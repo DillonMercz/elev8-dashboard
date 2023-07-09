@@ -1,0 +1,35 @@
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+<script>
+const firebaseConfig = {
+    apiKey: "AIzaSyAeK4Sa-5hitMezvtaqC9qBKDxO-VN-X7w",
+    authDomain: "Elev8 Admin-ae310.firebaseapp.com",
+    projectId: "Elev8 Admin-ae310",
+    storageBucket: "Elev8 Admin-ae310.appspot.com",
+    messagingSenderId: "102241139444",
+    appId: "1:102241139444:web:86e243c660628a044bfca1",
+    measurementId: "G-WV3JX67Y6Y"
+};
+firebase.initializeApp(firebaseConfig);
+db = firebase.firestore();
+db.settings({ timestampsInSnapshots: true, merge: true });
+
+function getUser() {
+    firebase.auth().onAuthStateChanged((user) => {
+        if (user) {
+            // User is signed in, see docs for a list of available properties
+            // https://firebase.google.com/docs/reference/js/firebase.User
+            var uid = user.email;
+            userEmail = uid
+            window.location.href="./pages/dashboard.html"
+            // ...
+        } else {
+            // User is signed out
+            window.location.href = "https://dashboard.admin.elev8.cards/pages/sign-up.html"
+            // ...
+        }
+    });
+}
+getUser()
+</script>

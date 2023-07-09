@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, minimal-ui, viewport-fit=cover">
+    <meta name="theme-color" content="#2196f3">
+    <meta name="author" content="DillonMerx" />
+    <meta name="keywords" content="" />
+    <meta name="robots" content="" />
+    <meta name="title" content="Elev8 Home Services - Book Now">
+    <meta name="description" content="Book Home Services With A Tap.">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://metatags.io/">
+    <meta property="og:title" content="Elev8 Home Services - Book Now">
+    <meta property="og:description" content="Book Home Services With A Tap.">
+    <meta property="og:image" content="https://i.imgur.com/AuINjvO.png">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://metatags.io/">
+    <meta property="twitter:title" content="Elev8 Home Services - Book Now">
+    <meta property="twitter:description" content="Book Home Services With A Tap.">
+    <meta property="twitter:image" content="https://i.imgur.com/AuINjvO.png">
+    <meta name="description" content="Elev8 - Services ">
+    <meta name="format-detection" content="telephone=no">
+    <!-- Favicons Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
+    <!-- Title -->
+    <title>Elev8 Home Services</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/smoothness/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+</head>
+
+<body data-theme-color="color-yellow">
+    <div class="page-wraper">
+        <!-- Preloader -->
+        <div id="preloader">
+            <div class="spinner"></div>
+        </div>
+        <!-- Preloader end-->
+        <!-- Header -->
+        <header class="header">
+            <div class="main-bar">
+                <div class="container">
+                    <div class="header-content">
+                        <div class="left-content">
+                            <a href="javascript:void(0);" class="back-btn">
+                                <svg width="18" height="18" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.03033 0.46967C9.2966 0.735936 9.3208 1.1526 9.10295 1.44621L9.03033 1.53033L2.561 8L9.03033 14.4697C9.2966 14.7359 9.3208 15.1526 9.10295 15.4462L9.03033 15.5303C8.76406 15.7966 8.3474 15.8208 8.05379 15.6029L7.96967 15.5303L0.96967 8.53033C0.703403 8.26406 0.679197 7.8474 0.897052 7.55379L0.96967 7.46967L7.96967 0.46967C8.26256 0.176777 8.73744 0.176777 9.03033 0.46967Z" fill="#a19fa8" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="mid-content">
+                            <h5 class="mb-0">Book Now</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header End -->
+        <div class="page-content">
+            <div class="container fb">
+                <!-- row -->
+                <div class="container">
+                    <div class="row">
+                        <!-- Column starts -->
+                        <div class="col-12">
+                            <form id="form-part-1" class="contact-info">
+                                <!-- Contact Details form -->
+                                <center>
+                                    <h1>
+                                        Contact Details:
+                                    </h1>
+                                </center><br>
+                                <input class="form-control" type="text" id="name" name="name" placeholder="Name" required>
+                                <br>
+                                <input class="form-control" type="email" id="email" name="email" placeholder="Email" required>
+                                <br>
+                                <input class="form-control" type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+                                <br>
+                                <input class="form-control" type="search" dir="ltr" spellcheck=false autocorrect="off" autocomplete="off" autocapitalize="off" id="autocomplete" name="autocomplete" placeholder="Enter your address">
+                                <br>
+                                <input class="form-control" type="text" id="zip" name="zip" placeholder="Zip Code">
+                                <br><br>
+                                <button type="button" id="part-1-next" class="btn btn-primary w-100">Continue</button>
+                            </form>
+                            <form id="form-part-2" class="job-info" style="display: none;">
+                                <!-- Job Details form -->
+                                <center>
+                                    <h1>
+                                        Job Details:
+                                    </h1>
+                                </center><br>
+                                <br><label for="job">Booking Category:</label>
+                                <h3 id="category"></h3>
+                                <br><label for="details">Booking Subcategory:</label>
+                                <h3 id="subcategory"></h3>
+                                <label for="fee">Booking Fee:</label>
+                                <h3 class="" type="text" id="fee" name="fee" data-toggle="tooltip" title="The booking fee is used to secure your booking and get the right person out there on your time frame!"></h3>
+                                <script>
+                                    $(document).ready(function(){
+                            $('[data-toggle="tooltip"]').tooltip();   
+                        });
+                    </script><br><br>
+                                <button type="button" id="part-2-next" class="btn btn-primary w-100">Next</button>
+                                <button type="button" id="part-2-back" class="btn btn-primary w-100">Back</button>
+                            </form>
+                            <form id="form-part-3" class="job-details" style="display: none;" action="handleSubmit()" method="post">
+                                <!-- Appointment Details form -->
+                                <center>
+                                    <h1>
+                                        Appointment Details:
+                                    </h1>
+                                </center><br>
+                                <br><label for="date">Preferred Date:</label>
+                                <input class="form-control" type="date" id="date" name="date" required>
+                                <br><label for="time">Preferred Time:</label>
+                                <input type="text" id="time" name="time" class="form-control timepicker" required>
+                                <br><label for="notes">Additional Notes:</label>
+                                <textarea rows="5" class="form-control" id="notes" name="notes" placeholder="Please enter any additional notes"></textarea>
+                                <input class="form-control" type="hidden" id="job-type" name="job-type">
+                                <input class="form-control" type="hidden" id="job-details" name="job-details">
+                                <input class="form-control" type="hidden" id="booking-fee" name="booking-fee">
+                                <button type="button" id="part-3-next" class="btn btn-primary w-100">Next</button>
+                                <button type="button" id="part-3-back" class="btn btn-primary w-100">Back</button>
+                            </form>
+                            <form id="form-part-4" class="review" style="display: none;">
+                                <!-- Review Your Booking Details form -->
+                                <center>
+                                    <h1>
+                                        Review Your Booking Details:
+                                    </h1>
+                                </center><br>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h3>Contact Details:</h3>
+                                        <p><strong>Name:</strong> <span id="review-name"></span></p>
+                                        <p><strong>Email:</strong> <span id="review-email"></span></p>
+                                        <p><strong>Phone:</strong> <span id="review-phone"></span></p>
+                                        <p><strong>Address:</strong> <span id="review-address"></span></p>
+                                        <p><strong>Zip Code:</strong> <span id="review-zip"></span></p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h3>Job Details:</h3>
+                                        <p><strong>Booking Category:</strong> <span id="review-category"></span></p>
+                                        <p><strong>Booking Subcategory:</strong> <span id="review-subcategory"></span></p>
+                                        <p><strong>Booking Fee:</strong> <span id="review-fee"></span></p>
+                                        <p><strong>Preferred Date:</strong> <span id="review-date"></span></p>
+                                        <p><strong>Preferred Time:</strong> <span id="review-time"></span></p>
+                                        <p><strong>Additional Notes:</strong> <span id="review-notes"></span></p>
+                                    </div>
+                                </div>
+                                <div class="divider border-secondary inner-divider mb-0" style="border-color:black !important"><span style="background-color:black">Payment</span></div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <center>
+                                            <h3>Payment Details:</h3>
+                                        </center>
+                                        <center>
+                                            <div id="paypal-button-container"></div>
+                                        </center>
+                                    </div>
+                                    <br>
+                                    <div style="margin-top:25px">
+                                        <h3>Payment Summary:</h3>
+                                        <p><strong>Total Amount:</strong><span id="total-amount"></span></p>
+                                    </div>
+                                </div>
+                                <br><br>
+                                <button type="button" id="part-4-submit" onclick="handleSubmit()" class="btn btn-primary w-100" disabled>Submit Booking</button>
+                                <br>
+                                <br>
+                                <button type="button" id="part-4-back" class="btn btn-primary w-100">Back</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!--Succesfull Payment-->
+                <div class="modal fade" tabindex="-1" id="paymentCompleteModal" aria-labelledby="paymentCompleteModal" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-body text-center small p-4">
+                                <i class="fa fa-4x fa-check-circle text-success m-b15"></i>
+                                <h5>Payment Successfull!</h5>
+                                <p class="m-b0">You can now submit your booking.</p>
+                                <br>
+                                <button type="button" onclick="handleSubmit()" class="btn btn-primary w-100">Submit Booking</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Payment Error-->
+                <div class="modal fade" tabindex="-1" id="paymentErrorModal" aria-labelledby="paymentCompleteModal" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-body text-center small p-4">
+                                <i class="fa fa-4x fa-exclamation-circle text-error m-b15"></i>
+                                <h5>Payment Was Unsuccessful!</h5>
+                                <p class="m-b0">Please try a different payment method or card.</p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" style="display:none" class="btn btn-danger btn-block my-3 dzToastBtn" id="toastbtn5">Show Alert</button>
+                <div style="position:absolute;right:10px;bottom: 80px;">
+                    <div id="dzToast5" class="dzToastArea toast style-1 toast-danger dz-toast on-bottom" role="alert" aria-live="polite" aria-atomic="true">
+                        <div class="toast-body">
+                            <svg fill="#ff3838" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-4.53 -4.53 54.37 54.37" xml:space="preserve" stroke="#ff3838">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0">
+                                    <rect x="-4.53" y="-4.53" width="54.37" height="54.37" rx="27.185" fill="#fafeff" strokewidth="0"></rect>
+                                </g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <g>
+                                        <path d="M22.675,0.02c-0.006,0-0.014,0.001-0.02,0.001c-0.007,0-0.013-0.001-0.02-0.001C10.135,0.02,0,10.154,0,22.656 c0,12.5,10.135,22.635,22.635,22.635c0.007,0,0.013,0,0.02,0c0.006,0,0.014,0,0.02,0c12.5,0,22.635-10.135,22.635-22.635 C45.311,10.154,35.176,0.02,22.675,0.02z M22.675,38.811c-0.006,0-0.014-0.001-0.02-0.001c-0.007,0-0.013,0.001-0.02,0.001 c-2.046,0-3.705-1.658-3.705-3.705c0-2.045,1.659-3.703,3.705-3.703c0.007,0,0.013,0,0.02,0c0.006,0,0.014,0,0.02,0 c2.045,0,3.706,1.658,3.706,3.703C26.381,37.152,24.723,38.811,22.675,38.811z M27.988,10.578 c-0.242,3.697-1.932,14.692-1.932,14.692c0,1.854-1.519,3.356-3.373,3.356c-0.01,0-0.02,0-0.029,0c-0.009,0-0.02,0-0.029,0 c-1.853,0-3.372-1.504-3.372-3.356c0,0-1.689-10.995-1.931-14.692C17.202,8.727,18.62,5.29,22.626,5.29 c0.01,0,0.02,0.001,0.029,0.001c0.009,0,0.019-0.001,0.029-0.001C26.689,5.29,28.109,8.727,27.988,10.578z"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                            <div class="toast-content ms-3 me-2">
+                                <strong>Please fill out all fields as required</strong>
+                                <small class="d-block">Thank you!</small>
+                            </div>
+                            <button class="btn btn-close position-absolute p-1" type="button" data-bs-dismiss="toast" aria-label="Close"> </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Menubar -->
+                <div class="menubar-area">
+                    <div class="toolbar-inner menubar-nav">
+                        <a href="index.html" class="nav-link active">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.14373 20.7821V17.7152C9.14372 16.9381 9.77567 16.3067 10.5584 16.3018H13.4326C14.2189 16.3018 14.8563 16.9346 14.8563 17.7152V20.7732C14.8562 21.4473 15.404 21.9951 16.0829 22H18.0438C18.9596 22.0023 19.8388 21.6428 20.4872 21.0007C21.1356 20.3586 21.5 19.4868 21.5 18.5775V9.86585C21.5 9.13139 21.1721 8.43471 20.6046 7.9635L13.943 2.67427C12.7785 1.74912 11.1154 1.77901 9.98539 2.74538L3.46701 7.9635C2.87274 8.42082 2.51755 9.11956 2.5 9.86585V18.5686C2.5 20.4637 4.04738 22 5.95617 22H7.87229C8.19917 22.0023 8.51349 21.8751 8.74547 21.6464C8.97746 21.4178 9.10793 21.1067 9.10792 20.7821H9.14373Z" fill="#130F26" />
+                            </svg>
+                        </a>
+                        <a href="search.html" class="nav-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 512 512">
+                                <path d="M469.3 19.3l23.4 23.4c25 25 25 65.5 0 90.5l-56.4 56.4L322.3 75.7l56.4-56.4c25-25 65.5-25 90.5 0zM44.9 353.2L299.7 98.3 413.7 212.3 158.8 467.1c-6.7 6.7-15.1 11.6-24.2 14.2l-104 29.7c-8.4 2.4-17.4 .1-23.6-6.1s-8.5-15.2-6.1-23.6l29.7-104c2.6-9.2 7.5-17.5 14.2-24.2zM249.4 103.4L103.4 249.4 16 161.9c-18.7-18.7-18.7-49.1 0-67.9L94.1 16c18.7-18.7 49.1-18.7 67.9 0l19.8 19.8c-.3 .3-.7 .6-1 .9l-64 64c-6.2 6.2-6.2 16.4 0 22.6s16.4 6.2 22.6 0l64-64c.3-.3 .6-.7 .9-1l45.1 45.1zM408.6 262.6l45.1 45.1c-.3 .3-.7 .6-1 .9l-64 64c-6.2 6.2-6.2 16.4 0 22.6s16.4 6.2 22.6 0l64-64c.3-.3 .6-.7 .9-1L496 350.1c18.7 18.7 18.7 49.1 0 67.9L417.9 496c-18.7 18.7-49.1 18.7-67.9 0l-87.4-87.4L408.6 262.6z" fill="#a19fa8" /></svg>
+                        </a>
+                        <a href="messages.html" class="nav-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.4" d="M22 15.9403C22 18.7303 19.76 20.9903 16.97 21.0003H16.96H7.05C4.27 21.0003 2 18.7503 2 15.9603V15.9503C2 15.9503 2.006 11.5243 2.014 9.2983C2.015 8.8803 2.495 8.6463 2.822 8.9063C5.198 10.7913 9.447 14.2283 9.5 14.2733C10.21 14.8423 11.11 15.1633 12.03 15.1633C12.95 15.1633 13.85 14.8423 14.56 14.2623C14.613 14.2273 18.767 10.8933 21.179 8.9773C21.507 8.7163 21.989 8.9503 21.99 9.3673C22 11.5763 22 15.9403 22 15.9403Z" fill="#a19fa8" />
+                                <path d="M21.4761 5.67369C20.6101 4.04169 18.9061 2.99969 17.0301 2.99969H7.05013C5.17413 2.99969 3.47013 4.04169 2.60413 5.67369C2.41013 6.03869 2.50213 6.4937 2.82513 6.75169L10.2501 12.6907C10.7701 13.1107 11.4001 13.3197 12.0301 13.3197C12.0341 13.3197 12.0371 13.3197 12.0401 13.3197C12.0431 13.3197 12.0471 13.3197 12.0501 13.3197C12.6801 13.3197 13.3101 13.1107 13.8301 12.6907L21.2551 6.75169C21.5781 6.4937 21.6701 6.03869 21.4761 5.67369Z" fill="#a19fa8" />
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0);" class="menu-toggler">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.4" d="M16.0755 2H19.4615C20.8637 2 22 3.14585 22 4.55996V7.97452C22 9.38864 20.8637 10.5345 19.4615 10.5345H16.0755C14.6732 10.5345 13.537 9.38864 13.537 7.97452V4.55996C13.537 3.14585 14.6732 2 16.0755 2Z" fill="#a19fa8" />
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.53852 2H7.92449C9.32676 2 10.463 3.14585 10.463 4.55996V7.97452C10.463 9.38864 9.32676 10.5345 7.92449 10.5345H4.53852C3.13626 10.5345 2 9.38864 2 7.97452V4.55996C2 3.14585 3.13626 2 4.53852 2ZM4.53852 13.4655H7.92449C9.32676 13.4655 10.463 14.6114 10.463 16.0255V19.44C10.463 20.8532 9.32676 22 7.92449 22H4.53852C3.13626 22 2 20.8532 2 19.44V16.0255C2 14.6114 3.13626 13.4655 4.53852 13.4655ZM19.4615 13.4655H16.0755C14.6732 13.4655 13.537 14.6114 13.537 16.0255V19.44C13.537 20.8532 14.6732 22 16.0755 22H19.4615C20.8637 22 22 20.8532 22 19.44V16.0255C22 14.6114 20.8637 13.4655 19.4615 13.4655Z" fill="#a19fa8" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <!-- Menubar -->
+                <!-- Theme Color Settings End -->
+            </div>
+        </div>
+        <!--**********************************
+    Scripts
+***********************************-->
+        <script src="assets/js/jquery.js"></script>
+        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/settings.js"></script>
+        <script src="assets/js/custom.js"></script>
+        <script src="assets/js/dz.carousel.js"></script><!-- Swiper -->
+        <script src="assets/vendor/swiper/swiper-bundle.min.js"></script><!-- Swiper -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+        <script>
+        const part1 = document.querySelector('#form-part-1');
+        const part2 = document.querySelector('#form-part-2');
+        const part3 = document.querySelector('#form-part-3');
+        const part4 = document.querySelector('#form-part-4');
+
+
+        // Part 1
+        const part1NextBtn = document.querySelector('#part-1-next');
+        part1NextBtn.addEventListener('click', () => {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var phone = document.getElementById("phone").value;
+            var address = document.getElementById("autocomplete").value;
+            var zipCode = document.getElementById("zip").value;
+
+            if ((name !== undefined && name !== null && name !== "") &&
+                (email !== undefined && email !== null && email !== "") &&
+                (phone !== undefined && phone !== null && phone !== "") &&
+                (address !== undefined && address !== null && address !== "") &&
+                (zipCode !== undefined && zipCode !== null && zipCode !== "")) {
+                console.log(name);
+
+                var part1 = document.getElementById("form-part-1");
+                var part2 = document.getElementById("form-part-2");
+
+                part1.style.display = 'none';
+                part2.style.display = 'flex';
+                part2.style.flexDirection = 'column';
+                part2.style.alignItems = 'center';
+                part2.style.gap = '20px';
+            } else {
+                var toastItem = document.querySelectorAll('.dzToastBtn');
+                toastItem.forEach(item => {
+                    console.log(item.id)
+
+                    var toastID = item.id.split('toastbtn')[1];
+                    const toastTrigger = document.getElementById('toastbtn' + toastID)
+                    const toastLiveExample = document.getElementById('dzToast' + toastID)
+                    const toast = new bootstrap.Toast(toastLiveExample)
+                    toast.show()
+                })
+            }
+        });
+
+        // Part 2
+        const part2BackBtn = document.querySelector('#part-2-back');
+        const part2NextBtn = document.querySelector('#part-2-next');
+        part2BackBtn.addEventListener('click', () => {
+            part2.style.display = 'none';
+            part1.style.display = 'flex';
+            part1.style.flexDirection = 'column';
+            part1.style.alignItems = 'center';
+            part1.style.gap = '20px';
+        });
+        part2NextBtn.addEventListener('click', () => {
+            part2.style.display = 'none';
+            part3.style.display = 'flex';
+            part3.style.flexDirection = 'column';
+            part3.style.alignItems = 'center';
+            part3.style.gap = '20px';
+            // Populate hidden fields for form submission
+            const jobTypeInput = document.querySelector('#job-type');
+            const jobDetailsInput = document.querySelector('#job-details');
+            const feeInput = document.querySelector('#booking-fee');
+            jobTypeInput.value = document.querySelector('#job').value;
+            jobDetailsInput.value = document.querySelector('#details').value;
+            feeInput.value = document.querySelector('#fee').value;
+        });
+
+        // Part 3 Back Button
+        const part3BackBtn = document.querySelector('#part-3-back');
+        part3BackBtn.addEventListener('click', () => {
+            var part2 = document.getElementById("form-part-2");
+            var part3 = document.getElementById("form-part-3");
+
+            part2.style.display = 'block';
+            part3.style.display = 'none';
+        });
+
+        // Part 3 Next Button
+        const part3NextBtn = document.querySelector('#part-3-next');
+        part3NextBtn.addEventListener('click', () => {
+            var preferredDate = document.getElementById("date").value;
+            var preferredTime = document.getElementById("time").value;
+            var notes = document.getElementById("notes").value;
+
+            if (preferredDate !== "" && preferredTime !== "") {
+                var part3 = document.getElementById("form-part-3");
+                var part4 = document.getElementById("form-part-4");
+
+                part3.style.display = 'none';
+                part4.style.display = 'block';
+                part4.style.flexDirection = 'column';
+                part4.style.alignItems = 'center';
+                part4.style.gap = '20px';
+
+                // Populate review section with form data
+                populateReviewSection();
+            } else {
+                var toastItem = document.querySelectorAll('.dzToastBtn');
+                toastItem.forEach(item => {
+                    var toastID = item.id.split('toastbtn')[1];
+                    const toastLiveExample = document.getElementById('dzToast' + toastID)
+                    const toast = new bootstrap.Toast(toastLiveExample);
+                    toast.show();
+                });
+            }
+        });
+
+        // Part 4
+        const part4BackBtn = document.querySelector('#part-4-back');
+        part4BackBtn.addEventListener('click', () => {
+            part4.style.display = 'none';
+            part3.style.display = 'flex';
+            part3.style.flexDirection = 'column';
+            part3.style.alignItems = 'center';
+            part3.style.gap = '20px';
+        });
+
+        // Review user's responses
+        const reviewName = document.querySelector('#review-name');
+        const reviewEmail = document.querySelector('#review-email');
+        const reviewPhone = document.querySelector('#review-phone');
+        const reviewAddress = document.querySelector('#review-address');
+        const reviewZip = document.querySelector('#review-zip');
+        const reviewCategory = document.querySelector('#review-category');
+        const reviewSubcategory = document.querySelector('#review-subcategory');
+        const reviewQuote = document.querySelector('#review-fee');
+        const reviewDate = document.querySelector('#review-date');
+        const reviewTime = document.querySelector('#review-time');
+        const reviewNotes = document.querySelector('#review-notes');
+
+        const populateReview = () => {
+            // Part 1
+            reviewName.textContent = document.querySelector('#name').value;
+            reviewEmail.textContent = document.querySelector('#email').value;
+            reviewPhone.textContent = document.querySelector('#phone').value;
+            reviewAddress.textContent = document.querySelector('#autocomplete').value;
+            reviewZip.textContent = document.querySelector('#zip').value;
+
+            // Part 2
+            reviewCategory.textContent = document.querySelector('#category').textContent;
+            reviewSubcategory.textContent = document.querySelector('#subcategory').textContent;
+            reviewQuote.textContent = document.querySelector('#fee').innerHTML;
+
+            // Part 3
+            reviewDate.textContent = document.querySelector('#date').value;
+            reviewTime.textContent = document.querySelector('#time').value;
+            reviewNotes.textContent = document.querySelector('#notes').value;
+        };
+
+        // Update review section whenever input changes
+        const inputElements = [...document.querySelectorAll('input, textarea')];
+        inputElements.forEach((inputElement) => {
+            inputElement.addEventListener('input', () => {
+                populateReview();
+            });
+        });
+
+        // Submit form and show confirmation
+        const submitButton = document.querySelector('#part-4-submit');
+        submitButton.addEventListener('click', () => {
+            // Save data to Firebase here
+            // ...
+
+            // Show confirmation message
+            /*const confirmationMessage = document.querySelector('#confirmation-message');
+            confirmationMessage.style.display = 'flex';
+            confirmationMessage.style.flexDirection = 'column';
+            confirmationMessage.style.alignItems = 'center';
+            confirmationMessage.style.gap = '20px';*/
+
+            // Hide review section and Part 3 form
+            part4.style.display = 'none';
+            part3.style.display = 'none';
+        });
+
+
+        // Quote calculator
+        //const detailsInput = document.querySelector('#details');
+        //const quoteInput = document.querySelector('#quote');
+
+
+        /*function calculateQuote(details) {
+            // Simple quote calculation
+            return `$${details.length * 0.5}`;
+        }*/
+        var zip = localStorage.getItem("zip")
+        document.getElementById('zip').value = zip
+        // Create a new URL object with the current URL
+        const url = new URL(window.location.href);
+
+        // Get the query parameters
+        const params = new URLSearchParams(url.search);
+
+        // Get the value of a specific parameter
+        const category = params.get("category");
+        document.getElementById("category").innerHTML = category
+        const subcategory = params.get("subcategory");
+        document.getElementById("subcategory").innerHTML = subcategory
+        const fee = window.localStorage.getItem("fee")
+        document.getElementById("fee").innerHTML = "$" + fee
+        document.getElementById("total-amount").innerHTML = " $<strong>" + fee + "</strong>"
+
+
+
+
+        // Select the phone input field
+        const phoneInput = document.getElementById('phone');
+
+        // Define the format function
+        function formatPhoneNumber(phoneNumberString) {
+            const cleaned = ('' + phoneNumberString).replace(/\D/g, '');
+            const match = cleaned.match(/^(\d{3})(\d{3})(\d{4})$/);
+            if (match) {
+                return '(' + match[1] + ') ' + match[2] + '-' + match[3];
+            }
+            return phoneNumberString;
+        }
+
+        // Add an event listener to the input field
+        phoneInput.addEventListener('input', () => {
+            phoneInput.value = formatPhoneNumber(phoneInput.value);
+        });
+
+        function autocompleteAddress() {
+            $('#autocomplete').autocomplete({
+                source: async function(request, response) {
+                    const options = {
+                        countrycodes: 'us', // limit results to the United States
+                        limit: 10, // limit to a maximum of 10 results
+                    };
+                    const url = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(request.term)}&${new URLSearchParams(options)}`;
+                    const result = await fetch(url);
+                    const json = await result.json();
+                    console.log(json)
+                    response(json.map(result => result.display_name));
+                },
+                minLength: 2
+            });
+        }
+
+        autocompleteAddress();
+        </script>
+        <script>
+        $('.timepicker').timepicker({
+            timeFormat: 'h:mm p',
+            interval: 30,
+            minTime: '09:00',
+            maxTime: '10:00pm',
+            defaultTime: '11',
+            startTime: '09:00',
+            dynamic: false,
+            dropdown: true,
+            scrollbar: true
+        });
+        </script>
+        <!-- Include the Firebase JavaScript SDK -->
+        <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-firestore-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-auth-compat.js"></script>
+        <script>
+        var guest
+        // Initialize Firebase
+        const firebaseConfig = {
+            // Your Firebase configuration goes here
+            apiKey: "AIzaSyBd9mTGo1lM19_Kcqf_vl7-pE4Rq1AzWA8",
+            authDomain: "bookings-49c4e.firebaseapp.com",
+            projectId: "bookings-49c4e",
+            storageBucket: "bookings-49c4e.appspot.com",
+            messagingSenderId: "491340380786",
+            appId: "1:491340380786:web:50ea0578b31309494ae0eb",
+            measurementId: "G-3JJKPRCD9Y"
+        };
+        firebase.initializeApp(firebaseConfig);
+
+        // Get a reference to the database service
+        const database = firebase.firestore();
+        // Get a reference to the form and listen for submit events
+        const form = document.querySelector('#form-part-4');
+        form.addEventListener('submit', handleSubmit);
+        firebase.auth().onAuthStateChanged(function(user) {
+            if (user) {
+                // User is signed in, show their name
+                guest = user.email;
+
+            } else {
+                // No user is signed in, show login button
+                console.log("No User Found")
+                window.location.href = "./login.html";
+
+            }
+        });
+
+        function handleSubmit(event) {
+            // Prevent the default form submission behavior
+            //event.preventDefault();
+
+            // Get the form data and create a new object with it
+            //const formData = new FormData(event.target);
+            const data = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                address: document.getElementById('autocomplete').value,
+                zip: document.getElementById('zip').value,
+                date: document.getElementById('date').value,
+                time: document.getElementById('time').value,
+                notes: document.getElementById('review-notes').innerHTML,
+                jobCategory: document.getElementById('review-category').innerHTML,
+                jobSubcategory: document.getElementById('review-subcategory').innerHTML,
+                fee: document.getElementById('fee').innerHTML,
+                user: guest
+            };
+
+            // Save the data to Firebase
+            database.collection('bookings').add(data)
+                .then((docRef) => {
+                    console.log("Document written with ID: ", docRef.id);
+                    // Show success message and reset form
+                    //document.querySelector('#form').reset();
+                    location.href = './success'
+                })
+                .catch((error) => {
+                    console.error("Error adding document: ", error);
+                    alert('Form submission failed. Please try again later.');
+                });
+
+
+
+        }
+        function createNewBooking(){
+            const data = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                address: document.getElementById('autocomplete').value,
+                zip: document.getElementById('zip').value,
+                date: document.getElementById('date').value,
+                time: document.getElementById('time').value,
+                notes: document.getElementById('review-notes').innerHTML,
+                jobCategory: document.getElementById('review-category').innerHTML,
+                jobSubcategory: document.getElementById('review-subcategory').innerHTML,
+                fee: document.getElementById('fee').innerHTML,
+                user: guest,
+                status: "paid"
+            };
+
+            // Save the data to Firebase
+            database.collection('bookings').add(data)
+                .then((docRef) => {
+                    console.log("Document written with ID: ", docRef.id);
+                    // Show success message and reset form
+                    //document.querySelector('#form').reset();
+                    location.href = './success'
+                })
+                .catch((error) => {
+                    console.error("Error adding document: ", error);
+                    alert('Form submission failed. Please try again later.');
+                });
+
+
+        }
+        // Load the PayPal JavaScript SDK asynchronously
+        // Load the PayPal JavaScript SDK asynchronously
+        function loadPayPalSDK() {
+            return new Promise((resolve, reject) => {
+                const script = document.createElement('script');
+                script.src = 'https://www.paypal.com/sdk/js?client-id=AR87bKAqN3tVfDLzORiYAmkes_IciIOmUhM0tf03mFMaPvkD7F4Glt6NbUq8esfJokVlMRLbVAqX2u0D';
+                script.addEventListener('load', resolve);
+                script.addEventListener('error', reject);
+                document.body.appendChild(script);
+            });
+        }
+
+        // Initialize the PayPal SDK and render the buttons with the desired amount
+        function initializePayPalButtons() {
+            var price = window.localStorage.getItem("fee");
+            paypal.Buttons({
+                createOrder: function(data, actions) {
+                    return actions.order.create({
+                        purchase_units: [{
+                            amount: {
+                                value: price, // Set the desired amount here
+                                currency_code: 'USD'
+                            }
+                        }]
+                    });
+                },
+                onError: function(error) {
+                    console.log(error);
+                    // Handle error or decline here
+                    // You can display an error message to the user or take appropriate action
+                    openPaymentErrorModal()
+                },
+                onApprove: function(data, actions) {
+                    return actions.order.capture().then(function(details) {
+                        // Handle successful payment
+                        console.log(details);
+                        //document.getElementById('part-4-submit').style.display = 'block'; // Show the booking button
+                        enableBookingButton()
+                        //openPaymentCompleteModal()
+                        createNewBooking()
+                    });
+                }
+            }).render('#paypal-button-container');
+        }
+        // Load the PayPal SDK and initialize the buttons
+        function initializeButtons() {
+            loadPayPalSDK()
+                .then(initializePayPalButtons)
+                .catch(function(error) {
+                    // Handle errors while loading the PayPal SDK
+                    console.log(error);
+                });
+        }
+
+        // Call the initializeButtons function to load and render the buttons
+        initializeButtons();
+
+        // Function to open the payment complete modal
+        function openPaymentCompleteModal() {
+            $('#paymentCompleteModal').modal('show');
+        }
+        // Function to open the payment complete modal
+        function openPaymentErrorModal() {
+            $('#paymentErrorModal').modal('show');
+        }
+
+        // Function to enable the submit booking button
+        function enableBookingButton() {
+            document.getElementById('part-4-submit').removeAttribute('disabled');
+        }
+
+        // Event listener for submit booking button in modal
+        document.getElementById('submitBookingButton').addEventListener('click', function() {
+            // Perform necessary actions for submitting the booking
+            document.getElementById('part-4-submit').click()
+            console.log('Booking submitted');
+            // ...
+        });
+        </script>
+</body>
+
+</html>

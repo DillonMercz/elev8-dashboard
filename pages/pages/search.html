@@ -1,0 +1,1573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, minimal-ui, viewport-fit=cover">
+    <meta name="theme-color" content="#2196f3">
+    <meta name="author" content="Elev8 Home Services LLC" />
+    <meta name="keywords" content="" />
+    <meta name="robots" content="" />
+    <meta name="title" content="Elev8 Home Services - Book Now">
+    <meta name="description" content="Book Home Services With A Tap.">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://metatags.io/">
+    <meta property="og:title" content="Elev8 Home Services - Book Now">
+    <meta property="og:description" content="Book Home Services With A Tap.">
+    <meta property="og:image" content="https://i.imgur.com/AuINjvO.png">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://metatags.io/">
+    <meta property="twitter:title" content="Elev8 Home Services - Book Now">
+    <meta property="twitter:description" content="Book Home Services With A Tap.">
+    <meta property="twitter:image" content="https://i.imgur.com/AuINjvO.png">
+    <meta name="description" content="Elev8 - Services ">
+    <!-- Favicons Icon 
+        <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />-->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Title -->
+    <title>Elev8 Home Services - Home</title>
+    <!-- PWA Version -->
+    <link rel="manifest" href="./manifest.json">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <style>
+        .circle {
+ border-radius: 50%;
+ height: 100px;
+ width: 100px;
+ overflow: hidden;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+ul.ui-autocomplete {
+
+        -moz-border-radius: 15px;
+        border-radius: 15px;
+        left:-10px;
+    }
+    .login-button{
+
+        margin-top:10px;
+        margin-bottom:30px;
+
+    }
+    p{
+
+        color:black;
+    }
+    .testimonial{
+        min-height:235px;
+    }
+    .autocomplete-container{
+        padding:15px;
+        width:95%;
+        max-height:20%;
+        overflow-y: scroll;
+        text-align: left;
+        background-color: white;
+
+
+    }
+.autocomplete-list{
+    overflow-x: scroll;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+.swiper-container-pointer-events {
+    touch-action: pan-x !important;
+}
+    #autocomplete-results{
+        display: none;
+    }
+
+</style>
+</head>
+
+<body data-theme-color="color-yellow">
+    <div class="page-wraper">
+        <!-- Header End -->
+        <!-- Preloader -->
+        <div id="preloader">
+            <div class="spinner"></div>
+        </div>
+        <!-- Preloader end-->
+        <!-- Banner -->
+        <div class="banner-wrapper author-notification" style="height:90px">
+            <div class="container inner-wrapper">
+                <div class="dz-info">
+                    <strong><span id=greeting></span><strong>
+                            <h2 class="name mb-0" id="user-name"></h2>
+                            <div id="login-container">
+                            </div>
+                </div>
+                <!-- Profile
+
+            <div class="dz-media media-45 rounded-circle">
+                <a href="profile.html"><img src="https://i.imgur.com/7F6QVaL.jpg"  style="max-width:70px;max-height:70px;border-radius:50% !important"class="rounded-circle circle" alt="author-image"></a>
+            </div>-->
+            </div>
+        </div>
+        <!-- Banner End -->
+        <!-- Page Content -->
+        <div class="page-content">
+            <div class="content-inner pt-0">
+                <div class="container fb">
+                    <h1 style="margin-top:10%">What Can We Elev8?</h1>
+                    <!-- Search -->
+                    <form class="m-b30">
+                        <div class="serach-area">
+                            <div class="input-group search-input" style="margin-bottom:0px">
+                                <input type="text" placeholder="Search services here..." id="search" onclick="mapAutocomplete()" class="form-control style-1 main-in">
+                                <a href="javascript:void(0);" class="btn-close"><i class="fa-solid fa-xmark"></i></a>
+                            </div>
+                            <center>
+                                <div class="autocomplete-container" id="autocomplete-results"></div>
+                            </center>
+                    </form>
+                    <!-- Dashboard Area -->
+                    <div class="dashboard-area" id="dashboard-area">
+                        <!-- Features -->
+                        <div class="m-b10">
+                            <div class="title-bar">
+                                <h5 class="dz-title" style="margin-top:20px">Recommended Services</h5>
+                                <div class="swiper-defult-pagination pagination-dots style-1 p-0"></div>
+                            </div>
+                            <div class="swiper-btn-center-lr">
+                                <div class="swiper-container tag-group mt-4 dz-swiper recomand-swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="card job-post">
+                                                <div class="card-body">
+                                                    <div class="media media-80">
+                                                        <img src="https://majesticwindowsexteriorcleaning.com/wp-content/uploads/2021/05/power-washing-wooden-deck-1.jpg" alt="/">
+                                                    </div>
+                                                    <div class="card-info">
+                                                        <h6 class="title"><a href="javascript:void(0);">Pressure Washing</a></h6>
+                                                        <div class="d-flex align-items-center">
+                                                            <svg class="text-primary" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <path d="M8.5 23C9.70017 23.0072 10.8898 22.7761 12 22.32C13.109 22.7799 14.2995 23.0112 15.5 23C19.145 23 22 21.055 22 18.571V14.429C22 11.945 19.145 10 15.5 10C15.331 10 15.165 10.008 15 10.017V5.333C15 2.9 12.145 1 8.5 1C4.855 1 2 2.9 2 5.333V18.667C2 21.1 4.855 23 8.5 23ZM20 18.571C20 19.72 18.152 21 15.5 21C12.848 21 11 19.72 11 18.571V17.646C12.3542 18.4696 13.9153 18.8898 15.5 18.857C17.0847 18.8898 18.6458 18.4696 20 17.646V18.571ZM15.5 12C18.152 12 20 13.28 20 14.429C20 15.578 18.152 16.857 15.5 16.857C12.848 16.857 11 15.577 11 14.429C11 13.281 12.848 12 15.5 12ZM8.5 3C11.152 3 13 4.23 13 5.333C13 6.43601 11.152 7.66701 8.5 7.66701C5.848 7.66701 4 6.43701 4 5.333C4 4.229 5.848 3 8.5 3ZM4 8.48201C5.35986 9.28959 6.91876 9.7001 8.5 9.66701C10.0812 9.7001 11.6401 9.28959 13 8.48201V10.33C11.9102 10.6047 10.9107 11.1586 10.1 11.937C9.57422 12.0508 9.03795 12.1091 8.5 12.111C5.848 12.111 4 10.881 4 9.77801V8.48201ZM4 12.927C5.36015 13.7338 6.91891 14.1439 8.5 14.111C8.678 14.111 8.85 14.089 9.025 14.08C9.0101 14.1958 9.00176 14.3123 9 14.429V16.514C8.832 16.524 8.67 16.556 8.5 16.556C5.848 16.556 4 15.326 4 14.222V12.927ZM4 17.371C5.35986 18.1786 6.91876 18.5891 8.5 18.556C8.668 18.556 8.833 18.543 9 18.535V18.571C9.01431 19.4223 9.34144 20.2385 9.919 20.864C9.45111 20.9524 8.97615 20.9979 8.5 21C5.848 21 4 19.77 4 18.667V17.371Z" fill="#40189D" />
+                                                            </svg>
+                                                            <span class="ms-2 price-item">$</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card job-post">
+                                                <div class="card-body">
+                                                    <div class="media media-80">
+                                                        <img src="https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/home-improvement/wp-content/uploads/2022/07/featured-image-pool-maintenance.jpeg" alt="/">
+                                                    </div>
+                                                    <div class="card-info">
+                                                        <h6 class="title"><a href="javascript:void(0);">Pool Services</a></h6>
+                                                        <div class="d-flex align-items-center">
+                                                            <svg class="text-primary" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <path d="M8.5 23C9.70017 23.0072 10.8898 22.7761 12 22.32C13.109 22.7799 14.2995 23.0112 15.5 23C19.145 23 22 21.055 22 18.571V14.429C22 11.945 19.145 10 15.5 10C15.331 10 15.165 10.008 15 10.017V5.333C15 2.9 12.145 1 8.5 1C4.855 1 2 2.9 2 5.333V18.667C2 21.1 4.855 23 8.5 23ZM20 18.571C20 19.72 18.152 21 15.5 21C12.848 21 11 19.72 11 18.571V17.646C12.3542 18.4696 13.9153 18.8898 15.5 18.857C17.0847 18.8898 18.6458 18.4696 20 17.646V18.571ZM15.5 12C18.152 12 20 13.28 20 14.429C20 15.578 18.152 16.857 15.5 16.857C12.848 16.857 11 15.577 11 14.429C11 13.281 12.848 12 15.5 12ZM8.5 3C11.152 3 13 4.23 13 5.333C13 6.43601 11.152 7.66701 8.5 7.66701C5.848 7.66701 4 6.43701 4 5.333C4 4.229 5.848 3 8.5 3ZM4 8.48201C5.35986 9.28959 6.91876 9.7001 8.5 9.66701C10.0812 9.7001 11.6401 9.28959 13 8.48201V10.33C11.9102 10.6047 10.9107 11.1586 10.1 11.937C9.57422 12.0508 9.03795 12.1091 8.5 12.111C5.848 12.111 4 10.881 4 9.77801V8.48201ZM4 12.927C5.36015 13.7338 6.91891 14.1439 8.5 14.111C8.678 14.111 8.85 14.089 9.025 14.08C9.0101 14.1958 9.00176 14.3123 9 14.429V16.514C8.832 16.524 8.67 16.556 8.5 16.556C5.848 16.556 4 15.326 4 14.222V12.927ZM4 17.371C5.35986 18.1786 6.91876 18.5891 8.5 18.556C8.668 18.556 8.833 18.543 9 18.535V18.571C9.01431 19.4223 9.34144 20.2385 9.919 20.864C9.45111 20.9524 8.97615 20.9979 8.5 21C5.848 21 4 19.77 4 18.667V17.371Z" fill="#40189D" />
+                                                            </svg>
+                                                            <span class="ms-2 price-item">$$</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card job-post">
+                                                <div class="card-body">
+                                                    <div class="media media-80">
+                                                        <img src="https://media.istockphoto.com/id/1191736904/photo/the-master-in-yellow-gloves-lays-paving-stones.jpg?s=612x612&w=0&k=20&c=6sfhrCE1cZ5V54P-XEkkwozemIlVlIDNzF9DZANREoo=" alt="/">
+                                                    </div>
+                                                    <div class="card-info">
+                                                        <h6 class="title"><a href="javascript:void(0);">Paving</a></h6>
+                                                        <div class="d-flex align-items-center">
+                                                            <svg class="text-primary" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <path d="M8.5 23C9.70017 23.0072 10.8898 22.7761 12 22.32C13.109 22.7799 14.2995 23.0112 15.5 23C19.145 23 22 21.055 22 18.571V14.429C22 11.945 19.145 10 15.5 10C15.331 10 15.165 10.008 15 10.017V5.333C15 2.9 12.145 1 8.5 1C4.855 1 2 2.9 2 5.333V18.667C2 21.1 4.855 23 8.5 23ZM20 18.571C20 19.72 18.152 21 15.5 21C12.848 21 11 19.72 11 18.571V17.646C12.3542 18.4696 13.9153 18.8898 15.5 18.857C17.0847 18.8898 18.6458 18.4696 20 17.646V18.571ZM15.5 12C18.152 12 20 13.28 20 14.429C20 15.578 18.152 16.857 15.5 16.857C12.848 16.857 11 15.577 11 14.429C11 13.281 12.848 12 15.5 12ZM8.5 3C11.152 3 13 4.23 13 5.333C13 6.43601 11.152 7.66701 8.5 7.66701C5.848 7.66701 4 6.43701 4 5.333C4 4.229 5.848 3 8.5 3ZM4 8.48201C5.35986 9.28959 6.91876 9.7001 8.5 9.66701C10.0812 9.7001 11.6401 9.28959 13 8.48201V10.33C11.9102 10.6047 10.9107 11.1586 10.1 11.937C9.57422 12.0508 9.03795 12.1091 8.5 12.111C5.848 12.111 4 10.881 4 9.77801V8.48201ZM4 12.927C5.36015 13.7338 6.91891 14.1439 8.5 14.111C8.678 14.111 8.85 14.089 9.025 14.08C9.0101 14.1958 9.00176 14.3123 9 14.429V16.514C8.832 16.524 8.67 16.556 8.5 16.556C5.848 16.556 4 15.326 4 14.222V12.927ZM4 17.371C5.35986 18.1786 6.91876 18.5891 8.5 18.556C8.668 18.556 8.833 18.543 9 18.535V18.571C9.01431 19.4223 9.34144 20.2385 9.919 20.864C9.45111 20.9524 8.97615 20.9979 8.5 21C5.848 21 4 19.77 4 18.667V17.371Z" fill="#40189D" />
+                                                            </svg>
+                                                            <span class="ms-2 price-item">$</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card job-post">
+                                                <div class="card-body">
+                                                    <div class="media media-80" style="width:100px">
+                                                        <p>View More ></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Recomended Jobs End -->
+                        <!-- Recomended Jobs 
+                    <div class="features-box">
+                        <div class="row m-b20 g-3">
+                            <div class="col">
+                                <div class="card card-bx card-content bg-primary">
+                                    <div class="card-body">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 24 24" version="1.1" class="svg-main-icon">
+                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <rect x="0" y="0" width="24" height="24"/>
+                                                <path d="M5.84026576,8 L18.1597342,8 C19.1999115,8 20.0664437,8.79732479 20.1528258,9.83390904 L20.8194924,17.833909 C20.9112219,18.9346631 20.0932459,19.901362 18.9924919,19.9930915 C18.9372479,19.9976952 18.8818364,20 18.8264009,20 L5.1735991,20 C4.0690296,20 3.1735991,19.1045695 3.1735991,18 C3.1735991,17.9445645 3.17590391,17.889153 3.18050758,17.833909 L3.84717425,9.83390904 C3.93355627,8.79732479 4.80008849,8 5.84026576,8 Z M10.5,10 C10.2238576,10 10,10.2238576 10,10.5 L10,11.5 C10,11.7761424 10.2238576,12 10.5,12 L13.5,12 C13.7761424,12 14,11.7761424 14,11.5 L14,10.5 C14,10.2238576 13.7761424,10 13.5,10 L10.5,10 Z" fill="#fff"/>
+                                                <path d="M10,8 L8,8 L8,7 C8,5.34314575 9.34314575,4 11,4 L13,4 C14.6568542,4 16,5.34314575 16,7 L16,8 L14,8 L14,7 C14,6.44771525 13.5522847,6 13,6 L11,6 C10.4477153,6 10,6.44771525 10,7 L10,8 Z" fill="#fff" fill-rule="nonzero" opacity="0.3"/>
+                                            </g>
+                                        </svg>
+                                        <div class="card-info">
+                                            <h4 class="title">0</h4>
+                                            <p>Current Jobs</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card card-bx card-content bg-secondary">
+                                    <div class="card-body">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 24 24" version=  "1.1" class="svg-main-icon">
+                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <rect x="0" y="0" width="24" height="24"/>
+                                                <path d="M12,2 C13.8385982,2 15.5193947,3.03878936 16.3416408,4.68328157 L19,10 C20.365323,12.730646 19.25851,16.0510849 16.527864,17.4164079 C15.7602901,17.8001948 14.9139019,18 14.0557281,18 L9.94427191,18 C6.8913169,18 4.41640786,15.525091 4.41640786,12.472136 C4.41640786,11.6139622 4.61621302,10.767574 5,10 L7.65835921,4.68328157 C8.48060532,3.03878936 10.1614018,2 12,2 Z M7.55,13.6 C9.00633458,14.6922509 10.4936654,15.25 12,15.25 C13.5063346,15.25 14.9936654,14.6922509 16.45,13.6 L15.55,12.4 C14.3396679,13.3077491 13.1603321,13.75 12,13.75 C10.8396679,13.75 9.66033208,13.3077491 8.45,12.4 L7.55,13.6 Z" fill="#fff"/>
+                                                <path d="M6.15999985,21.0604779 L8.15999985,17.5963763 C8.43614222,17.1180837 9.04773263,16.9542085 9.52602525,17.2303509 C10.0043179,17.5064933 10.168193,18.1180837 9.89205065,18.5963763 L7.89205065,22.0604779 C7.61590828,22.5387706 7.00431787,22.7026457 6.52602525,22.4265033 C6.04773263,22.150361 5.88385747,21.5387706 6.15999985,21.0604779 Z M17.8320512,21.0301278 C18.1081936,21.5084204 17.9443184,22.1200108 17.4660258,22.3961532 C16.9877332,22.6722956 16.3761428,22.5084204 16.1000004,22.0301278 L14.1000004,18.5660262 C13.823858,18.0877335 13.9877332,17.4761431 14.4660258,17.2000008 C14.9443184,16.9238584 15.5559088,17.0877335 15.8320512,17.5660262 L17.8320512,21.0301278 Z" fill="#fff" opacity="0.3"/>
+                                            </g>
+                                        </svg>
+ 
+                                        <div class="card-info">
+                                            <h4 class="title" id="past">0</h4>
+                                            <p>Past Jobs</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>    
+                    </div>-->
+                        <!-- Features End -->
+                        <!-- Categorie -->
+                        <div class="categorie-section">
+                            <div class="title-bar">
+                                <h5 class="dz-title">Top Categories</h5>
+                            </div>
+                            <ul class="d-flex align-items-center">
+                                <li>
+                                    <a href="search.html" class="btn">
+                                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none">
+                                            <path opacity="0.9" d="M4 17a3 3 0 013-3h34a3 3 0 013 3v7H4v-7zM7 24h34v13a3 3 0 01-3 3H10a3 3 0 01-3-3V24z" fill="#130F26">
+                                            </path>
+                                            <path d="M41 24H7v8a8.381 8.381 0 018.036-6h25.963L41 24z" fill="#130F26"></path>
+                                            <path opacity="0.4" d="M29 24v3a2 2 0 01-2 2h-6a2 2 0 01-2-2v-3h10z" fill="white"></path>
+                                            <path opacity="0.2" d="M18.5 14v-2a3 3 0 013-3h5a3 3 0 013 3v2" stroke="#130F26" stroke-width="2px" fill="#130F26"></path>
+                                        </svg>
+                                    </a>
+                                    <center>
+                                        <p>Handyman</p>
+                                    </center>
+                                </li>
+                                <li>
+                                    <a href="search.html" class="btn">
+                                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8 11.242a3 3 0 01.879-2.12L12 6l3.121 3.121A3 3 0 0116 11.242V42H8V11.242zm12 0a3 3 0 01.879-2.12L24 6l3.121 3.121A3 3 0 0128 11.242V42h-8V11.242zm12.879-2.12a3 3 0 00-.879 2.12V42h8V11.242a3 3 0 00-.879-2.12L36 6 32.879 9.12z" fill="#e3b706"></path>
+                                            <rect opacity="1" x="4" y="21" width="40" height="11" rx="1" fill="#e3b706"></rect>
+                                            <mask id="FenceRepair_svg__a" x="8" y="5" width="32" height="37" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 10l4-4 4 4v32H8V10zm12 .414a1 1 0 01.293-.707l3-3a1 1 0 011.414 0l3 3a1 1 0 01.293.707V40a2 2 0 01-2 2h-4a2 2 0 01-2-2V10.414zm12.293-.707a1 1 0 00-.293.707V40a2 2 0 002 2h4a2 2 0 002-2V10.414a1 1 0 00-.293-.707l-3-3a1 1 0 00-1.414 0l-3 3z" fill="#C4C4C4"></path>
+                                            </mask>
+                                            <g mask="url(#FenceRepair_svg__a)" fill="none">
+                                                <path d="M40 32H8v7a7.954 7.954 0 017.385-5H40v-2z" fill="#e3b706"></path>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                    <center>
+                                        <p>Fencing</p>
+                                    </center>
+                                </li>
+                                <li>
+                                    <a href="search.html" class="btn">
+                                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path opacity="0.6" d="M28 16.47v-2.529h-8v2.53c0 .442-.098.88-.287 1.28l-3.426 7.26a3 3 0 00-.287 1.28v14.71a3 3 0 003 3h10a3 3 0 003-3V26.29a3 3 0 00-.287-1.28l-3.426-7.26a3.001 3.001 0 01-.287-1.28z" fill="#e3b706"></path>
+                                            <path d="M20 10.608h8v6.333A8.349 8.349 0 0021.64 14H20v-3.392zM26 29H16v8h10v-8z" fill="#e3b706"></path>
+                                            <path opacity="0.9" fill-rule="evenodd" clip-rule="evenodd" d="M20 6c0 3.266-2.734 6-6 6v2a8 8 0 008-8h-2z" fill="#e3b706"></path>
+                                            <path opacity="0.6" d="M14.267 7.333h1.067V4.667h-1.067c-.172 0-.34.06-.472.17l-.41.343a1.067 1.067 0 000 1.64l.41.343c.133.11.3.17.472.17z" fill="#e3b706"></path>
+                                            <path opacity="0.5" d="M32 12V7a3 3 0 00-3-3H15v3.004a3 3 0 001.41 2.544l3.194 1.996a3 3 0 001.59.456H32z" fill="#e3b706"></path>
+                                        </svg>
+                                    </a>
+                                    <center>
+                                        <p>Cleaning</p>
+                                    </center>
+                                </li>
+                                <li>
+                                    <a href="search.html" class="btn">
+                                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none">
+                                            <path d="M28 28h4v15h-4V28z" fill="#e3b706"></path>
+                                            <path fill="#e3b706" d="M14 35h4v7h-4z"></path>
+                                            <path d="M14.59 9.639c.249-.994 1.653-1.016 1.933-.03l5.314 18.755C22.922 32.194 20.045 36 16.064 36h-.38c-3.903 0-6.767-3.668-5.82-7.455L14.59 9.639z" fill="#e3b706"></path>
+                                            <path d="M36 39.5a2.5 2.5 0 00-5 0v.5h5v-.5zM16 40.5a2.5 2.5 0 00-5 0v.5h5v-.5zM24 43.5a2.5 2.5 0 015 0v.5h-5v-.5z" fill="#e3b706"></path>
+                                            <path d="M4 42a5 5 0 0110 0v2H5.91A1.91 1.91 0 014 42.09V42z" fill="#e3b706"></path>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M28 29v7a7.952 7.952 0 014-4.244V29h-4z" fill="#e3b706"></path>
+                                            <path d="M34.342 6.518A4.998 4.998 0 0030 4a4.998 4.998 0 00-4.342 2.518 4.998 4.998 0 00-4.85 1.29 4.998 4.998 0 00-1.29 4.85A4.998 4.998 0 0017 17a4.998 4.998 0 002.518 4.342 4.998 4.998 0 001.29 4.85 4.998 4.998 0 004.85 1.29A4.998 4.998 0 0030 30a4.998 4.998 0 004.342-2.518 4.998 4.998 0 004.85-1.29 4.998 4.998 0 001.29-4.85A4.998 4.998 0 0043 17a4.998 4.998 0 00-2.518-4.342 4.998 4.998 0 00-1.29-4.85 4.999 4.999 0 00-4.85-1.29zM13 40h31v1a3 3 0 01-3 3H13v-4z" fill="#e3b706"></path>
+                                        </svg>
+                                    </a>
+                                    <center>
+                                        <p>Trees</p>
+                                    </center>
+                                </li>
+                                <li>
+                                    <a href="search.html" class="btn">
+                                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none">
+                                            <path d="M6 28h22V16H6v12zm24 2v4h12v-4H30zm-2-2a2 2 0 012 2h12c0-7.732-6.268-14-14-14v12z" fill="#e3b706"></path>
+                                            <path d="M4 12h7a3 3 0 013 3v14a3 3 0 01-3 3H4V12z" fill="#e3b706"></path>
+                                            <path d="M35.449 37.26a.601.601 0 011.102 0l1.546 3.534a2.289 2.289 0 11-4.194 0l1.546-3.534z" fill="#e3b706"></path>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9 5.5h16V8h-2a4 4 0 00-4 4v5h-3v-5a4 4 0 00-4-4H9V5.5z" fill="#e3b706"></path>
+                                            <circle r="3" transform="matrix(-1 0 0 1 26 7)" fill="#e3b706"></circle>
+                                            <circle r="3" transform="matrix(-1 0 0 1 9 7)" fill="#e3b706"></circle>
+                                            <path d="M14 16v12h10l-.469-.217A12.984 12.984 0 0116.004 16L14 16z" fill="#e3b706"></path>
+                                        </svg>
+                                    </a>
+                                    <center>
+                                        <p>Plumbing</p>
+                                    </center>
+                                </li>
+                                <li>
+                                    <a href="search.html" class="btn">
+                                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none">
+                                            <path opacity="0.2" d="M35 5H15L5 25h30V5z" fill="#e3b706"></path>
+                                            <path d="M15 5h20l10 20H28.708a6 6 0 01-5.366-3.317L15 5z" fill="#e3b706"></path>
+                                            <path opacity="0.6" d="M8 25l8-17 8 17h18v15a3 3 0 01-3 3H11a3 3 0 01-3-3V25z" fill="#e3b706"></path>
+                                        </svg>
+                                    </a>
+                                    <center>
+                                        <p>Roofing</p>
+                                    </center>
+                                </li>
+                                <li>
+                                    <a href="search.html" class="btn">
+                                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none">
+                                            <path d="M19 30h10v6.333a.667.667 0 01-.667.667c-.736 0-1.333.597-1.333 1.333V39h-6a2 2 0 00-2-2v-7zM21 41h6a3 3 0 11-6 0z" fill="#e3b706"></path>
+                                            <mask id="Electrical_svg__a" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="19" y="30" width="10" height="10" fill="none">
+                                                <path d="M19.937 30.937h8.126v5.314a2.812 2.812 0 01-2.813 2.812h-2.5a2.812 2.812 0 01-2.813-2.813v-5.313z" fill="#EC665F" stroke="#EC665F" stroke-width="1.875px"></path>
+                                            </mask>
+                                            <g mask="url(#Electrical_svg__a)" fill="none">
+                                                <path d="M29 30H18v7.75A7.397 7.397 0 0124.435 34H29v-4z" fill="#e3b706"></path>
+                                            </g>
+                                            <circle cx="24" cy="18" r="14" fill="#e3b706"></circle>
+                                            <path d="M18.226 19.184L25.5 9l-.733 7.335a.15.15 0 00.149.165h4.672a.2.2 0 01.158.324L21.75 27l1.464-7.32a.15.15 0 00-.147-.18h-4.678a.2.2 0 01-.163-.316z" fill="#e3b706"></path>
+                                        </svg>
+                                    </a>
+                                    <center>
+                                        <p>Electrical</p>
+                                    </center>
+                                </li>
+                                <li>
+                                    <a href="search.html" class="btn">
+                                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M21 21l-6.56-6.56a1.5 1.5 0 00-1.061-.44H9" stroke="#e3b706" stroke-width="2px" fill="none"></path>
+                                            <path d="M23 30.5l-9.862-6.827c-1.326-.919-3.138.03-3.138 1.644V31M23 33.5l-7.571 3.117a1.5 1.5 0 00-.929 1.388V41" stroke="#e3b706" stroke-width="2px" fill="none"></path>
+                                            <path d="M27 21l6.56-6.56a1.5 1.5 0 011.061-.44H39" stroke="#e3b706" stroke-width="2px" fill="none"></path>
+                                            <path d="M25 30.5l9.862-6.827c1.326-.919 3.138.03 3.138 1.644V31M25 33.5l7.571 3.117a1.5 1.5 0 01.929 1.388V41M23.5 14.5c0-4.97-3.53-9-8.5-9M24.5 14.5c0-4.97 3.53-9 8.5-9" stroke="#e3b706" stroke-width="2px" fill="none"></path>
+                                            <path d="M19 13a5 5 0 0110 0v2H19v-2z" fill="#e3b706"></path>
+                                            <path d="M23.084 14h1.832a5 5 0 014.486 2.792l1.084 2.201A5 5 0 0131 21.202v6.471c0 2.682-.469 5.342-1.385 7.862l-1.724 4.74a4.14 4.14 0 01-7.782 0l-1.724-4.74A22.999 22.999 0 0117 27.673v-6.471a5 5 0 01.514-2.209l1.084-2.201A5 5 0 0123.084 14z" fill="#e3b706" stroke="#e3b706" stroke-width="2px" stroke-linecap="round"></path>
+                                            <mask id="PestControl_svg__a" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="16" y="13" width="16" height="31" fill="none">
+                                                <path d="M21.217 14.5h5.566a1.5 1.5 0 011.346.838l1.908 3.876a4.5 4.5 0 01.463 1.988v6.471a22.5 22.5 0 01-1.355 7.691l-1.724 4.74a3.64 3.64 0 01-6.842 0l-1.724-4.74a22.5 22.5 0 01-1.355-7.69v-6.472c0-.69.158-1.37.463-1.988l1.908-3.876a1.5 1.5 0 011.346-.838z" fill="#EC665F" stroke="#EC665F" stroke-width="3px" stroke-linecap="round"></path>
+                                            </mask>
+                                            <g mask="url(#PestControl_svg__a)" fill="none">
+                                                <path d="M49 14H15v8a8.38 8.38 0 018.036-6h25.963L49 14z" fill="#e3b706"></path>
+                                            </g>
+                                            <path d="M24 15v19.5" stroke="#e3b706" stroke-width="2px" stroke-linecap="square" fill="none"></path>
+                                        </svg>
+                                    </a>
+                                    <center>
+                                        <p>Pest</p>
+                                    </center>
+                                </li>
+                                <li>
+                                    <a href="categories.html" class="btn">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path opacity="0.4" d="M16.0755 2H19.4615C20.8637 2 22 3.14585 22 4.55996V7.97452C22 9.38864 20.8637 10.5345 19.4615 10.5345H16.0755C14.6732 10.5345 13.537 9.38864 13.537 7.97452V4.55996C13.537 3.14585 14.6732 2 16.0755 2Z" fill="#e3b706"></path>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.53852 2H7.92449C9.32676 2 10.463 3.14585 10.463 4.55996V7.97452C10.463 9.38864 9.32676 10.5345 7.92449 10.5345H4.53852C3.13626 10.5345 2 9.38864 2 7.97452V4.55996C2 3.14585 3.13626 2 4.53852 2ZM4.53852 13.4655H7.92449C9.32676 13.4655 10.463 14.6114 10.463 16.0255V19.44C10.463 20.8532 9.32676 22 7.92449 22H4.53852C3.13626 22 2 20.8532 2 19.44V16.0255C2 14.6114 3.13626 13.4655 4.53852 13.4655ZM19.4615 13.4655H16.0755C14.6732 13.4655 13.537 14.6114 13.537 16.0255V19.44C13.537 20.8532 14.6732 22 16.0755 22H19.4615C20.8637 22 22 20.8532 22 19.44V16.0255C22 14.6114 20.8637 13.4655 19.4615 13.4655Z" fill="#e3b706"></path>
+                                        </svg>
+                                    </a>
+                                    <center>
+                                        <p>Browse All</p>
+                                    </center>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Categorie End -->
+                        <!-- How it works -->
+                        <div class="m-b10">
+                            <div class="title-bar">
+                                <h5 class="dz-title">How It Works</h5>
+                                <div class="swiper-defult-pagination pagination-dots style-1 p-0"></div>
+                            </div>
+                            <div class="swiper-btn-center-lr">
+                                <div class="swiper-container tag-group mt-4 dz-swiper recomand-swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="card job-post">
+                                                <div class="card-body">
+                                                    <div class="media media-80">
+                                                        <img src="https://media.istockphoto.com/id/1189938147/vector/nfc-contactless-payments-sign.jpg?s=612x612&w=0&k=20&c=10JktkNUAEfvmuTDdgyXhzM9xZeFBN-0Lo_5qyKmIbk=" alt="/">
+                                                    </div>
+                                                    <div class="card-info">
+                                                        <h6 class="title"><a href="javascript:void(0);">Tap/Scan</a></h6>
+                                                        <div class="d-flex align-items-center">
+                                                            <span class="price-item">Your Card</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card job-post">
+                                                <div class="card-body">
+                                                    <div class="media media-80">
+                                                        <img src="https://www.iconpacks.net/icons/2/free-search-icon-2903-thumb.png" alt="/">
+                                                    </div>
+                                                    <div class="card-info">
+                                                        <h6 class="title"><a href="javascript:void(0);">Search</a></h6>
+                                                        <div class="d-flex align-items-center">
+                                                            <span class=" price-item">What you need done</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card job-post">
+                                                <div class="card-body">
+                                                    <div class="media media-80">
+                                                        <img src="https://i.imgur.com/JCLyQp1.png" alt="/">
+                                                    </div>
+                                                    <div class="card-info">
+                                                        <h6 class="title"><a href="javascript:void(0);">Book</a></h6>
+                                                        <div class="d-flex align-items-center">
+                                                            <span class="price-item">All your favorite services</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <p class="ms-3" style="text-decoration: underline;">Learn More</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- How it works End -->
+                        <!-- interior services -->
+                        <div class="m-b10">
+                            <div class="title-bar">
+                                <h5 class="dz-title">Interior Services</h5>
+                                <div class="swiper-defult-pagination pagination-dots style-1 p-0"></div>
+                            </div>
+                            <div class="swiper-btn-center-lr">
+                                <div class="swiper-container tag-group mt-4 dz-swiper recomand-swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="card job-post">
+                                                <div class="card-body">
+                                                    <div class="media media-80">
+                                                        <img src="https://i0.wp.com/movingtips.wpengine.com/wp-content/uploads/2020/08/home-cleaning-service.jpg?fit=400%2C684&ssl=1" />
+                                                    </div>
+                                                    <div class="card-info">
+                                                        <h6 class="title"><a href="javascript:void(0);">One-time Cleaning</a></h6>
+                                                        <div class="d-flex align-items-center">
+                                                            <svg class="text-primary" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <path d="M8.5 23C9.70017 23.0072 10.8898 22.7761 12 22.32C13.109 22.7799 14.2995 23.0112 15.5 23C19.145 23 22 21.055 22 18.571V14.429C22 11.945 19.145 10 15.5 10C15.331 10 15.165 10.008 15 10.017V5.333C15 2.9 12.145 1 8.5 1C4.855 1 2 2.9 2 5.333V18.667C2 21.1 4.855 23 8.5 23ZM20 18.571C20 19.72 18.152 21 15.5 21C12.848 21 11 19.72 11 18.571V17.646C12.3542 18.4696 13.9153 18.8898 15.5 18.857C17.0847 18.8898 18.6458 18.4696 20 17.646V18.571ZM15.5 12C18.152 12 20 13.28 20 14.429C20 15.578 18.152 16.857 15.5 16.857C12.848 16.857 11 15.577 11 14.429C11 13.281 12.848 12 15.5 12ZM8.5 3C11.152 3 13 4.23 13 5.333C13 6.43601 11.152 7.66701 8.5 7.66701C5.848 7.66701 4 6.43701 4 5.333C4 4.229 5.848 3 8.5 3ZM4 8.48201C5.35986 9.28959 6.91876 9.7001 8.5 9.66701C10.0812 9.7001 11.6401 9.28959 13 8.48201V10.33C11.9102 10.6047 10.9107 11.1586 10.1 11.937C9.57422 12.0508 9.03795 12.1091 8.5 12.111C5.848 12.111 4 10.881 4 9.77801V8.48201ZM4 12.927C5.36015 13.7338 6.91891 14.1439 8.5 14.111C8.678 14.111 8.85 14.089 9.025 14.08C9.0101 14.1958 9.00176 14.3123 9 14.429V16.514C8.832 16.524 8.67 16.556 8.5 16.556C5.848 16.556 4 15.326 4 14.222V12.927ZM4 17.371C5.35986 18.1786 6.91876 18.5891 8.5 18.556C8.668 18.556 8.833 18.543 9 18.535V18.571C9.01431 19.4223 9.34144 20.2385 9.919 20.864C9.45111 20.9524 8.97615 20.9979 8.5 21C5.848 21 4 19.77 4 18.667V17.371Z" fill="#40189D" />
+                                                            </svg>
+                                                            <span class="ms-2 price-item">$</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card job-post">
+                                                <div class="card-body">
+                                                    <div class="media media-80">
+                                                        <img src="data:image/jpeg;base64,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" alt="/">
+                                                    </div>
+                                                    <div class="card-info">
+                                                        <h6 class="title"><a href="javascript:void(0);">Carpet Cleaning</a></h6>
+                                                        <div class="d-flex align-items-center">
+                                                            <svg class="text-primary" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <path d="M8.5 23C9.70017 23.0072 10.8898 22.7761 12 22.32C13.109 22.7799 14.2995 23.0112 15.5 23C19.145 23 22 21.055 22 18.571V14.429C22 11.945 19.145 10 15.5 10C15.331 10 15.165 10.008 15 10.017V5.333C15 2.9 12.145 1 8.5 1C4.855 1 2 2.9 2 5.333V18.667C2 21.1 4.855 23 8.5 23ZM20 18.571C20 19.72 18.152 21 15.5 21C12.848 21 11 19.72 11 18.571V17.646C12.3542 18.4696 13.9153 18.8898 15.5 18.857C17.0847 18.8898 18.6458 18.4696 20 17.646V18.571ZM15.5 12C18.152 12 20 13.28 20 14.429C20 15.578 18.152 16.857 15.5 16.857C12.848 16.857 11 15.577 11 14.429C11 13.281 12.848 12 15.5 12ZM8.5 3C11.152 3 13 4.23 13 5.333C13 6.43601 11.152 7.66701 8.5 7.66701C5.848 7.66701 4 6.43701 4 5.333C4 4.229 5.848 3 8.5 3ZM4 8.48201C5.35986 9.28959 6.91876 9.7001 8.5 9.66701C10.0812 9.7001 11.6401 9.28959 13 8.48201V10.33C11.9102 10.6047 10.9107 11.1586 10.1 11.937C9.57422 12.0508 9.03795 12.1091 8.5 12.111C5.848 12.111 4 10.881 4 9.77801V8.48201ZM4 12.927C5.36015 13.7338 6.91891 14.1439 8.5 14.111C8.678 14.111 8.85 14.089 9.025 14.08C9.0101 14.1958 9.00176 14.3123 9 14.429V16.514C8.832 16.524 8.67 16.556 8.5 16.556C5.848 16.556 4 15.326 4 14.222V12.927ZM4 17.371C5.35986 18.1786 6.91876 18.5891 8.5 18.556C8.668 18.556 8.833 18.543 9 18.535V18.571C9.01431 19.4223 9.34144 20.2385 9.919 20.864C9.45111 20.9524 8.97615 20.9979 8.5 21C5.848 21 4 19.77 4 18.667V17.371Z" fill="#40189D" />
+                                                            </svg>
+                                                            <span class="ms-2 price-item">$$</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card job-post">
+                                                <div class="card-body">
+                                                    <div class="media media-80">
+                                                        <img src="https://empire-s3-production.bobvila.com/articles/wp-content/uploads/2022/07/The-Best-Furniture-Assembly-Services.jpg" alt="/">
+                                                    </div>
+                                                    <div class="card-info">
+                                                        <h6 class="title"><a href="javascript:void(0);">Furniture Assembly</a></h6>
+                                                        <div class="d-flex align-items-center">
+                                                            <svg class="text-primary" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <path d="M8.5 23C9.70017 23.0072 10.8898 22.7761 12 22.32C13.109 22.7799 14.2995 23.0112 15.5 23C19.145 23 22 21.055 22 18.571V14.429C22 11.945 19.145 10 15.5 10C15.331 10 15.165 10.008 15 10.017V5.333C15 2.9 12.145 1 8.5 1C4.855 1 2 2.9 2 5.333V18.667C2 21.1 4.855 23 8.5 23ZM20 18.571C20 19.72 18.152 21 15.5 21C12.848 21 11 19.72 11 18.571V17.646C12.3542 18.4696 13.9153 18.8898 15.5 18.857C17.0847 18.8898 18.6458 18.4696 20 17.646V18.571ZM15.5 12C18.152 12 20 13.28 20 14.429C20 15.578 18.152 16.857 15.5 16.857C12.848 16.857 11 15.577 11 14.429C11 13.281 12.848 12 15.5 12ZM8.5 3C11.152 3 13 4.23 13 5.333C13 6.43601 11.152 7.66701 8.5 7.66701C5.848 7.66701 4 6.43701 4 5.333C4 4.229 5.848 3 8.5 3ZM4 8.48201C5.35986 9.28959 6.91876 9.7001 8.5 9.66701C10.0812 9.7001 11.6401 9.28959 13 8.48201V10.33C11.9102 10.6047 10.9107 11.1586 10.1 11.937C9.57422 12.0508 9.03795 12.1091 8.5 12.111C5.848 12.111 4 10.881 4 9.77801V8.48201ZM4 12.927C5.36015 13.7338 6.91891 14.1439 8.5 14.111C8.678 14.111 8.85 14.089 9.025 14.08C9.0101 14.1958 9.00176 14.3123 9 14.429V16.514C8.832 16.524 8.67 16.556 8.5 16.556C5.848 16.556 4 15.326 4 14.222V12.927ZM4 17.371C5.35986 18.1786 6.91876 18.5891 8.5 18.556C8.668 18.556 8.833 18.543 9 18.535V18.571C9.01431 19.4223 9.34144 20.2385 9.919 20.864C9.45111 20.9524 8.97615 20.9979 8.5 21C5.848 21 4 19.77 4 18.667V17.371Z" fill="#40189D" />
+                                                            </svg>
+                                                            <span class="ms-2 price-item">$</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card job-post">
+                                                <div class="card-body">
+                                                    <div class="media media-80">
+                                                        <img src="https://img1.wsimg.com/isteam/ip/1bfe4c52-70b0-48b2-9e6d-e2d9244e2cfd/IMG-4344-e96427b.JPG/:/cr=t:0%25,l:0.12%25,w:99.75%25,h:100%25/rs=w:600,h:451.12781954887214,cg:true" alt="/">
+                                                    </div>
+                                                    <div class="card-info">
+                                                        <h6 class="title"><a href="javascript:void(0);">Home Theater Installation</a></h6>
+                                                        <div class="d-flex align-items-center">
+                                                            <svg class="text-primary" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <path d="M8.5 23C9.70017 23.0072 10.8898 22.7761 12 22.32C13.109 22.7799 14.2995 23.0112 15.5 23C19.145 23 22 21.055 22 18.571V14.429C22 11.945 19.145 10 15.5 10C15.331 10 15.165 10.008 15 10.017V5.333C15 2.9 12.145 1 8.5 1C4.855 1 2 2.9 2 5.333V18.667C2 21.1 4.855 23 8.5 23ZM20 18.571C20 19.72 18.152 21 15.5 21C12.848 21 11 19.72 11 18.571V17.646C12.3542 18.4696 13.9153 18.8898 15.5 18.857C17.0847 18.8898 18.6458 18.4696 20 17.646V18.571ZM15.5 12C18.152 12 20 13.28 20 14.429C20 15.578 18.152 16.857 15.5 16.857C12.848 16.857 11 15.577 11 14.429C11 13.281 12.848 12 15.5 12ZM8.5 3C11.152 3 13 4.23 13 5.333C13 6.43601 11.152 7.66701 8.5 7.66701C5.848 7.66701 4 6.43701 4 5.333C4 4.229 5.848 3 8.5 3ZM4 8.48201C5.35986 9.28959 6.91876 9.7001 8.5 9.66701C10.0812 9.7001 11.6401 9.28959 13 8.48201V10.33C11.9102 10.6047 10.9107 11.1586 10.1 11.937C9.57422 12.0508 9.03795 12.1091 8.5 12.111C5.848 12.111 4 10.881 4 9.77801V8.48201ZM4 12.927C5.36015 13.7338 6.91891 14.1439 8.5 14.111C8.678 14.111 8.85 14.089 9.025 14.08C9.0101 14.1958 9.00176 14.3123 9 14.429V16.514C8.832 16.524 8.67 16.556 8.5 16.556C5.848 16.556 4 15.326 4 14.222V12.927ZM4 17.371C5.35986 18.1786 6.91876 18.5891 8.5 18.556C8.668 18.556 8.833 18.543 9 18.535V18.571C9.01431 19.4223 9.34144 20.2385 9.919 20.864C9.45111 20.9524 8.97615 20.9979 8.5 21C5.848 21 4 19.77 4 18.667V17.371Z" fill="#40189D" />
+                                                            </svg>
+                                                            <span class="ms-2 price-item">$$</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card job-post">
+                                                <div class="card-body">
+                                                    <div class="media media-80">
+                                                        <img src="https://img.huffingtonpost.com/asset/6127a4eb410000fcd5837de2.jpeg?cache=KvQHwzFWNm&ops=scalefit_720_noupscale" alt="/">
+                                                    </div>
+                                                    <div class="card-info">
+                                                        <h6 class="title"><a href="javascript:void(0);">Organization and Storage</a></h6>
+                                                        <div class="d-flex align-items-center">
+                                                            <svg class="text-primary" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <path d="M8.5 23C9.70017 23.0072 10.8898 22.7761 12 22.32C13.109 22.7799 14.2995 23.0112 15.5 23C19.145 23 22 21.055 22 18.571V14.429C22 11.945 19.145 10 15.5 10C15.331 10 15.165 10.008 15 10.017V5.333C15 2.9 12.145 1 8.5 1C4.855 1 2 2.9 2 5.333V18.667C2 21.1 4.855 23 8.5 23ZM20 18.571C20 19.72 18.152 21 15.5 21C12.848 21 11 19.72 11 18.571V17.646C12.3542 18.4696 13.9153 18.8898 15.5 18.857C17.0847 18.8898 18.6458 18.4696 20 17.646V18.571ZM15.5 12C18.152 12 20 13.28 20 14.429C20 15.578 18.152 16.857 15.5 16.857C12.848 16.857 11 15.577 11 14.429C11 13.281 12.848 12 15.5 12ZM8.5 3C11.152 3 13 4.23 13 5.333C13 6.43601 11.152 7.66701 8.5 7.66701C5.848 7.66701 4 6.43701 4 5.333C4 4.229 5.848 3 8.5 3ZM4 8.48201C5.35986 9.28959 6.91876 9.7001 8.5 9.66701C10.0812 9.7001 11.6401 9.28959 13 8.48201V10.33C11.9102 10.6047 10.9107 11.1586 10.1 11.937C9.57422 12.0508 9.03795 12.1091 8.5 12.111C5.848 12.111 4 10.881 4 9.77801V8.48201ZM4 12.927C5.36015 13.7338 6.91891 14.1439 8.5 14.111C8.678 14.111 8.85 14.089 9.025 14.08C9.0101 14.1958 9.00176 14.3123 9 14.429V16.514C8.832 16.524 8.67 16.556 8.5 16.556C5.848 16.556 4 15.326 4 14.222V12.927ZM4 17.371C5.35986 18.1786 6.91876 18.5891 8.5 18.556C8.668 18.556 8.833 18.543 9 18.535V18.571C9.01431 19.4223 9.34144 20.2385 9.919 20.864C9.45111 20.9524 8.97615 20.9979 8.5 21C5.848 21 4 19.77 4 18.667V17.371Z" fill="#40189D" />
+                                                            </svg>
+                                                            <span class="ms-2 price-item">$</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card job-post">
+                                                <div class="card-body">
+                                                    <div class="media media-80">
+                                                        <img src="https://thumbor.forbes.com/thumbor/fit-in/x/https://www.forbes.com/home-improvement/wp-content/uploads/2022/08/featured_image_how_to_install_a_lighting_fixture.jpeg.jpg" alt="/">
+                                                    </div>
+                                                    <div class="card-info">
+                                                        <h6 class="title"><a href="javascript:void(0);">Lighting Installation or Repair</a></h6>
+                                                        <div class="d-flex align-items-center">
+                                                            <svg class="text-primary" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <path d="M8.5 23C9.70017 23.0072 10.8898 22.7761 12 22.32C13.109 22.7799 14.2995 23.0112 15.5 23C19.145 23 22 21.055 22 18.571V14.429C22 11.945 19.145 10 15.5 10C15.331 10 15.165 10.008 15 10.017V5.333C15 2.9 12.145 1 8.5 1C4.855 1 2 2.9 2 5.333V18.667C2 21.1 4.855 23 8.5 23ZM20 18.571C20 19.72 18.152 21 15.5 21C12.848 21 11 19.72 11 18.571V17.646C12.3542 18.4696 13.9153 18.8898 15.5 18.857C17.0847 18.8898 18.6458 18.4696 20 17.646V18.571ZM15.5 12C18.152 12 20 13.28 20 14.429C20 15.578 18.152 16.857 15.5 16.857C12.848 16.857 11 15.577 11 14.429C11 13.281 12.848 12 15.5 12ZM8.5 3C11.152 3 13 4.23 13 5.333C13 6.43601 11.152 7.66701 8.5 7.66701C5.848 7.66701 4 6.43701 4 5.333C4 4.229 5.848 3 8.5 3ZM4 8.48201C5.35986 9.28959 6.91876 9.7001 8.5 9.66701C10.0812 9.7001 11.6401 9.28959 13 8.48201V10.33C11.9102 10.6047 10.9107 11.1586 10.1 11.937C9.57422 12.0508 9.03795 12.1091 8.5 12.111C5.848 12.111 4 10.881 4 9.77801V8.48201ZM4 12.927C5.36015 13.7338 6.91891 14.1439 8.5 14.111C8.678 14.111 8.85 14.089 9.025 14.08C9.0101 14.1958 9.00176 14.3123 9 14.429V16.514C8.832 16.524 8.67 16.556 8.5 16.556C5.848 16.556 4 15.326 4 14.222V12.927ZM4 17.371C5.35986 18.1786 6.91876 18.5891 8.5 18.556C8.668 18.556 8.833 18.543 9 18.535V18.571C9.01431 19.4223 9.34144 20.2385 9.919 20.864C9.45111 20.9524 8.97615 20.9979 8.5 21C5.848 21 4 19.77 4 18.667V17.371Z" fill="#40189D" />
+                                                            </svg>
+                                                            <span class="ms-2 price-item">$</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card job-post">
+                                                <div class="card-body">
+                                                    <div class="media media-80" style="width:100px">
+                                                        <p>View More ></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- interior services End -->
+                        <!-- exterior services -->
+                        <div class="m-b10">
+                            <div class="title-bar">
+                                <h5 class="dz-title">Exterior Services</h5>
+                                <div class="swiper-defult-pagination pagination-dots style-1 p-0"></div>
+                            </div>
+                            <div class="swiper-btn-center-lr">
+                                <div class="swiper-container tag-group mt-4 dz-swiper recomand-swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="card job-post">
+                                                <div class="card-body">
+                                                    <div class="media media-80">
+                                                        <img src="https://www.kguard.com/wp-content/uploads/KGuard-Blog-Post-Parts-and-Accessories-Involved-in-Gutter-Installation.png" />
+                                                    </div>
+                                                    <div class="card-info">
+                                                        <h6 class="title"><a href="javascript:void(0);">Gutter Installation and Cleaning</a></h6>
+                                                        <div class="d-flex align-items-center">
+                                                            <svg class="text-primary" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <path d="M8.5 23C9.70017 23.0072 10.8898 22.7761 12 22.32C13.109 22.7799 14.2995 23.0112 15.5 23C19.145 23 22 21.055 22 18.571V14.429C22 11.945 19.145 10 15.5 10C15.331 10 15.165 10.008 15 10.017V5.333C15 2.9 12.145 1 8.5 1C4.855 1 2 2.9 2 5.333V18.667C2 21.1 4.855 23 8.5 23ZM20 18.571C20 19.72 18.152 21 15.5 21C12.848 21 11 19.72 11 18.571V17.646C12.3542 18.4696 13.9153 18.8898 15.5 18.857C17.0847 18.8898 18.6458 18.4696 20 17.646V18.571ZM15.5 12C18.152 12 20 13.28 20 14.429C20 15.578 18.152 16.857 15.5 16.857C12.848 16.857 11 15.577 11 14.429C11 13.281 12.848 12 15.5 12ZM8.5 3C11.152 3 13 4.23 13 5.333C13 6.43601 11.152 7.66701 8.5 7.66701C5.848 7.66701 4 6.43701 4 5.333C4 4.229 5.848 3 8.5 3ZM4 8.48201C5.35986 9.28959 6.91876 9.7001 8.5 9.66701C10.0812 9.7001 11.6401 9.28959 13 8.48201V10.33C11.9102 10.6047 10.9107 11.1586 10.1 11.937C9.57422 12.0508 9.03795 12.1091 8.5 12.111C5.848 12.111 4 10.881 4 9.77801V8.48201ZM4 12.927C5.36015 13.7338 6.91891 14.1439 8.5 14.111C8.678 14.111 8.85 14.089 9.025 14.08C9.0101 14.1958 9.00176 14.3123 9 14.429V16.514C8.832 16.524 8.67 16.556 8.5 16.556C5.848 16.556 4 15.326 4 14.222V12.927ZM4 17.371C5.35986 18.1786 6.91876 18.5891 8.5 18.556C8.668 18.556 8.833 18.543 9 18.535V18.571C9.01431 19.4223 9.34144 20.2385 9.919 20.864C9.45111 20.9524 8.97615 20.9979 8.5 21C5.848 21 4 19.77 4 18.667V17.371Z" fill="#40189D" />
+                                                            </svg>
+                                                            <span class="ms-2 price-item">$$$</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card job-post">
+                                                <div class="card-body">
+                                                    <div class="media media-80">
+                                                        <img src="https://www.familyhandyman.com/wp-content/uploads/2022/06/Removing-vinyl-siding-FH07APR_477_06_050-JVedit.jpg" />
+                                                    </div>
+                                                    <div class="card-info">
+                                                        <h6 class="title"><a href="javascript:void(0);">Siding Repair and Replacement</a></h6>
+                                                        <div class="d-flex align-items-center">
+                                                            <svg class="text-primary" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <path d="M8.5 23C9.70017 23.0072 10.8898 22.7761 12 22.32C13.109 22.7799 14.2995 23.0112 15.5 23C19.145 23 22 21.055 22 18.571V14.429C22 11.945 19.145 10 15.5 10C15.331 10 15.165 10.008 15 10.017V5.333C15 2.9 12.145 1 8.5 1C4.855 1 2 2.9 2 5.333V18.667C2 21.1 4.855 23 8.5 23ZM20 18.571C20 19.72 18.152 21 15.5 21C12.848 21 11 19.72 11 18.571V17.646C12.3542 18.4696 13.9153 18.8898 15.5 18.857C17.0847 18.8898 18.6458 18.4696 20 17.646V18.571ZM15.5 12C18.152 12 20 13.28 20 14.429C20 15.578 18.152 16.857 15.5 16.857C12.848 16.857 11 15.577 11 14.429C11 13.281 12.848 12 15.5 12ZM8.5 3C11.152 3 13 4.23 13 5.333C13 6.43601 11.152 7.66701 8.5 7.66701C5.848 7.66701 4 6.43701 4 5.333C4 4.229 5.848 3 8.5 3ZM4 8.48201C5.35986 9.28959 6.91876 9.7001 8.5 9.66701C10.0812 9.7001 11.6401 9.28959 13 8.48201V10.33C11.9102 10.6047 10.9107 11.1586 10.1 11.937C9.57422 12.0508 9.03795 12.1091 8.5 12.111C5.848 12.111 4 10.881 4 9.77801V8.48201ZM4 12.927C5.36015 13.7338 6.91891 14.1439 8.5 14.111C8.678 14.111 8.85 14.089 9.025 14.08C9.0101 14.1958 9.00176 14.3123 9 14.429V16.514C8.832 16.524 8.67 16.556 8.5 16.556C5.848 16.556 4 15.326 4 14.222V12.927ZM4 17.371C5.35986 18.1786 6.91876 18.5891 8.5 18.556C8.668 18.556 8.833 18.543 9 18.535V18.571C9.01431 19.4223 9.34144 20.2385 9.919 20.864C9.45111 20.9524 8.97615 20.9979 8.5 21C5.848 21 4 19.77 4 18.667V17.371Z" fill="#40189D" />
+                                                            </svg>
+                                                            <span class="ms-2 price-item">$$</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card job-post">
+                                                <div class="card-body">
+                                                    <div class="media media-80">
+                                                        <img src="https://screenenclosurerepairtampa.net/wp-content/uploads/2021/03/ezgif.com-gif-maker-18.jpg" alt="/">
+                                                    </div>
+                                                    <div class="card-info">
+                                                        <h6 class="title"><a href="javascript:void(0);">Screen Enclosure Repair</a></h6>
+                                                        <div class="d-flex align-items-center">
+                                                            <svg class="text-primary" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <path d="M8.5 23C9.70017 23.0072 10.8898 22.7761 12 22.32C13.109 22.7799 14.2995 23.0112 15.5 23C19.145 23 22 21.055 22 18.571V14.429C22 11.945 19.145 10 15.5 10C15.331 10 15.165 10.008 15 10.017V5.333C15 2.9 12.145 1 8.5 1C4.855 1 2 2.9 2 5.333V18.667C2 21.1 4.855 23 8.5 23ZM20 18.571C20 19.72 18.152 21 15.5 21C12.848 21 11 19.72 11 18.571V17.646C12.3542 18.4696 13.9153 18.8898 15.5 18.857C17.0847 18.8898 18.6458 18.4696 20 17.646V18.571ZM15.5 12C18.152 12 20 13.28 20 14.429C20 15.578 18.152 16.857 15.5 16.857C12.848 16.857 11 15.577 11 14.429C11 13.281 12.848 12 15.5 12ZM8.5 3C11.152 3 13 4.23 13 5.333C13 6.43601 11.152 7.66701 8.5 7.66701C5.848 7.66701 4 6.43701 4 5.333C4 4.229 5.848 3 8.5 3ZM4 8.48201C5.35986 9.28959 6.91876 9.7001 8.5 9.66701C10.0812 9.7001 11.6401 9.28959 13 8.48201V10.33C11.9102 10.6047 10.9107 11.1586 10.1 11.937C9.57422 12.0508 9.03795 12.1091 8.5 12.111C5.848 12.111 4 10.881 4 9.77801V8.48201ZM4 12.927C5.36015 13.7338 6.91891 14.1439 8.5 14.111C8.678 14.111 8.85 14.089 9.025 14.08C9.0101 14.1958 9.00176 14.3123 9 14.429V16.514C8.832 16.524 8.67 16.556 8.5 16.556C5.848 16.556 4 15.326 4 14.222V12.927ZM4 17.371C5.35986 18.1786 6.91876 18.5891 8.5 18.556C8.668 18.556 8.833 18.543 9 18.535V18.571C9.01431 19.4223 9.34144 20.2385 9.919 20.864C9.45111 20.9524 8.97615 20.9979 8.5 21C5.848 21 4 19.77 4 18.667V17.371Z" fill="#40189D" />
+                                                            </svg>
+                                                            <span class="ms-2 price-item">$</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card job-post">
+                                                <div class="card-body">
+                                                    <div class="media media-80">
+                                                        <img src="https://contentgrid.homedepot-static.com/hdus/en_US/DTCCOMNEW/Articles/how-to-mow-a-lawn-2023-hero.jpg" alt="/">
+                                                    </div>
+                                                    <div class="card-info">
+                                                        <h6 class="title"><a href="javascript:void(0);">Lawn Mowing</a></h6>
+                                                        <div class="d-flex align-items-center">
+                                                            <svg class="text-primary" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <path d="M8.5 23C9.70017 23.0072 10.8898 22.7761 12 22.32C13.109 22.7799 14.2995 23.0112 15.5 23C19.145 23 22 21.055 22 18.571V14.429C22 11.945 19.145 10 15.5 10C15.331 10 15.165 10.008 15 10.017V5.333C15 2.9 12.145 1 8.5 1C4.855 1 2 2.9 2 5.333V18.667C2 21.1 4.855 23 8.5 23ZM20 18.571C20 19.72 18.152 21 15.5 21C12.848 21 11 19.72 11 18.571V17.646C12.3542 18.4696 13.9153 18.8898 15.5 18.857C17.0847 18.8898 18.6458 18.4696 20 17.646V18.571ZM15.5 12C18.152 12 20 13.28 20 14.429C20 15.578 18.152 16.857 15.5 16.857C12.848 16.857 11 15.577 11 14.429C11 13.281 12.848 12 15.5 12ZM8.5 3C11.152 3 13 4.23 13 5.333C13 6.43601 11.152 7.66701 8.5 7.66701C5.848 7.66701 4 6.43701 4 5.333C4 4.229 5.848 3 8.5 3ZM4 8.48201C5.35986 9.28959 6.91876 9.7001 8.5 9.66701C10.0812 9.7001 11.6401 9.28959 13 8.48201V10.33C11.9102 10.6047 10.9107 11.1586 10.1 11.937C9.57422 12.0508 9.03795 12.1091 8.5 12.111C5.848 12.111 4 10.881 4 9.77801V8.48201ZM4 12.927C5.36015 13.7338 6.91891 14.1439 8.5 14.111C8.678 14.111 8.85 14.089 9.025 14.08C9.0101 14.1958 9.00176 14.3123 9 14.429V16.514C8.832 16.524 8.67 16.556 8.5 16.556C5.848 16.556 4 15.326 4 14.222V12.927ZM4 17.371C5.35986 18.1786 6.91876 18.5891 8.5 18.556C8.668 18.556 8.833 18.543 9 18.535V18.571C9.01431 19.4223 9.34144 20.2385 9.919 20.864C9.45111 20.9524 8.97615 20.9979 8.5 21C5.848 21 4 19.77 4 18.667V17.371Z" fill="#40189D" />
+                                                            </svg>
+                                                            <span class="ms-2 price-item">$</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card job-post">
+                                                <div class="card-body">
+                                                    <div class="media media-80">
+                                                        <img src="https://roofclaim.com/wp-content/uploads/2021/03/shingle-roof-repair.jpg" alt="/">
+                                                    </div>
+                                                    <div class="card-info">
+                                                        <h6 class="title"><a href="javascript:void(0);">Roof Repair or Replacement</a></h6>
+                                                        <div class="d-flex align-items-center">
+                                                            <svg class="text-primary" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <path d="M8.5 23C9.70017 23.0072 10.8898 22.7761 12 22.32C13.109 22.7799 14.2995 23.0112 15.5 23C19.145 23 22 21.055 22 18.571V14.429C22 11.945 19.145 10 15.5 10C15.331 10 15.165 10.008 15 10.017V5.333C15 2.9 12.145 1 8.5 1C4.855 1 2 2.9 2 5.333V18.667C2 21.1 4.855 23 8.5 23ZM20 18.571C20 19.72 18.152 21 15.5 21C12.848 21 11 19.72 11 18.571V17.646C12.3542 18.4696 13.9153 18.8898 15.5 18.857C17.0847 18.8898 18.6458 18.4696 20 17.646V18.571ZM15.5 12C18.152 12 20 13.28 20 14.429C20 15.578 18.152 16.857 15.5 16.857C12.848 16.857 11 15.577 11 14.429C11 13.281 12.848 12 15.5 12ZM8.5 3C11.152 3 13 4.23 13 5.333C13 6.43601 11.152 7.66701 8.5 7.66701C5.848 7.66701 4 6.43701 4 5.333C4 4.229 5.848 3 8.5 3ZM4 8.48201C5.35986 9.28959 6.91876 9.7001 8.5 9.66701C10.0812 9.7001 11.6401 9.28959 13 8.48201V10.33C11.9102 10.6047 10.9107 11.1586 10.1 11.937C9.57422 12.0508 9.03795 12.1091 8.5 12.111C5.848 12.111 4 10.881 4 9.77801V8.48201ZM4 12.927C5.36015 13.7338 6.91891 14.1439 8.5 14.111C8.678 14.111 8.85 14.089 9.025 14.08C9.0101 14.1958 9.00176 14.3123 9 14.429V16.514C8.832 16.524 8.67 16.556 8.5 16.556C5.848 16.556 4 15.326 4 14.222V12.927ZM4 17.371C5.35986 18.1786 6.91876 18.5891 8.5 18.556C8.668 18.556 8.833 18.543 9 18.535V18.571C9.01431 19.4223 9.34144 20.2385 9.919 20.864C9.45111 20.9524 8.97615 20.9979 8.5 21C5.848 21 4 19.77 4 18.667V17.371Z" fill="#40189D" />
+                                                            </svg>
+                                                            <span class="ms-2 price-item">$</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card job-post">
+                                                <div class="card-body">
+                                                    <div class="media media-80">
+                                                        <img src="https://treenewal.com/wp-content/uploads/2020/11/tree-trimming-by-own.png" alt="/">
+                                                    </div>
+                                                    <div class="card-info">
+                                                        <h6 class="title"><a href="javascript:void(0);">Tree Trimming or Removal</a></h6>
+                                                        <div class="d-flex align-items-center">
+                                                            <svg class="text-primary" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <path d="M8.5 23C9.70017 23.0072 10.8898 22.7761 12 22.32C13.109 22.7799 14.2995 23.0112 15.5 23C19.145 23 22 21.055 22 18.571V14.429C22 11.945 19.145 10 15.5 10C15.331 10 15.165 10.008 15 10.017V5.333C15 2.9 12.145 1 8.5 1C4.855 1 2 2.9 2 5.333V18.667C2 21.1 4.855 23 8.5 23ZM20 18.571C20 19.72 18.152 21 15.5 21C12.848 21 11 19.72 11 18.571V17.646C12.3542 18.4696 13.9153 18.8898 15.5 18.857C17.0847 18.8898 18.6458 18.4696 20 17.646V18.571ZM15.5 12C18.152 12 20 13.28 20 14.429C20 15.578 18.152 16.857 15.5 16.857C12.848 16.857 11 15.577 11 14.429C11 13.281 12.848 12 15.5 12ZM8.5 3C11.152 3 13 4.23 13 5.333C13 6.43601 11.152 7.66701 8.5 7.66701C5.848 7.66701 4 6.43701 4 5.333C4 4.229 5.848 3 8.5 3ZM4 8.48201C5.35986 9.28959 6.91876 9.7001 8.5 9.66701C10.0812 9.7001 11.6401 9.28959 13 8.48201V10.33C11.9102 10.6047 10.9107 11.1586 10.1 11.937C9.57422 12.0508 9.03795 12.1091 8.5 12.111C5.848 12.111 4 10.881 4 9.77801V8.48201ZM4 12.927C5.36015 13.7338 6.91891 14.1439 8.5 14.111C8.678 14.111 8.85 14.089 9.025 14.08C9.0101 14.1958 9.00176 14.3123 9 14.429V16.514C8.832 16.524 8.67 16.556 8.5 16.556C5.848 16.556 4 15.326 4 14.222V12.927ZM4 17.371C5.35986 18.1786 6.91876 18.5891 8.5 18.556C8.668 18.556 8.833 18.543 9 18.535V18.571C9.01431 19.4223 9.34144 20.2385 9.919 20.864C9.45111 20.9524 8.97615 20.9979 8.5 21C5.848 21 4 19.77 4 18.667V17.371Z" fill="#40189D" />
+                                                            </svg>
+                                                            <span class="ms-2 price-item">$$$</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card job-post">
+                                                <div class="card-body">
+                                                    <div class="media media-80" style="width:100px">
+                                                        <p>View More ></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- exterior services End -->
+                        <!-- How it works 
+                        <div class="m-b10">
+                            <div class="title-bar">
+                                <h5 class="dz-title">Elev8 Experiences</h5>
+                                <div class="swiper-defult-pagination pagination-dots style-1 p-0"></div>
+                            </div>
+                            <div class="swiper-btn-center-lr">
+                                <div class="swiper-container tag-group mt-4 dz-swiper recomand-swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="card job-post">
+                                                <div class="card-body testimonial">
+                                                    <div class="media media-80">
+                                                        <img src="https://cdn-icons-png.flaticon.com/512/201/201634.png" alt="/">
+                                                    </div>
+                                                    <div class="card-info">
+                                                        <h6 class="title"><a href="javascript:void(0);">"My kitchen turned out amazing...after they made my pool look new, they made my kitchen look even better!"</a></h6>
+                                                        <div class="d-flex align-items-center">
+                                                            <span class="price-item">Carol A.</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card job-post">
+                                                <div class="card-body testimonial">
+                                                    <div class="media media-80">
+                                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHbR4PkMWk1-B8uPjrt8JF4gGEYS2wcqr_G9yomn2xGumCXU62EFvjCpbyAQmjFHx2J-U&usqp=CAU" alt="/">
+                                                    </div>
+                                                    <div class="card-info">
+                                                        <h6 class="title"><a href="javascript:void(0);">"My gosh, the pool and the screens make my house look brand new!"</a></h6>
+                                                        <div class="d-flex align-items-center">
+                                                            <span class=" price-item">Wendy G.</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card job-post">
+                                                <div class="card-body testimonial">
+                                                    <div class="media media-80">
+                                                        <img src="https://cdn4.iconfinder.com/data/icons/avatars-21/512/avatar-circle-human-male-3-512.png" alt="/">
+                                                    </div>
+                                                    <div class="card-info">
+                                                        <h6 class="title"><a href="javascript:void(0);">"Booked a few quick services to add some finishing touches to my remodel. This company is worth every dime! They put the cherry on top."</a></h6>
+                                                        <div class="d-flex align-items-center">
+                                                            <span class="price-item">Harmeet A.</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                         Testimonials End -->
+                        <!-- Recent Jobs 
+                    <div class="title-bar">
+                        <h5 class="dz-title">Popular Companies</h5>
+                        <a class="btn btn-sm text-primary" href="search.html">More</a>
+                    </div>
+                    <div class="list item-list recent-jobs-list">
+                        <ul>
+                            <li>
+                                <div class="item-content">
+                                    <a href="job-detail.html" class="item-media"><img src="assets/images/logo/company-logo1.png" width="55" alt="logo"></a>
+                                    <div class="item-inner">
+                                        <div class="item-title-row">
+                                            <div class="item-subtitle">Jay's Paving Services LLC</div>
+                                            <h6 class="item-title"><a href="job-detail.html">Paving Service</a></h6>
+                                        </div>
+                                        <div class="d-flex align-items-center mb-2">
+                                            <svg class="text-primary" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M8.5 23C9.70017 23.0072 10.8898 22.7761 12 22.32C13.109 22.7799 14.2995 23.0112 15.5 23C19.145 23 22 21.055 22 18.571V14.429C22 11.945 19.145 10 15.5 10C15.331 10 15.165 10.008 15 10.017V5.333C15 2.9 12.145 1 8.5 1C4.855 1 2 2.9 2 5.333V18.667C2 21.1 4.855 23 8.5 23ZM20 18.571C20 19.72 18.152 21 15.5 21C12.848 21 11 19.72 11 18.571V17.646C12.3542 18.4696 13.9153 18.8898 15.5 18.857C17.0847 18.8898 18.6458 18.4696 20 17.646V18.571ZM15.5 12C18.152 12 20 13.28 20 14.429C20 15.578 18.152 16.857 15.5 16.857C12.848 16.857 11 15.577 11 14.429C11 13.281 12.848 12 15.5 12ZM8.5 3C11.152 3 13 4.23 13 5.333C13 6.43601 11.152 7.66701 8.5 7.66701C5.848 7.66701 4 6.43701 4 5.333C4 4.229 5.848 3 8.5 3ZM4 8.48201C5.35986 9.28959 6.91876 9.7001 8.5 9.66701C10.0812 9.7001 11.6401 9.28959 13 8.48201V10.33C11.9102 10.6047 10.9107 11.1586 10.1 11.937C9.57422 12.0508 9.03795 12.1091 8.5 12.111C5.848 12.111 4 10.881 4 9.77801V8.48201ZM4 12.927C5.36015 13.7338 6.91891 14.1439 8.5 14.111C8.678 14.111 8.85 14.089 9.025 14.08C9.0101 14.1958 9.00176 14.3123 9 14.429V16.514C8.832 16.524 8.67 16.556 8.5 16.556C5.848 16.556 4 15.326 4 14.222V12.927ZM4 17.371C5.35986 18.1786 6.91876 18.5891 8.5 18.556C8.668 18.556 8.833 18.543 9 18.535V18.571C9.01431 19.4223 9.34144 20.2385 9.919 20.864C9.45111 20.9524 8.97615 20.9979 8.5 21C5.848 21 4 19.77 4 18.667V17.371Z" fill="#40189D"/>
+                                            </svg>
+                                            <div class="item-price">$</div>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <svg class="text-primary" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path opacity="0.4" d="M0.000244141 9.07849C0.0502441 11.4165 0.190244 15.4155 0.210244 15.8565C0.281244 16.7995 0.642244 17.7525 1.20424 18.4245C1.98624 19.3675 2.94924 19.7885 4.29224 19.7885C6.14824 19.7985 8.19424 19.7985 10.1812 19.7985C12.1762 19.7985 14.1122 19.7985 15.7472 19.7885C17.0712 19.7885 18.0642 19.3565 18.8362 18.4245C19.3982 17.7525 19.7592 16.7895 19.8102 15.8565C19.8302 15.4855 19.9302 11.1445 19.9902 9.07849H0.000244141Z" fill="#130F26"/>
+                                                <path d="M9.24548 13.3842V14.6782C9.24548 15.0922 9.58148 15.4282 9.99548 15.4282C10.4095 15.4282 10.7455 15.0922 10.7455 14.6782V13.3842C10.7455 12.9702 10.4095 12.6342 9.99548 12.6342C9.58148 12.6342 9.24548 12.9702 9.24548 13.3842Z" fill="#130F26"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.21137 12.5564C8.11137 12.9194 7.76237 13.1514 7.38437 13.1014C4.83337 12.7454 2.39537 11.8404 0.337366 10.4814C0.126366 10.3434 0.000366211 10.1074 0.000366211 9.8554V6.3894C0.000366211 4.2894 1.71237 2.5814 3.81737 2.5814H5.78437C5.97237 1.1294 7.20237 0.000396729 8.70437 0.000396729H11.2864C12.7874 0.000396729 14.0184 1.1294 14.2064 2.5814H16.1834C18.2824 2.5814 19.9904 4.2894 19.9904 6.3894V9.8554C19.9904 10.1074 19.8634 10.3424 19.6544 10.4814C17.5924 11.8464 15.1444 12.7554 12.5764 13.1104C12.5414 13.1154 12.5074 13.1174 12.4734 13.1174C12.1344 13.1174 11.8314 12.8884 11.7464 12.5524C11.5444 11.7564 10.8214 11.1994 9.99037 11.1994C9.14837 11.1994 8.43337 11.7444 8.21137 12.5564ZM11.2864 1.5004H8.70437C8.03137 1.5004 7.46937 1.9604 7.30137 2.5814H12.6884C12.5204 1.9604 11.9584 1.5004 11.2864 1.5004Z" fill="#130F26"/>
+                                            </svg>
+                                            <div class="item-price">New Port Richey, Florida</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sortable-handler"></div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <a href="job-detail.html" class="item-media"><img src="assets/images/logo/company-logo2.png" width="55" alt="logo"></a>
+                                    <div class="item-inner">
+                                        <div class="item-title-row">
+                                            <div class="item-subtitle">Farrell Roofing</div>
+                                            <h6 class="item-title"><a href="job-detail.html">Roofing Services</a></h6>
+                                        </div>
+                                        <div class="d-flex align-items-center mb-2">
+                                            <svg class="text-primary" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M8.5 23C9.70017 23.0072 10.8898 22.7761 12 22.32C13.109 22.7799 14.2995 23.0112 15.5 23C19.145 23 22 21.055 22 18.571V14.429C22 11.945 19.145 10 15.5 10C15.331 10 15.165 10.008 15 10.017V5.333C15 2.9 12.145 1 8.5 1C4.855 1 2 2.9 2 5.333V18.667C2 21.1 4.855 23 8.5 23ZM20 18.571C20 19.72 18.152 21 15.5 21C12.848 21 11 19.72 11 18.571V17.646C12.3542 18.4696 13.9153 18.8898 15.5 18.857C17.0847 18.8898 18.6458 18.4696 20 17.646V18.571ZM15.5 12C18.152 12 20 13.28 20 14.429C20 15.578 18.152 16.857 15.5 16.857C12.848 16.857 11 15.577 11 14.429C11 13.281 12.848 12 15.5 12ZM8.5 3C11.152 3 13 4.23 13 5.333C13 6.43601 11.152 7.66701 8.5 7.66701C5.848 7.66701 4 6.43701 4 5.333C4 4.229 5.848 3 8.5 3ZM4 8.48201C5.35986 9.28959 6.91876 9.7001 8.5 9.66701C10.0812 9.7001 11.6401 9.28959 13 8.48201V10.33C11.9102 10.6047 10.9107 11.1586 10.1 11.937C9.57422 12.0508 9.03795 12.1091 8.5 12.111C5.848 12.111 4 10.881 4 9.77801V8.48201ZM4 12.927C5.36015 13.7338 6.91891 14.1439 8.5 14.111C8.678 14.111 8.85 14.089 9.025 14.08C9.0101 14.1958 9.00176 14.3123 9 14.429V16.514C8.832 16.524 8.67 16.556 8.5 16.556C5.848 16.556 4 15.326 4 14.222V12.927ZM4 17.371C5.35986 18.1786 6.91876 18.5891 8.5 18.556C8.668 18.556 8.833 18.543 9 18.535V18.571C9.01431 19.4223 9.34144 20.2385 9.919 20.864C9.45111 20.9524 8.97615 20.9979 8.5 21C5.848 21 4 19.77 4 18.667V17.371Z" fill="#40189D"/>
+                                            </svg>
+                                            <div class="item-price">$$</div>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <svg class="text-primary" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path opacity="0.4" d="M0.000244141 9.07849C0.0502441 11.4165 0.190244 15.4155 0.210244 15.8565C0.281244 16.7995 0.642244 17.7525 1.20424 18.4245C1.98624 19.3675 2.94924 19.7885 4.29224 19.7885C6.14824 19.7985 8.19424 19.7985 10.1812 19.7985C12.1762 19.7985 14.1122 19.7985 15.7472 19.7885C17.0712 19.7885 18.0642 19.3565 18.8362 18.4245C19.3982 17.7525 19.7592 16.7895 19.8102 15.8565C19.8302 15.4855 19.9302 11.1445 19.9902 9.07849H0.000244141Z" fill="#130F26"/>
+                                                <path d="M9.24548 13.3842V14.6782C9.24548 15.0922 9.58148 15.4282 9.99548 15.4282C10.4095 15.4282 10.7455 15.0922 10.7455 14.6782V13.3842C10.7455 12.9702 10.4095 12.6342 9.99548 12.6342C9.58148 12.6342 9.24548 12.9702 9.24548 13.3842Z" fill="#130F26"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.21137 12.5564C8.11137 12.9194 7.76237 13.1514 7.38437 13.1014C4.83337 12.7454 2.39537 11.8404 0.337366 10.4814C0.126366 10.3434 0.000366211 10.1074 0.000366211 9.8554V6.3894C0.000366211 4.2894 1.71237 2.5814 3.81737 2.5814H5.78437C5.97237 1.1294 7.20237 0.000396729 8.70437 0.000396729H11.2864C12.7874 0.000396729 14.0184 1.1294 14.2064 2.5814H16.1834C18.2824 2.5814 19.9904 4.2894 19.9904 6.3894V9.8554C19.9904 10.1074 19.8634 10.3424 19.6544 10.4814C17.5924 11.8464 15.1444 12.7554 12.5764 13.1104C12.5414 13.1154 12.5074 13.1174 12.4734 13.1174C12.1344 13.1174 11.8314 12.8884 11.7464 12.5524C11.5444 11.7564 10.8214 11.1994 9.99037 11.1994C9.14837 11.1994 8.43337 11.7444 8.21137 12.5564ZM11.2864 1.5004H8.70437C8.03137 1.5004 7.46937 1.9604 7.30137 2.5814H12.6884C12.5204 1.9604 11.9584 1.5004 11.2864 1.5004Z" fill="#130F26"/>
+                                            </svg>
+                                            <div class="item-price">New Port Richey, Florida</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sortable-handler"></div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <a href="job-detail.html" class="item-media"><img src="assets/images/logo/company-logo3.png" width="55" alt="logo"></a>
+                                    <div class="item-inner">
+                                        <div class="item-title-row">
+                                            <div class="item-subtitle">Wolfepack Construction</div>
+                                            <h6 class="item-title"><a href="job-detail.html">General Contractor</a></h6>
+                                        </div>
+                                        <div class="d-flex align-items-center mb-2">
+                                            <svg class="text-primary" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M8.5 23C9.70017 23.0072 10.8898 22.7761 12 22.32C13.109 22.7799 14.2995 23.0112 15.5 23C19.145 23 22 21.055 22 18.571V14.429C22 11.945 19.145 10 15.5 10C15.331 10 15.165 10.008 15 10.017V5.333C15 2.9 12.145 1 8.5 1C4.855 1 2 2.9 2 5.333V18.667C2 21.1 4.855 23 8.5 23ZM20 18.571C20 19.72 18.152 21 15.5 21C12.848 21 11 19.72 11 18.571V17.646C12.3542 18.4696 13.9153 18.8898 15.5 18.857C17.0847 18.8898 18.6458 18.4696 20 17.646V18.571ZM15.5 12C18.152 12 20 13.28 20 14.429C20 15.578 18.152 16.857 15.5 16.857C12.848 16.857 11 15.577 11 14.429C11 13.281 12.848 12 15.5 12ZM8.5 3C11.152 3 13 4.23 13 5.333C13 6.43601 11.152 7.66701 8.5 7.66701C5.848 7.66701 4 6.43701 4 5.333C4 4.229 5.848 3 8.5 3ZM4 8.48201C5.35986 9.28959 6.91876 9.7001 8.5 9.66701C10.0812 9.7001 11.6401 9.28959 13 8.48201V10.33C11.9102 10.6047 10.9107 11.1586 10.1 11.937C9.57422 12.0508 9.03795 12.1091 8.5 12.111C5.848 12.111 4 10.881 4 9.77801V8.48201ZM4 12.927C5.36015 13.7338 6.91891 14.1439 8.5 14.111C8.678 14.111 8.85 14.089 9.025 14.08C9.0101 14.1958 9.00176 14.3123 9 14.429V16.514C8.832 16.524 8.67 16.556 8.5 16.556C5.848 16.556 4 15.326 4 14.222V12.927ZM4 17.371C5.35986 18.1786 6.91876 18.5891 8.5 18.556C8.668 18.556 8.833 18.543 9 18.535V18.571C9.01431 19.4223 9.34144 20.2385 9.919 20.864C9.45111 20.9524 8.97615 20.9979 8.5 21C5.848 21 4 19.77 4 18.667V17.371Z" fill="#40189D"/>
+                                            </svg>
+                                            <div class="item-price">$$$</div>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <svg class="text-primary" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path opacity="0.4" d="M0.000244141 9.07849C0.0502441 11.4165 0.190244 15.4155 0.210244 15.8565C0.281244 16.7995 0.642244 17.7525 1.20424 18.4245C1.98624 19.3675 2.94924 19.7885 4.29224 19.7885C6.14824 19.7985 8.19424 19.7985 10.1812 19.7985C12.1762 19.7985 14.1122 19.7985 15.7472 19.7885C17.0712 19.7885 18.0642 19.3565 18.8362 18.4245C19.3982 17.7525 19.7592 16.7895 19.8102 15.8565C19.8302 15.4855 19.9302 11.1445 19.9902 9.07849H0.000244141Z" fill="#130F26"/>
+                                                <path d="M9.24548 13.3842V14.6782C9.24548 15.0922 9.58148 15.4282 9.99548 15.4282C10.4095 15.4282 10.7455 15.0922 10.7455 14.6782V13.3842C10.7455 12.9702 10.4095 12.6342 9.99548 12.6342C9.58148 12.6342 9.24548 12.9702 9.24548 13.3842Z" fill="#130F26"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.21137 12.5564C8.11137 12.9194 7.76237 13.1514 7.38437 13.1014C4.83337 12.7454 2.39537 11.8404 0.337366 10.4814C0.126366 10.3434 0.000366211 10.1074 0.000366211 9.8554V6.3894C0.000366211 4.2894 1.71237 2.5814 3.81737 2.5814H5.78437C5.97237 1.1294 7.20237 0.000396729 8.70437 0.000396729H11.2864C12.7874 0.000396729 14.0184 1.1294 14.2064 2.5814H16.1834C18.2824 2.5814 19.9904 4.2894 19.9904 6.3894V9.8554C19.9904 10.1074 19.8634 10.3424 19.6544 10.4814C17.5924 11.8464 15.1444 12.7554 12.5764 13.1104C12.5414 13.1154 12.5074 13.1174 12.4734 13.1174C12.1344 13.1174 11.8314 12.8884 11.7464 12.5524C11.5444 11.7564 10.8214 11.1994 9.99037 11.1994C9.14837 11.1994 8.43337 11.7444 8.21137 12.5564ZM11.2864 1.5004H8.70437C8.03137 1.5004 7.46937 1.9604 7.30137 2.5814H12.6884C12.5204 1.9604 11.9584 1.5004 11.2864 1.5004Z" fill="#130F26"/>
+                                            </svg>
+                                            <div class="item-price">Tampa, Florida</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sortable-handler"></div>
+                            </li>
+                       </ul>
+                    </div>-->
+                        <!-- Recent Jobs End -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Page Content End-->
+        <!-- Menubar -->
+        <div class="menubar-area">
+            <div class="toolbar-inner menubar-nav">
+                <a href="index.html" class="nav-link active">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.14373 20.7821V17.7152C9.14372 16.9381 9.77567 16.3067 10.5584 16.3018H13.4326C14.2189 16.3018 14.8563 16.9346 14.8563 17.7152V20.7732C14.8562 21.4473 15.404 21.9951 16.0829 22H18.0438C18.9596 22.0023 19.8388 21.6428 20.4872 21.0007C21.1356 20.3586 21.5 19.4868 21.5 18.5775V9.86585C21.5 9.13139 21.1721 8.43471 20.6046 7.9635L13.943 2.67427C12.7785 1.74912 11.1154 1.77901 9.98539 2.74538L3.46701 7.9635C2.87274 8.42082 2.51755 9.11956 2.5 9.86585V18.5686C2.5 20.4637 4.04738 22 5.95617 22H7.87229C8.19917 22.0023 8.51349 21.8751 8.74547 21.6464C8.97746 21.4178 9.10793 21.1067 9.10792 20.7821H9.14373Z" fill="#130F26" />
+                    </svg>
+                </a>
+                <a href="my-jobs.html" class="nav-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 512 512">
+                        <path d="M469.3 19.3l23.4 23.4c25 25 25 65.5 0 90.5l-56.4 56.4L322.3 75.7l56.4-56.4c25-25 65.5-25 90.5 0zM44.9 353.2L299.7 98.3 413.7 212.3 158.8 467.1c-6.7 6.7-15.1 11.6-24.2 14.2l-104 29.7c-8.4 2.4-17.4 .1-23.6-6.1s-8.5-15.2-6.1-23.6l29.7-104c2.6-9.2 7.5-17.5 14.2-24.2zM249.4 103.4L103.4 249.4 16 161.9c-18.7-18.7-18.7-49.1 0-67.9L94.1 16c18.7-18.7 49.1-18.7 67.9 0l19.8 19.8c-.3 .3-.7 .6-1 .9l-64 64c-6.2 6.2-6.2 16.4 0 22.6s16.4 6.2 22.6 0l64-64c.3-.3 .6-.7 .9-1l45.1 45.1zM408.6 262.6l45.1 45.1c-.3 .3-.7 .6-1 .9l-64 64c-6.2 6.2-6.2 16.4 0 22.6s16.4 6.2 22.6 0l64-64c.3-.3 .6-.7 .9-1L496 350.1c18.7 18.7 18.7 49.1 0 67.9L417.9 496c-18.7 18.7-49.1 18.7-67.9 0l-87.4-87.4L408.6 262.6z" fill="#a19fa8" /></svg>
+                </a>
+                <a href="messages.html" class="nav-link">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.4" d="M22 15.9403C22 18.7303 19.76 20.9903 16.97 21.0003H16.96H7.05C4.27 21.0003 2 18.7503 2 15.9603V15.9503C2 15.9503 2.006 11.5243 2.014 9.2983C2.015 8.8803 2.495 8.6463 2.822 8.9063C5.198 10.7913 9.447 14.2283 9.5 14.2733C10.21 14.8423 11.11 15.1633 12.03 15.1633C12.95 15.1633 13.85 14.8423 14.56 14.2623C14.613 14.2273 18.767 10.8933 21.179 8.9773C21.507 8.7163 21.989 8.9503 21.99 9.3673C22 11.5763 22 15.9403 22 15.9403Z" fill="#a19fa8" />
+                        <path d="M21.4761 5.67369C20.6101 4.04169 18.9061 2.99969 17.0301 2.99969H7.05013C5.17413 2.99969 3.47013 4.04169 2.60413 5.67369C2.41013 6.03869 2.50213 6.4937 2.82513 6.75169L10.2501 12.6907C10.7701 13.1107 11.4001 13.3197 12.0301 13.3197C12.0341 13.3197 12.0371 13.3197 12.0401 13.3197C12.0431 13.3197 12.0471 13.3197 12.0501 13.3197C12.6801 13.3197 13.3101 13.1107 13.8301 12.6907L21.2551 6.75169C21.5781 6.4937 21.6701 6.03869 21.4761 5.67369Z" fill="#a19fa8" />
+                    </svg>
+                </a>
+                <a href="javascript:void(0);" class="menu-toggler">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.4" d="M16.0755 2H19.4615C20.8637 2 22 3.14585 22 4.55996V7.97452C22 9.38864 20.8637 10.5345 19.4615 10.5345H16.0755C14.6732 10.5345 13.537 9.38864 13.537 7.97452V4.55996C13.537 3.14585 14.6732 2 16.0755 2Z" fill="#a19fa8" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.53852 2H7.92449C9.32676 2 10.463 3.14585 10.463 4.55996V7.97452C10.463 9.38864 9.32676 10.5345 7.92449 10.5345H4.53852C3.13626 10.5345 2 9.38864 2 7.97452V4.55996C2 3.14585 3.13626 2 4.53852 2ZM4.53852 13.4655H7.92449C9.32676 13.4655 10.463 14.6114 10.463 16.0255V19.44C10.463 20.8532 9.32676 22 7.92449 22H4.53852C3.13626 22 2 20.8532 2 19.44V16.0255C2 14.6114 3.13626 13.4655 4.53852 13.4655ZM19.4615 13.4655H16.0755C14.6732 13.4655 13.537 14.6114 13.537 16.0255V19.44C13.537 20.8532 14.6732 22 16.0755 22H19.4615C20.8637 22 22 20.8532 22 19.44V16.0255C22 14.6114 20.8637 13.4655 19.4615 13.4655Z" fill="#a19fa8" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <!-- Menubar -->
+        <!-- PWA Offcanvas -->
+        <div class="offcanvas offcanvas-bottom pwa-offcanvas">
+            <div class="container">
+                <div class="offcanvas-body small">
+                    <img class="logo" src="https://i.imgur.com/O7lp7Gv.png" alt="">
+                    <h5 class="title">Download The Elev8 App!</h5>
+                    <p>Booking home services is easier than ever before, skip the card and book services with a click!</p>
+                    <a href="javascrpit:void(0);" class="btn btn-sm btn-secondary pwa-btn">Download App</a>
+                    <a href="javascrpit:void(0);" class="btn btn-sm pwa-close light btn-danger ms-2">Maybe later</a>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas-backdrop pwa-backdrop"></div>
+        <!-- PWA Offcanvas End -->
+    </div>
+    <!--**********************************
+    Scripts
+***********************************-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="index.js" defer></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/settings.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/dz.carousel.js"></script><!-- Swiper -->
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script><!-- Swiper -->
+    <script>
+    var categories;
+
+    function mapAutocomplete() {
+        console.log("searching")
+        $(document).ready(function() {
+            categories = [{
+                    "name": "Pressure Washing",
+                    "subcategories": [
+                        "Driveway",
+                        "Patio",
+                        "Pool Deck",
+                        "Sidewalk",
+                        "Fence",
+                        "House Exterior",
+                        "Roof",
+                        "Boat Dock"
+                    ]
+                },
+                {
+                    "name": "Fencing",
+                    "subcategories": [
+                        "Wooden Fence Installation",
+                        "Wooden Fence Repair",
+                        "Vinyl Fence Installation",
+                        "Vinyl Fence Repair",
+                        "Chain Link Fence Installation",
+                        "Chain Link Fence Repair",
+                        "Wrought Iron Fence Installation",
+                        "Wrought Iron Fence Repair",
+                        "Aluminum Fence Installation",
+                        "Aluminum Fence Repair",
+                        "Farm and Ranch Fence Installation",
+                        "Farm and Ranch Fence Repair",
+                        "Pool Fence Installation",
+                        "Pool Fence Repair",
+                        "Fence Staining and Painting",
+                        "Fence Power Washing"
+                    ]
+                },
+                {
+                    "name": "Solar",
+                    "subcategories": [
+                        "Solar Panel Installation",
+                        "Solar Panel Repair",
+                        "Solar Inverter Installation",
+                        "Solar Inverter Repair",
+                        "Solar Battery Installation",
+                        "Solar Battery Repair",
+                        "Off-Grid Solar System Installation",
+                        "Off-Grid Solar System Repair",
+                        "Grid-Tied Solar System Installation",
+                        "Grid-Tied Solar System Repair",
+                        "Solar Pool Heater Installation",
+                        "Solar Pool Heater Repair",
+                        "Solar Water Heater Installation",
+                        "Solar Water Heater Repair"
+                    ]
+                },
+                {
+                    "name": "Irrigation",
+                    "subcategories": [
+                        "Irrigation System Installation",
+                        "Irrigation System Repair",
+                        "Sprinkler System Installation",
+                        "Sprinkler System Repair",
+                        "Drip Irrigation Installation",
+                        "Drip Irrigation Repair",
+                        "Lawn Sprinkler System Installation",
+                        "Lawn Sprinkler System Repair",
+                        "Backflow Preventer Installation",
+                        "Backflow Preventer Testing",
+                        "Winterization",
+                        "Spring Start-Up",
+                        "Rain Sensor Installation"
+                    ]
+                },
+                {
+                    "name": "Door Services",
+                    "subcategories": [
+                        "Door Installation",
+                        "Door Repair",
+                        "Sliding Door Repair",
+                        "Sliding Door Installation",
+                        "Shower Door Repair",
+                        "Shower Door Installation",
+                        "Storm Door Installation",
+                        "Storm Door Repair",
+                        "Screen Door Installation",
+                        "Screen Door Repair",
+                        "Security Door Installation",
+                        "Security Door Repair",
+                        "French Door Installation",
+                        "French Door Repair"
+                    ]
+                }, {
+                    "name": "Living Room",
+                    "subcategories": [
+                        "Sofa, Couch, and Upholstery Cleaning",
+                        "Carpet Cleaning",
+                        "Blinds and Shades Installation",
+                        "TV Mounting",
+                        "Art and Picture Hanging",
+                        "Lighting Installation",
+                        "Furniture Moving and Rearranging",
+                        "Curtain and Drapes Installation"
+                    ]
+                }, {
+                    "name": "Garage",
+                    "subcategories": [
+                        "Garage Door Installation",
+                        "Garage Door Repair",
+                        "Garage Organization and Shelving",
+                        "Garage Flooring",
+                        "Garage Lighting",
+                        "Garage Heating and Cooling",
+                        "Garage Conversion",
+                        "Car Lift Installation",
+                        "Vehicle Maintenance",
+                        "General Garage Repairs"
+                    ]
+                },
+                {
+                    "name": "TV and Stereo",
+                    "subcategories": [
+                        "TV Installation",
+                        "TV Mounting",
+                        "Home Theater Setup",
+                        "Stereo and Surround Sound Installation",
+                        "Speaker Installation",
+                        "Cable and Wire Management",
+                        "Remote Control Programming",
+                        "TV Repair",
+                        "Stereo and Sound System Repair"
+                    ]
+                },
+                {
+                    "name": "Kitchen",
+                    "subcategories": [
+                        "Cabinet Installation and Repair",
+                        "Countertop Installation and Repair",
+                        "Sink and Faucet Installation and Repair",
+                        "Flooring Installation and Repair",
+                        "Lighting Installation and Repair",
+                        "Appliance Installation and Repair",
+                        "Backsplash Installation and Repair",
+                        "Kitchen Island Installation",
+                        "Pantry Organization and Installation"
+                    ]
+                },
+                {
+                    "name": "Interior Design",
+                    "subcategories": [
+                        "Residential Design",
+                        "Commercial Design",
+                        "Color Consulting",
+                        "Furniture Selection and Placement",
+                        "Lighting Design",
+                        "Window Treatments and Coverings",
+                        "Wallpaper and Paint Selection",
+                        "Flooring Selection",
+                        "Accessories and Decor",
+                        "Space Planning"
+                    ]
+                },
+
+
+                {
+                    "name": "Flooring",
+                    "subcategories": [
+                        "Vinyl",
+                        "Tile",
+                        "Epoxy",
+                        "Laminate",
+                        "Hardwood",
+                        "Carpet",
+                        "Terrazzo"
+                    ]
+                },
+                {
+                    "name": "Landscaping",
+                    "subcategories": [
+                        "Lawn care",
+                        "Garden design",
+                        "Hardscaping",
+                        "Tree care",
+                        "Irrigation",
+                        "Landscape maintenance",
+                        "Landscaping installation",
+                        "Outdoor living spaces",
+                        "Water features",
+                        "Landscape lighting",
+                        "Pool Landscaping",
+                        "Xeriscaping",
+                        "Artificial Turf",
+                        "Sod Installation",
+                        "Mulching",
+                        "Planting",
+                        "Tree Trimming",
+                        "Stump Grinding",
+                        "Weed Control",
+                        "Pest Control",
+                        "Fertilization",
+                        "Seasonal Cleanups"
+                    ]
+                },
+                {
+                    "name": "Handyman",
+                    "subcategories": [
+                        "Painting and Staining",
+                        "Drywall Repair and Installation",
+                        "Furniture Assembly",
+                        "General Home Repairs",
+                        "Window Repair and Installation",
+                        "Door Repair and Installation",
+                        "Caulking and Weatherstripping",
+                        "Tile and Grout Installation and Repair",
+                    ]
+                },
+                {
+                    "name": "Lighting",
+                    "subcategories": [
+                        "Light Fixture Installation",
+                        "Light Fixture Repair",
+                        "LED Lighting Installation",
+                        "LED Lighting Repair",
+                        "Outdoor Lighting Installation",
+                        "Outdoor Lighting Repair",
+                        "Landscape Lighting Installation",
+                        "Landscape Lighting Repair",
+                        "Chandelier Installation",
+                        "Chandelier Repair",
+                        "Ceiling Fan Installation",
+                        "Ceiling Fan Repair",
+                        "Dimmer Switch Installation",
+                        "Dimmer Switch Repair",
+                        "Lighting Control System Installation",
+                        "Lighting Control System Repair"
+                    ]
+                },
+                {
+                    "name": "Cleaning",
+                    "subcategories": [
+                        "House Cleaning",
+                        "Carpet Cleaning",
+                        "Upholstery Cleaning",
+                        "Window Cleaning",
+                        "Deep Cleaning",
+                        "Move-In/Move-Out Cleaning",
+                        "Commercial Cleaning",
+                        "Disinfecting and Sanitizing",
+                        "Maid Services",
+                        "Window Cleaning",
+                        "Airbnb Cleaning"
+                    ]
+                },
+
+                {
+                    "name": "Roofing",
+                    "subcategories": [
+                        "Roof repair",
+                        "Roof replacement",
+                        "Roof installation",
+                        "Gutter installation and repair",
+                        "Skylight installation and repair",
+                        "Roof cleaning and maintenance",
+                        "Chimney repair and maintenance",
+                        "Emergency roof repair",
+                        "Flat Roofing",
+                        "Metal Roofing",
+                        "Tile Roofing",
+                        "Shingle Roofing"
+                    ]
+                },
+                {
+                    "name": "Air Conditioning",
+                    "subcategories": [
+                        "AC Repair",
+                        "AC Installation",
+                        "AC Maintenance",
+                        "Duct Cleaning",
+                        "Thermostat Installation",
+                        "Indoor Air Quality",
+                        "Commercial AC Services",
+                        "Emergency AC Services",
+                        "Heat Pump Services"
+                    ]
+                },
+                {
+                    "name": "Plumbing",
+                    "subcategories": [
+                        "Water Heater Repair and Installation",
+                        "Drain Cleaning",
+                        "Toilet Repair and Installation",
+                        "Faucet Repair and Installation",
+                        "Garbage Disposal Repair and Installation",
+                        "Sump Pump Repair and Installation",
+                        "Leak Detection and Repair",
+                        "Backflow Prevention",
+                        "Hydro Jetting",
+                        "Gas Line Services"
+                    ]
+                },
+                {
+                    "name": "Electrical",
+                    "subcategories": [
+                        "Electrical Repairs",
+                        "Electrical Panel Upgrades",
+                        "Electrical Installations",
+                        "Lighting Installations and Repairs",
+                        "Ceiling Fan Installations",
+                        "Generators",
+                        "Surge Protection",
+                        "Electrical Inspections",
+                        "Emergency Electrical Services"
+                    ]
+                },
+                {
+                    "name": "Pest Control",
+                    "subcategories": [
+                        "Termite Inspection and Treatment",
+                        "Bed Bug Treatment",
+                        "Ant Control",
+                        "Rodent Control",
+                        "Mosquito Control",
+                        "Spider Control",
+                        "Flea and Tick Treatment",
+                        "Wildlife Control",
+                        "Bee and Wasp Removal"
+                    ]
+                },
+                {
+                    "name": "Pool Services",
+                    "subcategories": [
+                        "Pool Cleaning",
+                        "Pool Maintenance",
+                        "Pool Repair",
+                        "Pool Renovation",
+                        "Pool Resurfacing",
+                        "Pool Decking",
+                        "Pool Heating",
+                        "Saltwater Pool Services",
+                        "Commercial Pool Services",
+                        "Emergency Pool Services",
+                        "Pool Leak Detection and Repair",
+                        "Pool Equipment Repair and Replacement",
+                        "Pool Lighting Installation and Repair"
+                    ]
+                },
+                {
+                    "name": "Painting",
+                    "subcategories": [
+                        "Interior Painting",
+                        "Exterior Painting",
+                        "Commercial Painting",
+                        "Residential Painting",
+                        "Wallpaper Installation and Removal",
+                        "Color Consultation",
+                        "Faux Painting",
+                        "Cabinet Painting",
+                        "Deck and Fence Painting or Staining",
+                        "Pressure Washing",
+                        "Drywall Repair and Texturing",
+                        "Trim and Baseboard Painting",
+                        "Epoxy Floor Coating"
+                    ]
+                },
+                {
+                    "name": "Smart Home",
+                    "subcategories": [
+                        "Smart Home Installation",
+                        "Smart Thermostat Installation and Programming",
+                        "Smart Lighting Installation and Programming",
+                        "Smart Lock Installation and Programming",
+                        "Smart Speaker and Voice Assistant Setup",
+                        "Smart Appliance Installation and Programming",
+                        "Smart Home Consulting and Design",
+                        "Smart Home Troubleshooting and Repair"
+                    ]
+                },
+                {
+                    "name": "Home Security",
+                    "subcategories": [
+                        "Alarm System Installation",
+                        "Surveillance Camera Installation",
+                        "Smart Home Security System Installation",
+                        "Window and Door Security",
+                        "Motion Detector Installation",
+                        "Security Lighting Installation",
+                        "Access Control System Installation",
+                        "Security System Monitoring",
+                        "Security System Repair and Maintenance",
+                        "Security Consultation and Design"
+                    ]
+                },
+                {
+                    "name": "Paving",
+                    "subcategories": [
+                        "Driveway Paving",
+                        "Asphalt Paving",
+                        "Concrete Paving",
+                        "Patio Paving",
+                        "Walkway Paving",
+                        "Pool Deck Paving",
+                        "Brick Paving",
+                        "Stone Paving",
+                        "Interlocking Pavers",
+                        "Paver Repair and Maintenance",
+                        "Paver Sealing",
+                        "Paver Cleaning"
+                    ]
+                }, {
+                    "name": "Furniture Assembly",
+                    "subcategories": [
+                        "Office Furniture Assembly",
+                        "Home Furniture Assembly",
+                        "IKEA Furniture Assembly",
+                        "Bed Assembly",
+                        "Dresser Assembly",
+                        "Wardrobe Assembly",
+                        "Table and Chair Assembly",
+                        "Bookshelf Assembly",
+                        "TV Stand Assembly",
+                        "Cabinet Assembly"
+                    ]
+                },
+                {
+                    "name": "Moving Services",
+                    "subcategories": [
+                        "Local Moving",
+                        "Long Distance Moving",
+                        "Commercial Moving",
+                        "Residential Moving",
+                        "Packing and Unpacking",
+                        "Storage Solutions",
+                        "Senior Moving Services",
+                        "Furniture Moving",
+                        "Piano Moving",
+                        "Small Moves"
+                    ]
+                },
+                {
+                    "name": "Appliances",
+                    "subcategories": [
+                        "Refrigerator Repair",
+                        "Dishwasher Repair",
+                        "Oven and Stove Repair",
+                        "Washing Machine Repair",
+                        "Dryer Repair",
+                        "Microwave Repair",
+                        "Freezer Repair",
+                        "Garbage Disposal Repair",
+                        "Trash Compactor Repair",
+                        "Range Hood Repair"
+                    ]
+                },
+                {
+                    "name": "Bathroom",
+                    "subcategories": [
+                        "Bathroom Remodeling",
+                        "Shower and Bathtub Installation",
+                        "Toilet Repair and Installation",
+                        "Sink and Faucet Installation",
+                        "Tile Installation and Repair",
+                        "Grout and Caulking Services",
+                        "Plumbing Services",
+                        "Exhaust Fan Installation",
+                        "Bathroom Lighting Installation",
+                        "Bathroom Vanity Installation",
+                        "Mirror Installation",
+                        "Towel Rack and Hook Installation",
+                        "Handicap Accessible Bathroom Installation"
+                    ]
+                }
+
+            ]
+
+        });
+    }
+function searchCategories(query) {
+    var results = [];
+
+    categories.forEach(function(category) {
+        var categoryMatches = [];
+
+        // Check if the category name includes the query
+        if (category.name.toLowerCase().includes(query.toLowerCase())) {
+            categoryMatches = category.subcategories.slice();
+        } else {
+            // Check each subcategory
+            category.subcategories.forEach(function(subcategory) {
+                if (subcategory.toLowerCase().includes(query.toLowerCase())) {
+                    categoryMatches.push(subcategory);
+                }
+            });
+        }
+
+        if (categoryMatches.length > 0) {
+            results.push({
+                category: category.name,
+                subcategories: categoryMatches
+            });
+        }
+    });
+
+    // Limit the number of results
+    return results.slice(0, 10);
+}
+
+var autocompleteVisible = false;
+var recentSearches = JSON.parse(localStorage.getItem('recentSearches')) || [];
+
+$('#search').on('input', function() {
+    var query = $(this).val();
+    var results = searchCategories(query);
+
+    $('#autocomplete-results').empty();
+
+    results.forEach(function(result) {
+        var categoryHeader = $('<h3>').addClass('autocomplete-header').text(result.category);
+        var subcategoryList = $('<ul>').addClass('autocomplete-list swiper-wrapper swiper-container tag-group my-4 team-swiper-4 swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events');
+
+        result.subcategories.forEach(function(subcategory) {
+            var subcategoryItem = `<div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 6" style="margin-right: 10px;">
+                                        <a href="./job-detail.html?category=${window.btoa(result.category)}&subcategory=${window.btoa(subcategory)}" class="tag-btn" id="${subcategory}">${subcategory}</a>
+                                    </div>`
+            
+            //subcategoryItem.data('category', result.category);
+            subcategoryList.append(subcategoryItem);
+        });
+
+        categoryHeader.data('category', result.category);
+        $('#autocomplete-results').append(categoryHeader).append(subcategoryList);
+    });
+
+    // add click handlers for category headers and subcategory items
+    $('.autocomplete-header, .autocomplete-item').on('click', function() {
+        var category = $(this).data('category');
+        var subcategory = $(this).hasClass('autocomplete-item') ? $(this).text() : null;
+
+        // store the search in recent searches
+        recentSearches.unshift({ category, subcategory });
+        localStorage.setItem('recentSearches', JSON.stringify(recentSearches.slice(0, 10)));
+
+        location.href = "./job-detail.html?category=" + window.btoa(category) + (subcategory ? '&subcategory=' + window.btoa(subcategory) : '');
+    });
+
+    $('#autocomplete-results').show();
+
+    autocompleteVisible = true;
+});
+
+$('#search').on('focus', function() {
+    // show recent searches when search bar is clicked
+    if (!autocompleteVisible) {
+        $('#autocomplete-results').empty();
+        recentSearches.forEach(function(search) {
+            var categoryHeader = $('<h3>').addClass('autocomplete-header').text(search.category);
+            categoryHeader.data('category', search.category);
+            $('#autocomplete-results').append(categoryHeader);
+            if (search.subcategory) {
+                var subcategoryItem = $('<li>').addClass('autocomplete-item').text(search.subcategory);
+                subcategoryItem.data('category', search.category);
+                $('#autocomplete-results').append(subcategoryItem);
+            }
+        });
+        $('#autocomplete-results').show();
+        autocompleteVisible = true;
+    }
+});
+
+$(document).on('click', function(event) {
+    if (!$(event.target).closest('#autocomplete-results').length) {
+        $('#autocomplete-results').hide();
+        autocompleteVisible = false;
+    }
+});
+
+    </script>
+    <script>
+    // get the current hour
+    const hour = new Date().getHours();
+
+    // set the greeting based on the time of day
+    let greeting;
+    if (hour >= 0 && hour < 12) {
+        greeting = "Good Morning";
+    } else if (hour >= 12 && hour < 18) {
+        greeting = "Good Afternoon";
+    } else {
+        greeting = "Good Evening";
+    }
+
+    // display the greeting in the HTML
+    const greetingElement = document.getElementById("greeting");
+    greetingElement.innerHTML = greeting;
+    </script>
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-app.js"></script>
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-database.js"></script>
+    <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+        apiKey: "AIzaSyBd9mTGo1lM19_Kcqf_vl7-pE4Rq1AzWA8",
+        authDomain: "bookings-49c4e.firebaseapp.com",
+        projectId: "bookings-49c4e",
+        storageBucket: "bookings-49c4e.appspot.com",
+        messagingSenderId: "491340380786",
+        appId: "1:491340380786:web:50ea0578b31309494ae0eb",
+        measurementId: "G-3JJKPRCD9Y"
+    };
+
+    // Initialize Firebase
+    const app = firebase.initializeApp(firebaseConfig);
+
+
+    firebase.auth().onAuthStateChanged(function(user) {
+        if (user) {
+            // User is signed in, show their name
+            var name = user.displayName;
+            document.getElementById("user-name").innerHTML = name;
+        } else {
+            // No user is signed in, show login button
+            console.log("No User Found")
+            window.location.href = "./login.html";
+            
+        }
+    });
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+</body>
+
+</html>
+
+</html>

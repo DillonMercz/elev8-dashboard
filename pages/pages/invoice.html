@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
+
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/static/apple-touch-icon.png?v=kPvy4M7Kk4"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/static/favicon-32x32.png?v=kPvy4M7Kk4"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/static/favicon-16x16.png?v=kPvy4M7Kk4"
+    />
+    <link rel="manifest" href="/static/site.webmanifest?v=kPvy4M7Kk4" />
+    <link
+      rel="mask-icon"
+      href="/static/safari-pinned-tab.svg?v=kPvy4M7Kk4"
+      color="#5bbad5"
+    />
+    <link rel="shortcut icon" href="/static/favicon.ico?v=kPvy4M7Kk4" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta
+      name="msapplication-config"
+      content="/static/browserconfig.xml?v=kPvy4M7Kk4"
+    />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Search Engine -->
+    <meta
+      name="description"
+      content="Generate fast invoices for the services you provide."
+    />
+    <meta
+      name="image"
+      content="https://i.imgur.com/AuINjvO.png"
+    />
+
+    <!-- Schema.org for Google -->
+    <meta
+      itemprop="name"
+      content="Invoice Generator | Made by Elev8"
+    />
+    <meta
+      itemprop="description"
+      content="Generate fast invoices for the services you provide."
+    />
+    <meta
+      itemprop="image"
+      content="https://i.imgur.com/AuINjvO.png"
+    />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Invoice Generator | Made by Elev8"
+    />
+    <meta
+      name="twitter:description"
+      content="Generate fast invoices for the services you provide."
+    />
+    <meta name="twitter:site" content="@elev8.cards" />
+    <meta name="twitter:creator" content="@elev8.cards" />
+    <meta
+      name="twitter:image:src"
+      content="https://i.imgur.com/AuINjvO.png"
+    />
+
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta
+      name="og:title"
+      content="Invoice Generator | Made by Elev8"
+    />
+    <meta
+      name="og:description"
+      content="Generate fast invoices for the services you provide."
+    />
+    <meta
+      name="og:image"
+      content="https://i.imgur.com/AuINjvO.png"
+    />
+    <meta name="og:url" content="https://elev8.cards/invoice" />
+    <meta
+      name="og:site_name"
+      content="Invoice Generator | Made by Elev8"
+    />
+    <meta name="og:locale" content="en_US" />
+    <meta name="og:type" content="website" />
+
+    <!-- Contry flags -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/css/flag-icon.min.css"
+    />
+        <!-- Primary Meta Tags -->
+    <title>Elev8 Home Services - Create Invoice</title>
+    <meta name="title" content="Elev8 Home Services - Book Now">
+    <meta name="description" content="Book Home Services With A Tap.">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://elev8.cards/invoice">
+    <meta property="og:title" content="Elev8 Home Services - Book Now">
+    <meta property="og:description" content="Book Home Services With A Tap.">
+    <meta property="og:image" content="https://i.imgur.com/AuINjvO.png">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://elev8.cards/invoice">
+    <meta property="twitter:title" content="Elev8 Home Services - Book Now">
+    <meta property="twitter:description" content="Book Home Services With A Tap.">
+    <meta property="twitter:image" content="https://i.imgur.com/AuINjvO.png">
+    <meta name="description" content="Elev8 - Services ">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
+   
+  </head>
+  <style type="text/css">
+/* purgecss start ignore */
+@tailwind base;
+@tailwind components;
+/* purgecss end ignore */
+[x-cloak] {
+  display: none;
+}
+
+@media print {
+  .no-printme {
+    display: none;
+  }
+  .printme {
+    display: block;
+  }
+  body {
+    line-height: 1.2;
+    margin-top:20% !important;
+  }
+}
+@page {
+  size: a4 portrait;
+  counter-increment: page;
+}
+/* Datepicker */
+.date-input {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  z-index: 2000;
+  margin: 3px 0 0 0;
+  border-top: 1px solid #eee;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.date-input.is-hidden {
+  display: none;
+}
+
+.date-input .pika-title {
+  padding: 0.5rem;
+  width: 100%;
+  text-align: center;
+}
+
+.date-input .pika-prev,
+.date-input .pika-next {
+  margin-top: 0;
+  /* margin-top: 0.5rem; */
+  padding: 0.2rem 0;
+  cursor: pointer;
+  color: #4299e1;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.date-input .pika-prev {
+  float: left;
+}
+
+.date-input .pika-next {
+  float: right;
+}
+
+.date-input .pika-prev:hover,
+.date-input .pika-next:hover {
+  text-decoration: underline;
+}
+
+.date-input .pika-label {
+  display: inline-block;
+  font-size: 0;
+}
+
+.date-input .pika-select-month,
+.date-input .pika-select-year {
+  display: inline-block;
+  border: 1px solid #ddd;
+  color: #444;
+  background-color: #fff;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  appearance: none;
+}
+
+.date-input .pika-select-month {
+  margin-right: 0.25em;
+}
+
+.date-input .pika-select-month:focus,
+.date-input .pika-select-year:focus {
+  border-color: #cbd5e0;
+  outline: none;
+}
+
+.date-input table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 0.2rem;
+}
+
+.date-input table th {
+  width: 2em;
+  height: 2em;
+  font-weight: normal;
+  color: #718096;
+  text-align: center;
+}
+
+.date-input table th abbr {
+  text-decoration: none;
+}
+
+.date-input table td {
+  padding: 2px;
+}
+
+.date-input table td button {
+  /* border: 1px solid #e2e8f0; */
+  width: 1.8em;
+  height: 1.8em;
+  text-align: center;
+  color: #555;
+  border-radius: 10px;
+}
+
+.date-input table td button:hover {
+  background-color: #bee3f8;
+}
+
+.date-input table td.is-today button {
+  background-color: #ebf8ff;
+}
+
+.date-input table td.is-selected button {
+  background-color: #3182ce;
+  color: white;
+}
+
+.date-input table td.is-selected button:hover {
+  color: white;
+}
+
+@tailwind utilities;
+.top-1\/2 {
+  top: 50%;
+}
+        .navbar-toggle{
+            background-color: white;
+        }
+        .navbar-fixed-top{
+background-color: black;
+}
+.white{
+    margin-top: 10px;
+    color: white !important;
+}
+    
+  </style>
+     <!-- <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="glyphicon glyphicon-menu-hamburger"></span>
+                </button>
+                <div class="navbar-left logo">
+                    <img src="https://i.imgur.com/DVbdCW5.png" heigth="90px" width="140px">
+                </div>
+            </div>
+            <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a class="white" href="#intro">Home</a></li>
+                    <li><a class="white" href="#about">About</a></li>
+                    <li><a class="white" href="#portfolio">Menu</a></li>
+                    <li><a class="white" href="#contact">Reserve</a></li>
+                </ul>
+                <button type="button" class="button" style="
+                    padding: 10px;
+                    margin-top: 12px;
+                    background: #C78B05;
+                    color: white;
+                    border-radius: 10px;
+                    margin-bottom: 10px;
+                ">
+                    Book Now
+                </button>
+            </div>
+        </div>
+    </nav>-->
+  <body class="antialiased bg-gray-200 sans-serif" style="/*margin-top:55px">
+    <header
+      class="px-5 py-4 transition-all duration-200 bg-white shadow-lg dark:bg-blue-900"
+    >
+      <div
+        class="container relative flex flex-wrap items-center justify-end mx-auto"
+      >
+        <div
+          @click.away="open = false"
+          class="relative ml-3"
+          x-data="{ open: false }"
+        >
+          <div>
+            <button
+              id="languageSwitcher"
+              @click="open = !open"
+              class="flex items-center max-w-xs px-3 py-2 text-sm text-white text-gray-700 transition-all duration-200 border border-gray-700 rounded focus:outline-none focus:shadow-solid dark:text-white dark:border-white"
+            >
+              <span class="w-8 h-5 flag-icon flag-icon-us"></span>
+              English
+            </button>
+          </div>
+          <div
+            x-show="open"
+            x-transition:enter="transition ease-out duration-100"
+            x-transition:enter-start="transform opacity-0 scale-95"
+            x-transition:enter-end="transform opacity-100 scale-100"
+            x-transition:leave="transition ease-in duration-75"
+            x-transition:leave-start="transform opacity-100 scale-100"
+            x-transition:leave-end="transform opacity-0 scale-95"
+            class="absolute right-0 z-50 w-48 mt-2 origin-top-right rounded-md shadow-lg"
+          >
+            <div class="py-1 bg-white rounded-md shadow-xs">
+              <button
+                id="english"
+                class="flex items-center w-full px-4 py-2 text-sm text-gray-700 transition-all duration-200 focus:outline-none focus:shadow-outline hover:bg-gray-300 justify-evenly"
+              >
+                <span class="w-8 h-5 flag-icon flag-icon-us"></span>
+                English
+              </button>
+              <button
+                id="german"
+                class="flex items-center w-full px-4 py-2 text-sm text-gray-700 transition-all duration-200 focus:outline-none focus:shadow-outline hover:bg-gray-300 justify-evenly"
+              >
+                <span class="w-8 h-5 flag-icon flag-icon-de"></span>
+                German
+              </button>
+              <button
+                id="spanish"
+                class="flex items-center w-full px-4 py-2 text-sm text-gray-700 transition-all duration-200 focus:outline-none focus:shadow-outline hover:bg-gray-300 justify-evenly"
+              >
+                <span class="w-8 h-5 flag-icon flag-icon-es"></span>
+                Español
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="h-2 border-t-8 border-gray-700"></div>
+    <div
+      class="container px-4 py-6 mx-auto"
+      x-data="invoices()"
+      x-init="generateInvoiceNumber(111111, 999999);"
+      x-cloak
+    >
+      <div class="flex justify-between">
+        <h2
+          key-lang="invoiceTitle"
+          class="pb-2 mb-6 text-2xl font-bold tracking-wider uppercase"
+        >
+          INVOICE
+        </h2>
+
+        <div>
+          <div class="relative inline-block mr-4">
+            <div
+              class="inline-flex items-center justify-center w-10 h-10 text-gray-500 bg-gray-100 rounded-full cursor-pointer focus:outline-none focus:shadow-outline hover:bg-gray-300"
+              @click="printInvoice()"
+              data-tippy-content="Print"
+            >
+              <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+                <path
+                  fill-rule="evenodd"
+                  d="M5 4v3H4a2 2 0 00-2 2v3a2 2 0 002 2h1v2a2 2 0 002 2h6a2 2 0 002-2v-2h1a2 2 0 002-2V9a2 2 0 00-2-2h-1V4a2 2 0 00-2-2H7a2 2 0 00-2 2zm8 0H7v3h6V4zm0 8H7v4h6v-4z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </div>
+          </div>
+
+          <div class="relative inline-block">
+            <div
+              class="inline-flex items-center justify-center w-10 h-10 text-gray-500 transition-all duration-150 bg-gray-100 rounded-full cursor-pointer focus:outline-none focus:shadow-outline hover:bg-gray-300"
+              @click="window.location.reload()"
+              data-tippy-content="Refresh"
+            >
+              <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+                <path
+                  fill-rule="evenodd"
+                  d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-between mb-8">
+        <div class="w-2/4">
+          <div class="items-center mb-2 md:mb-1 md:flex">
+            <label
+              key-lang="invoiceNumber"
+              class="block w-40 text-sm font-bold tracking-wide text-gray-800 uppercase"
+            >INVOICE Nº</label>
+            <span class="hidden inline-block mr-4 md:block">:</span>
+            <div class="flex-1">
+              <input
+                class="w-48 px-4 py-2 leading-tight text-gray-700 transition-all duration-150 bg-gray-100 border-2 border-gray-200 rounded appearance-none focus:outline-none focus:bg-white focus:border-blue-500"
+                type="text"
+                title="Invoice number"
+                placeholder="eg. #INV-100001"
+                x-model="invoiceNumber"
+              />
+            </div>
+          </div>
+
+          <div class="items-center mb-2 md:mb-1 md:flex">
+            <label
+              key-lang="invoiceDate"
+              class="block w-40 text-sm font-bold tracking-wide text-gray-800 uppercase"
+            >INVOICE DATE</label>
+            <span class="hidden inline-block mr-4 md:block">:</span>
+            <div class="flex-1">
+              <input
+                class="w-48 px-4 py-2 leading-tight text-gray-700 transition-all duration-150 bg-gray-100 border-2 border-gray-200 rounded appearance-none focus:outline-none focus:bg-white focus:border-blue-500 js-datepicker"
+                type="text"
+                id="datepicker1"
+                title="Invoice date"
+                placeholder="eg. 17 Feb, 2020"
+                x-model="invoiceDate"
+                x-on:change="invoiceDate = document.getElementById('datepicker1').value"
+                autocomplete="off"
+                readonly
+              />
+            </div>
+          </div>
+
+          <div class="items-center mb-2 md:mb-1 md:flex">
+            <label
+              key-lang="invoiceDue"
+              class="block w-40 text-sm font-bold tracking-wide text-gray-800 uppercase"
+            >DUE DATE</label>
+            <span class="hidden inline-block mr-4 md:block">:</span>
+            <div class="flex-1">
+              <input
+                class="w-48 px-4 py-2 leading-tight text-gray-700 transition-all duration-150 bg-gray-100 border-2 border-gray-200 rounded appearance-none focus:outline-none focus:bg-white focus:border-blue-500 js-datepicker-2"
+                id="datepicker2"
+                title="Invoice due date"
+                type="text"
+                placeholder="eg. 17 Mar, 2020"
+                x-model="invoiceDueDate"
+                x-on:change="invoiceDueDate = document.getElementById('datepicker2').value"
+                autocomplete="off"
+                readonly
+              />
+            </div>
+          </div>
+        </div>
+        <div>
+          <div
+            class="relative w-32 h-32 mb-1 overflow-hidden bg-gray-100 border rounded-lg"
+          >
+            <img
+              id="image"
+              alt="Placeholder logo image invoice"
+              class="object-cover w-full h-32"
+              src="https://placehold.co/300x300/e2e8f0/e2e8f0"
+            />
+
+            <div
+              class="absolute top-0 bottom-0 left-0 right-0 flex items-center justify-center block w-full cursor-pointer"
+              onClick="document.getElementById('fileInput').click()"
+            >
+              <button
+                type="button"
+                title="Add logo image"
+                style="background-color: rgba(255, 255, 255, 0.65);"
+                class="px-4 py-2 text-sm font-semibold text-gray-700 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:shadow-outline hover:bg-gray-100"
+              >
+                <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 5a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V7a2 2 0 00-2-2h-1.586a1 1 0 01-.707-.293l-1.121-1.121A2 2 0 0011.172 3H8.828a2 2 0 00-1.414.586L6.293 4.707A1 1 0 015.586 5H4zm6 9a3 3 0 100-6 3 3 0 000 6z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <input
+            name="photo"
+            id="fileInput"
+            title="Add logo image"
+            accept="image/*"
+            class="hidden"
+            type="file"
+            onChange="
+              let file = this.files[0]; 
+					    var reader = new FileReader();
+
+              reader.onload = function (e) {
+                document.getElementById('image').src = e.target.result;
+                document.getElementById('image2').src = e.target.result;
+              };
+				
+					    reader.readAsDataURL(file);
+				    "
+          />
+        </div>
+      </div>
+
+      <div class="flex flex-wrap justify-between mb-8">
+        <div class="w-full mb-2 md:w-1/3 md:mb-0">
+          <label
+            key-lang="invoiceBill"
+            class="block mb-1 text-sm font-bold tracking-wide text-gray-800 uppercase"
+          >BILL/SHIP TO:</label>
+          <input
+            class="w-full px-4 py-2 mb-1 leading-tight text-gray-700 transition duration-150 bg-gray-100 border-2 border-gray-200 rounded appearance-none focus:outline-none focus:bg-white focus:border-blue-500"
+            key-lang="invoiceBillCompanyName"
+            title="Bill company name"
+            type="text"
+            placeholder="Client Name"
+            x-model="billing.name"
+          />
+          <input
+            class="w-full px-4 py-2 mb-1 leading-tight text-gray-700 transition duration-150 bg-gray-100 border-2 border-gray-200 rounded appearance-none focus:outline-none focus:bg-white focus:border-blue-500"
+            key-lang="invoiceBillCompanyAddress"
+            title="Bill company address"
+            type="text"
+            placeholder="Client Address"
+            x-model="billing.address"
+          />
+          <input
+            class="w-full px-4 py-2 mb-1 leading-tight text-gray-700 transition duration-150 bg-gray-100 border-2 border-gray-200 rounded appearance-none focus:outline-none focus:bg-white focus:border-blue-500"
+            key-lang="invoiceAdditionalInfo"
+            title="Aditional information"
+            type="text"
+            placeholder="Client Notes"
+            x-model="billing.extra"
+          />
+        </div>
+        <div class="w-full md:w-1/3">
+          <label
+            key-lang="invoiceFrom"
+            class="block mb-1 text-sm font-bold tracking-wide text-gray-800 uppercase"
+          >FROM:</label>
+          <input
+            class="w-full px-4 py-2 mb-1 leading-tight text-gray-700 transition duration-150 bg-gray-100 border-2 border-gray-200 rounded appearance-none focus:outline-none focus:bg-white focus:border-blue-500"
+            key-lang="invoiceFromCompanyName"
+            title="From company name"
+            type="text"
+            placeholder="Company Name"
+            x-model="from.name"
+          />
+
+          <input
+            class="w-full px-4 py-2 mb-1 leading-tight text-gray-700 transition duration-150 bg-gray-100 border-2 border-gray-200 rounded appearance-none focus:outline-none focus:bg-white focus:border-blue-500"
+            key-lang="invoiceFromCompanyAddress"
+            title="From company address"
+            type="text"
+            placeholder="Company Address"
+            x-model="from.address"
+          />
+
+          <input
+            class="w-full px-4 py-2 mb-1 leading-tight text-gray-700 transition duration-150 bg-gray-100 border-2 border-gray-200 rounded appearance-none focus:outline-none focus:bg-white focus:border-blue-500"
+            key-lang="invoiceAdditionalInfo"
+            title="Aditional information"
+            type="text"
+            placeholder="Company Phone"
+            x-model="from.extra"
+          />
+        </div>
+      </div>
+
+      <div class="flex items-start py-2 -mx-1 border-b border-gray-400">
+        <div class="flex-1 px-1">
+          <p
+            key-lang="invoiceDescription"
+            class="text-sm font-bold tracking-wide text-gray-800 uppercase"
+          >Description</p>
+        </div>
+
+        <div class="w-20 px-1 text-right">
+          <p
+            key-lang="invoiceUnits"
+            class="text-sm font-bold tracking-wide text-gray-800 uppercase"
+          >Units</p>
+        </div>
+
+        <div class="w-32 px-1 text-right">
+          <p class="leading-none">
+            <span
+              key-lang="invoiceUnitPrice"
+              class="block text-sm font-bold tracking-wide text-gray-800 uppercase"
+            >Unit Price</span>
+            <span class="text-xs font-medium text-gray-500">(Incl. GST)</span>
+          </p>
+        </div>
+
+        <div class="w-32 px-1 text-right">
+          <p class="leading-none">
+            <span
+              key-lang="invoiceAmount"
+              class="block text-sm font-bold tracking-wide text-gray-800 uppercase"
+            >Amount</span>
+            <span class="text-xs font-medium text-gray-500">(Incl. GST)</span>
+          </p>
+        </div>
+
+        <div class="w-20 px-1 text-center"></div>
+      </div>
+
+      <template x-for="invoice in items" :key="invoice.id">
+        <div class="flex py-2 -mx-1 border-b border-gray-400">
+          <div class="flex-1 px-1">
+            <p class="text-gray-800" x-text="invoice.name"></p>
+          </div>
+
+          <div class="w-20 px-1 text-right">
+            <p class="text-gray-800" x-text="invoice.qty"></p>
+          </div>
+
+          <div class="w-32 px-1 text-right">
+            <p class="text-gray-800" x-text="numberFormat(invoice.rate)"></p>
+          </div>
+
+          <div class="w-32 px-1 text-right">
+            <p class="text-gray-800" x-text="numberFormat(invoice.total)"></p>
+          </div>
+
+          <div class="w-20 px-1 text-right">
+            <a
+              href="#"
+              class="block text-sm font-semibold text-red-500 transition-all duration-150 hover:text-red-600"
+              @click.prevent="deleteItem(invoice.id)"
+              data-tippy-content="Delete"
+            >
+              <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+                <path
+                  fill-rule="evenodd"
+                  d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v6a1 1 0 102 0V8a1 1 0 00-1-1z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </template>
+
+      <button
+        key-lang="invoiceAddButton"
+        title="Add item"
+        class="px-4 py-2 mt-6 text-sm font-semibold text-gray-700 bg-white border border-gray-300 rounded shadow-sm focus:outline-none focus:shadow-outline hover:bg-gray-100"
+        x-on:click="openModal = !openModal"
+      >ADD INVOICE ITEMS</button>
+
+      <div class="w-full py-2 mt-5 ml-auto sm:w-2/4 lg:w-1/4">
+        <div class="flex justify-between mb-3">
+          <div class="flex-1 text-right text-gray-800">Total incl. GST</div>
+          <div class="w-40 text-right">
+            <div class="font-medium text-gray-800" x-html="netTotal"></div>
+          </div>
+        </div>
+        <div class="flex justify-between mb-4">
+          <div class="flex-1 text-sm text-right text-gray-600">
+            GST(18%) incl. Total
+          </div>
+          <div class="w-40 text-right">
+            <div class="text-sm text-gray-600" x-html="totalGST"></div>
+          </div>
+        </div>
+
+        <div class="py-2 border-t border-b border-gray-400">
+          <div class="flex justify-between">
+            <div
+              key-lang="invoiceAmountDue"
+              class="flex-1 text-xl text-right text-gray-600"
+            >
+              Amount due
+            </div>
+            <div class="w-40 text-right">
+              <div
+                class="text-xl font-bold text-gray-800"
+                x-html="netTotal"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Print Template -->
+      <div id="js-print-template" x-ref="printTemplate" class="hidden">
+        <div class="flex justify-between mb-8">
+          <div>
+            <h2
+              key-lang="invoiceTitle"
+              class="pb-2 mb-6 text-3xl font-bold tracking-wider uppercase"
+            >
+              INVOICE
+            </h2>
+
+            <div class="flex items-center mb-1">
+              <label
+                key-lang="invoiceNumber"
+                class="block w-32 text-xs font-bold tracking-wide text-gray-800 uppercase"
+              >INVOICE Nº</label>
+              <span class="inline-block mr-4">:</span>
+              <div x-text="invoiceNumber"></div>
+            </div>
+
+            <div class="flex items-center mb-1">
+              <label
+                key-lang="invoiceDate"
+                class="block w-32 text-xs font-bold tracking-wide text-gray-800 uppercase"
+              >INVOICE DATE</label>
+              <span class="inline-block mr-4">:</span>
+              <div x-text="invoiceDate"></div>
+            </div>
+
+            <div class="flex items-center mb-1">
+              <label
+                key-lang="invoiceDue"
+                class="block w-32 text-xs font-bold tracking-wide text-gray-800 uppercase"
+              >DUE DATE</label>
+              <span class="inline-block mr-4">:</span>
+              <div x-text="invoiceDueDate"></div>
+            </div>
+          </div>
+          <div class="pr-5">
+            <div class="w-32 h-32 mb-1 overflow-hidden">
+              <img
+                id="image2"
+                class="object-cover w-20 h-20"
+                alt="Invoice logo"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-between mb-10">
+          <div class="w-1/2">
+            <label
+              key-lang="invoiceBill"
+              class="block mb-2 text-xs font-bold tracking-wide text-gray-800 uppercase"
+            >BILL/SHIP TO:</label>
+            <div>
+              <div x-text="billing.name"></div>
+              <div x-text="billing.address"></div>
+              <div x-text="billing.extra"></div>
+            </div>
+          </div>
+          <div class="w-1/2">
+            <label
+              key-lang="invoiceFrom"
+              class="block mb-2 text-xs font-bold tracking-wide text-gray-800 uppercase"
+            >From:</label>
+            <div>
+              <div x-text="from.name"></div>
+              <div x-text="from.address"></div>
+              <div x-text="from.extra"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap items-start py-2 -mx-1 border-b">
+          <div class="flex-1 px-1">
+            <p
+              key-lang="invoiceDescription"
+              class="text-xs font-bold tracking-wide text-gray-600 uppercase"
+            >Description:</p>
+          </div>
+
+          <div class="w-32 px-1 text-right">
+            <p
+              key-lang="invoiceUnits"
+              class="text-xs font-bold tracking-wide text-gray-600 uppercase"
+            >Units</p>
+          </div>
+
+          <div class="w-32 px-1 text-right">
+            <p class="leading-none">
+              <span
+                key-lang="invoiceUnitPrice"
+                class="block text-xs font-bold tracking-wide text-gray-600 uppercase"
+              >Unit Price</span>
+              <span class="text-xs font-medium text-gray-500">(Incl. GST)</span>
+            </p>
+          </div>
+
+          <div class="w-32 px-1 text-right">
+            <p class="leading-none">
+              <span
+                key-lang="invoiceAmount"
+                class="block text-xs font-bold tracking-wide text-gray-600 uppercase"
+              >Amount</span>
+              <span class="text-xs font-medium text-gray-500">(Incl. GST)</span>
+            </p>
+          </div>
+        </div>
+        <template x-for="invoice in items" :key="invoice.id">
+          <div class="flex flex-wrap py-2 -mx-1 border-b">
+            <div class="flex-1 px-1">
+              <p class="text-gray-800" x-text="invoice.name"></p>
+            </div>
+
+            <div class="w-32 px-1 text-right">
+              <p class="text-gray-800" x-text="invoice.qty"></p>
+            </div>
+
+            <div class="w-32 px-1 text-right">
+              <p class="text-gray-800" x-text="numberFormat(invoice.rate)"></p>
+            </div>
+
+            <div class="w-32 px-1 text-right">
+              <p class="text-gray-800" x-text="numberFormat(invoice.total)"></p>
+            </div>
+          </div>
+        </template>
+
+        <div class="py-2 mt-20 ml-auto" style="width: 320px;">
+          <div class="flex justify-between mb-3">
+            <div class="flex-1 text-right text-gray-800">Total incl. GST</div>
+            <div class="w-40 text-right">
+              <div class="font-medium text-gray-800" x-html="netTotal"></div>
+            </div>
+          </div>
+          <div class="flex justify-between mb-4">
+            <div class="flex-1 text-sm text-right text-gray-600">
+              GST(18%) incl. Total
+            </div>
+            <div class="w-40 text-right">
+              <div class="text-sm text-gray-600" x-html="totalGST"></div>
+            </div>
+          </div>
+
+          <div class="py-2 border-t border-b">
+            <div class="flex justify-between">
+              <div
+                key-lang="invoiceAmountDue"
+                class="flex-1 text-xl text-right text-gray-600"
+              ></div>
+              <div class="w-40 text-right">
+                <div
+                  class="text-xl font-bold text-gray-800"
+                  x-html="netTotal"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /Print Template -->
+
+      <!-- Modal -->
+      <div
+        style="background-color: rgba(0, 0, 0, 0.8);"
+        class="fixed top-0 bottom-0 left-0 right-0 z-40 w-full h-full"
+        x-show.transition.opacity="openModal"
+      >
+        <div
+          class="absolute relative left-0 right-0 max-w-xl p-4 mx-auto mt-24 overflow-hidden"
+        >
+          <div
+            class="absolute top-0 right-0 inline-flex items-center justify-center w-10 h-10 text-gray-500 bg-white rounded-full shadow cursor-pointer focus:outline-none focus:shadow-outline hover:text-gray-800"
+            x-on:click="openModal = !openModal"
+          >
+            <svg
+              class="w-6 h-6 fill-current"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z"
+              />
+            </svg>
+          </div>
+
+          <div
+            class="block w-full p-8 overflow-hidden bg-white rounded-lg shadow"
+          >
+            <h2
+              key-lang="invoiceModalTitle"
+              class="pb-2 mb-6 text-2xl font-bold text-gray-800 border-b"
+            >
+              Fill In Service Items:
+            </h2>
+
+            <div class="mb-4">
+              <label
+                key-lang="invoiceDescription"
+                class="block mb-1 text-sm font-bold tracking-wide text-gray-800 uppercase"
+              >DESCRIPTION</label>
+              <input
+                title="Description"
+                class="w-full px-4 py-2 mb-1 leading-tight text-gray-700 transition duration-150 bg-gray-100 border-2 border-gray-200 rounded appearance-none focus:outline-none focus:bg-white focus:border-blue-500"
+                type="text"
+                x-model="item.name"
+              />
+            </div>
+
+            <div class="flex">
+              <div class="w-1/3 mb-4 mr-2">
+                <label
+                  key-lang="invoiceUnits"
+                  class="block mb-1 text-sm font-bold tracking-wide text-gray-800 uppercase"
+                >UNITS</label>
+                <input
+                  title="Units"
+                  class="w-full px-4 py-2 mb-1 leading-tight text-right text-gray-700 bg-gray-200 border-2 border-gray-200 rounded appearance-none focus:outline-none focus:bg-white focus:border-blue-500"
+                  type="text"
+                  x-model="item.qty"
+                />
+              </div>
+
+              <div class="w-1/3 mb-4 mr-2">
+                <label
+                  key-lang="invoiceUnitPrice"
+                  class="block mb-1 text-sm font-bold tracking-wide text-gray-800 uppercase"
+                >UNIT PRICE</label>
+                <input
+                  title="Unit price"
+                  class="w-full px-4 py-2 mb-1 leading-tight text-right text-gray-700 bg-gray-200 border-2 border-gray-200 rounded appearance-none focus:outline-none focus:bg-white focus:border-blue-500"
+                  type="text"
+                  x-model="item.rate"
+                />
+              </div>
+
+              <div class="w-1/3 mb-4">
+                <label
+                  key-lang="invoiceAmount"
+                  class="block mb-1 text-sm font-bold tracking-wide text-gray-800 uppercase"
+                >UNIT AMOUNT</label>
+                <input
+                  title="Ammount"
+                  class="w-full px-4 py-2 mb-1 leading-tight text-right text-gray-700 bg-gray-200 border-2 border-gray-200 rounded appearance-none focus:outline-none focus:bg-white focus:border-blue-500"
+                  type="text"
+                  x-model="item.total = item.qty * item.rate"
+                />
+              </div>
+            </div>
+
+            <div class="w-32 mb-4">
+              <div class="relative">
+                <label
+                  class="block mb-1 text-sm font-bold tracking-wide text-gray-800 uppercase"
+                  >GST</label
+                >
+                <select
+                  title="Select taxes"
+                  class="block w-full px-4 py-2 pr-8 leading-tight text-gray-700 bg-gray-200 border-2 border-gray-200 rounded appearance-none focus:outline-none focus:bg-white focus:border-blue-500"
+                  x-model="item.gst"
+                >
+                  <option value="5">GST 5%</option>
+                  <option value="12">GST 12%</option>
+                  <option value="18">GST 18%</option>
+                  <option value="28">GST 28%</option>
+                </select>
+                <div
+                  class="absolute inset-y-0 right-0 flex items-center px-2 text-gray-600 pointer-events-none"
+                >
+                  <svg
+                    class="w-4 h-4 mt-6 fill-current"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-8 text-right">
+              <button
+                type="button"
+                title="Cancel item"
+                key-lang="invoiceCancelModal"
+                class="px-4 py-2 mr-2 font-semibold text-gray-700 bg-white border border-gray-300 rounded shadow-sm focus:outline-none focus:shadow-outline hover:bg-gray-100"
+                @click="openModal = !openModal"
+              >CANCEL</button>
+              <button
+                type="button"
+                title="Add item"
+                key-lang="invoiceAddItemModal"
+                class="px-4 py-2 font-semibold text-white bg-gray-800 border border-gray-700 rounded shadow-sm focus:outline-none focus:shadow-outline hover:bg-gray-700"
+                @click="addItem()"
+              >ADD ITEM</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /Modal -->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+      defer
+    ></script>
+
+    <script>
+      window.addEventListener('DOMContentLoaded', function () {
+        const today = new Date()
+
+        var picker = new Pikaday({
+          keyboardInput: false,
+          field: document.querySelector('.js-datepicker'),
+          format: 'MMM D YYYY',
+          theme: 'date-input',
+          i18n: {
+            previousMonth: 'Prev',
+            nextMonth: 'Next',
+            months: [
+              'Jan',
+              'Feb',
+              'Mar',
+              'Apr',
+              'May',
+              'Jun',
+              'Jul',
+              'Aug',
+              'Sep',
+              'Oct',
+              'Nov',
+              'Dec'
+            ],
+            weekdays: [
+              'Sunday',
+              'Monday',
+              'Tuesday',
+              'Wednesday',
+              'Thursday',
+              'Friday',
+              'Saturday'
+            ],
+            weekdaysShort: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa']
+          }
+        })
+        picker.setDate(new Date())
+
+        var picker2 = new Pikaday({
+          keyboardInput: false,
+          field: document.querySelector('.js-datepicker-2'),
+          format: 'MMM D YYYY',
+          theme: 'date-input',
+          i18n: {
+            previousMonth: 'Prev',
+            nextMonth: 'Next',
+            months: [
+              'Jan',
+              'Feb',
+              'Mar',
+              'Apr',
+              'May',
+              'Jun',
+              'Jul',
+              'Aug',
+              'Sep',
+              'Oct',
+              'Nov',
+              'Dec'
+            ],
+            weekdays: [
+              'Sunday',
+              'Monday',
+              'Tuesday',
+              'Wednesday',
+              'Thursday',
+              'Friday',
+              'Saturday'
+            ],
+            weekdaysShort: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa']
+          }
+        })
+        picker2.setDate(new Date())
+      })
+
+      function invoices() {
+        return {
+          items: [],
+          invoiceNumber: 0,
+          invoiceDate: '',
+          invoiceDueDate: '',
+
+          totalGST: 0,
+          netTotal: 0,
+
+          item: {
+            id: '',
+            name: '',
+            qty: 0,
+            rate: 0,
+            total: 0,
+            gst: 18
+          },
+
+          billing: {
+            name: '',
+            address: '',
+            extra: ''
+          },
+          from: {
+            name: '',
+            address: '',
+            extra: ''
+          },
+
+          showTooltip: false,
+          showTooltip2: false,
+          openModal: false,
+
+          addItem() {
+            this.items.push({
+              id: this.generateUUID(),
+              name: this.item.name,
+              qty: this.item.qty,
+              rate: this.item.rate,
+              gst: this.calculateGST(this.item.gst, this.item.rate),
+              total: this.item.qty * this.item.rate
+            })
+
+            this.itemTotal()
+            this.itemTotalGST()
+
+            this.item.id = ''
+            this.item.name = ''
+            this.item.qty = 0
+            this.item.rate = 0
+            this.item.gst = 18
+            this.item.total = 0
+          },
+
+          deleteItem(uuid) {
+            this.items = this.items.filter(item => uuid !== item.id)
+
+            this.itemTotal()
+            this.itemTotalGST()
+          },
+
+          itemTotal() {
+            this.netTotal = this.numberFormat(
+              this.items.length > 0
+                ? this.items.reduce((result, item) => {
+                    return result + item.total
+                  }, 0)
+                : 0
+            )
+          },
+
+          itemTotalGST() {
+            this.totalGST = this.numberFormat(
+              this.items.length > 0
+                ? this.items.reduce((result, item) => {
+                    return result + item.gst * item.qty
+                  }, 0)
+                : 0
+            )
+          },
+
+          calculateGST(GSTPercentage, itemRate) {
+            return this.numberFormat(
+              (itemRate - itemRate * (100 / (100 + GSTPercentage))).toFixed(2)
+            )
+          },
+
+          generateUUID() {
+            return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(
+              /[xy]/g,
+              function (c) {
+                var r = (Math.random() * 16) | 0,
+                  v = c == 'x' ? r : (r & 0x3) | 0x8
+                return v.toString(16)
+              }
+            )
+          },
+
+          generateInvoiceNumber(minimum, maximum) {
+            const randomNumber =
+              Math.floor(Math.random() * (maximum - minimum)) + minimum
+            this.invoiceNumber = '#INV-' + randomNumber
+          },
+
+          numberFormat(amount) {
+            return amount.toLocaleString('en-US', {
+              style: 'currency',
+              currency: 'USD'
+            })
+          },
+
+          printInvoice() {
+            var printContents = this.$refs.printTemplate.innerHTML
+            var originalContents = document.body.innerHTML
+
+            document.body.innerHTML = printContents
+            window.print()
+            document.body.innerHTML = originalContents
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,586 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Primary Meta Tags -->
+    <link rel="icon" type="image/png" href="https://i.imgur.com/WMQ1gF2.png">
+    <title></title>
+    <meta name="title" content="">
+    <meta name="description" content="Build Forms to Capture, Distribute, or Sell leads. It's that easy. Get started today.">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://admin.elev8.cards/">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="Build Forms to Capture, Distribute, or Sell leads. It's that easy. Get started today.">
+    <meta property="og:image" content="https://i.imgur.com/hzmbRnz.png">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://admin.elev8.cards/">
+    <meta property="twitter:title" content="">
+    <meta property="twitter:description" content="Build Forms to Capture, Distribute, or Sell leads. It's that easy. Get started today.">
+    <meta property="twitter:image" content="https://i.imgur.com/hzmbRnz.png">
+    <title>
+        Prospects | Elev8 Admin
+    </title>
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <!-- Nucleo Icons -->
+    <link href="../assets/css/nucleo-icons.css" rel="stylesheet">
+    <link href="../assets/css/nucleo-svg.css" rel="stylesheet">
+    <link href="../assets/css/nucleo-svg.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+    <!-- CSS Files -->
+    <link id="pagestyle" href="../assets/css/soft-ui-dashboard.css?v=1.0.6" rel="stylesheet">
+</head>
+<style>
+    .team:hover{
+    color: #52b36c;
+    cursor: pointer;
+  }
+  .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 9999; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.text-xs{
+  margin-bottom: 1rem !important;
+}
+.dropzone{
+  width: 50%;
+  height: 120px !important;
+}
+button{
+width:90%;
+opacity:0.7
+}
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 10;
+  top: 10;
+  left: -105;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+transform: rotate(180deg);
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: -100;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+  display: none;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+.popup-item:hover{
+background-color: #5E6973 !important;
+color: white !important;
+}
+.popup-item{
+  margin-bottom: 0px !important;
+}
+.import{
+    height: 50px;
+    width: 100px;
+    border-radius: 30px;
+    background-color: white;
+    border: none;
+    color: green;
+    border: 2px solid green;
+        position: absolute;
+    left: 61%;
+    top: 25px;
+
+}
+.import:hover{
+    height: 50px;
+    width: 100px;
+    border-radius: 30px;
+    background-color: green;
+    border: none;
+    color: white;
+    border: 2px solid green;
+        position: absolute;
+    left: 61%;
+    top: 25px;
+
+}
+.export{
+    height: 50px;
+    width: 100px;
+    border-radius: 30px;
+    background-color: white;
+    border: none;
+    color: green;
+    border: 2px solid green;
+        position: absolute;
+    left: 70%;
+    top: 25px;
+
+}
+.export:hover{
+    height: 50px;
+    width: 100px;
+    border-radius: 30px;
+    background-color: green;
+    border: none;
+    color: white;
+    border: 2px solid green;
+        position: absolute;
+    left: 70%;
+    top: 25px;
+
+}
+.pill{
+    height: 50px;
+    width: 100px;
+    border-radius: 30px;
+    background-color: white;
+    border: none;
+    color: green;
+    border: 2px solid green;
+        position: absolute;
+    left: 70%;
+    top: 25px;
+
+}
+.pill:hover{
+    height: 50px;
+    width: 100px;
+    border-radius: 30px;
+    background-color: green;
+    border: none;
+    color: white;
+    border: 2px solid green;
+        position: absolute;
+    left: 70%;
+    top: 25px;
+
+}
+.formsSelect{
+      height: 50px;
+    width: 120px;
+    background-color: white;
+    border: none;
+    color: green;
+
+        position: absolute;
+    left: 50%;
+    top: 25px;
+    padding-left: 10px;
+    padding-right: 5px;
+
+}
+.formsSelect:hover{
+    height: 50px;
+    width: 120px;
+    background-color: green;
+    border: none;
+    color: white;
+        position: absolute;
+    left: 50%;
+    top: 25px;
+    padding-left: 10px;
+    padding-right: 5px;
+
+}
+</style>
+
+<body class="g-sidenav-show  bg-gray-100">
+    <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3 bg-white" id="sidenav-main" data-color="success">
+        <div class="sidenav-header">
+            <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
+            <a class="navbar-brand m-0" href=" ./dashboard.html ">
+                <center><img src="https://i.imgur.com/GbattxA.png" class="navbar-brand-img h-100" alt="main_logo" style="
+    height: 130px!important;
+    width: 150px !important;
+"></center>
+            </a>
+            <center><select id="user" onchange="if(this.value = 'dumb'){signOut()}" style="border:none">
+                </select></center>
+        </div><br><br>
+        <hr class="horizontal dark mt-0">
+        <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link  " href="../pages/dashboard.html">
+                        <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
+                            <svg width="12px" height="12px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <title>office</title>
+                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g transform="translate(-1869.000000, -293.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                                        <g transform="translate(1716.000000, 291.000000)">
+                                            <g id="office" transform="translate(153.000000, 2.000000)">
+                                                <path class="color-background opacity-6" d="M12.25,17.5 L8.75,17.5 L8.75,1.75 C8.75,0.78225 9.53225,0 10.5,0 L31.5,0 C32.46775,0 33.25,0.78225 33.25,1.75 L33.25,12.25 L29.75,12.25 L29.75,3.5 L12.25,3.5 L12.25,17.5 Z"></path>
+                                                <path class="color-background" d="M40.25,14 L24.5,14 C23.53225,14 22.75,14.78225 22.75,15.75 L22.75,38.5 L19.25,38.5 L19.25,22.75 C19.25,21.78225 18.46775,21 17.5,21 L1.75,21 C0.78225,21 0,21.78225 0,22.75 L0,40.25 C0,41.21775 0.78225,42 1.75,42 L40.25,42 C41.21775,42 42,41.21775 42,40.25 L42,15.75 C42,14.78225 41.21775,14 40.25,14 Z M12.25,36.75 L7,36.75 L7,33.25 L12.25,33.25 L12.25,36.75 Z M12.25,29.75 L7,29.75 L7,26.25 L12.25,26.25 L12.25,29.75 Z M35,36.75 L29.75,36.75 L29.75,33.25 L35,33.25 L35,36.75 Z M35,29.75 L29.75,29.75 L29.75,26.25 L35,26.25 L35,29.75 Z M35,22.75 L29.75,22.75 L29.75,19.25 L35,19.25 L35,22.75 Z"></path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <span class="nav-link-text ms-1">Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="./form.html">
+                        <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64">
+                                <g transform="translate(0, 0)">
+                                    <path d="M38,21V2H9A2,2,0,0,0,7,4V60a2,2,0,0,0,2,2H55a2,2,0,0,0,2-2V21ZM19,18h9a1,1,0,0,1,0,2H19a1,1,0,0,1,0-2ZM45,50H19a1,1,0,0,1,0-2H45a1,1,0,0,1,0,2Zm0-10H19a1,1,0,0,1,0-2H45a1,1,0,0,1,0,2Zm0-10H19a1,1,0,0,1,0-2H45a1,1,0,0,1,0,2Z" fill="#444444"></path>
+                                    <polygon data-color="color-2" points="40 2.586 40 19 56.414 19 40 2.586" fill="#444444"></polygon>
+                                </g>
+                            </svg>
+                        </div>
+                        <span class="nav-link-text ms-1">Forms</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./leads.html">
+                        <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64">
+                                <g transform="translate(0, 0)">
+                                    <path d="M38,37H26A19.021,19.021,0,0,0,7,56a1,1,0,0,0,.594.914C7.97,57.081,16.961,61,32,61s24.03-3.919,24.406-4.086A1,1,0,0,0,57,56,19.021,19.021,0,0,0,38,37Z" fill="#444444"></path>
+                                    <path data-color="color-2" d="M32,32c8.013,0,14-8.412,14-15.933a14,14,0,1,0-28,0C18,23.588,23.987,32,32,32Z" fill="#444444"></path>
+                                </g>
+                            </svg>
+                        </div>
+                        <span class="nav-link-text ms-1">Leads</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  " href="./teams.html">
+                        <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48">
+                                <g transform="translate(0, 0)">
+                                    <circle cx="10" cy="10" r="5" fill="#444444"></circle>
+                                    <path d="M40,17c-4.813,0-7.195,2.958-9.3,5.568-1.5,1.866-2.929,3.625-5.226,4.487.042.075.1.141.132.218a3.97,3.97,0,0,1,.163,3.058,3.911,3.911,0,0,1-.266.593A1.959,1.959,0,0,0,26,31a1.985,1.985,0,0,0,.665-.115A14.317,14.317,0,0,0,33,26.077V42a1,1,0,0,0,1,1H46a1,1,0,0,0,1-1V24A7.009,7.009,0,0,0,40,17Z" fill="#444444" data-color="color-2"></path>
+                                    <path d="M22.665,27.114c-2.384-.841-3.833-2.64-5.367-4.546C15.2,19.958,12.813,17,8,17a7.009,7.009,0,0,0-7,7V42a1,1,0,0,0,1,1H14a1,1,0,0,0,1-1V26.077a14.317,14.317,0,0,0,6.335,4.809,2,2,0,0,0,1.33-3.772Z" fill="#444444"></path>
+                                    <circle cx="38" cy="10" r="5" fill="#444444" data-color="color-2"></circle>
+                                </g>
+                            </svg>
+                        </div>
+                        <span class="nav-link-text ms-1">Teams</span>
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link  active" href="./prospects.html">
+                        <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16"><g transform="translate(0, 0)"><path data-color="color-2" d="M14,1H2A2,2,0,0,0,0,3v.4L8,7.9l8-4.4V3A2,2,0,0,0,14,1Z" fill="#ffffff"></path><path d="M7.5,9.9,0,5.7V13a2,2,0,0,0,2,2H14a2,2,0,0,0,2-2V5.7L8.5,9.9A1.243,1.243,0,0,1,7.5,9.9Z" fill="#ffffff"></path></g></svg>
+                        </div>
+                        <span class="nav-link-text ms-1">Customers</span>
+                    </a>
+                </li>
+                <li class="nav-item ">
+                                  <span class="badge">Coming Soon!</span>
+                    <a class="nav-link disabled1" href="">
+                        <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48"><g transform="translate(0, 0)"><path d="M15,15H3V40a5,5,0,0,0,5,5h7Z" fill="#444444"></path><path d="M17,15V45H40a5,5,0,0,0,5-5V15Z" fill="#444444"></path><path data-color="color-2" d="M40,3H8A5,5,0,0,0,3,8v5H45V8A5,5,0,0,0,40,3ZM9,10a2,2,0,1,1,2-2A2,2,0,0,1,9,10Zm7,0a2,2,0,1,1,2-2A2,2,0,0,1,16,10Z" fill="#444444"></path></g></svg>
+                        </div>
+                        <span class="nav-link-text ms-1">Landing Pages</span>
+                    </a>
+                </li>
+                <li class="nav-item ">
+                  <span class="badge">Coming Soon!</span>
+                    <a class="nav-link  disabled1" href="">
+                        <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
+                           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" stroke-width="2"><g stroke-width="2" transform="translate(0, 0)"><line data-cap="butt" data-color="color-2" x1="59" y1="5" x2="28" y2="36" fill="none" stroke="#444444" stroke-miterlimit="10" stroke-width="2" stroke-linecap="butt" stroke-linejoin="miter"></line><polygon points="59 5 40 59 28 36 5 24 59 5" fill="none" stroke="#444444" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="miter"></polygon></g></svg>
+                        </div>
+                        <span class="nav-link-text ms-1">Email Templates</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                </li>
+                <li class="nav-item mt-3">
+                </li>
+                <li class="nav-item">
+                </li>
+                <li class="nav-item">
+                </li>
+                <li class="nav-item">
+                </li>
+            </ul>
+        </div>
+        <!--<div class="sidenav-footer mx-3 ">
+            <div class="card card-background shadow-none card-background-mask-success" id="sidenavCard">
+                <div class="full-background" style="background-image: url('../assets/img/curved-images/white-curved.jpg')"></div>
+                <div class="card-body text-start p-3 w-100">
+                    <div class="icon icon-shape icon-sm bg-white shadow text-center mb-3 d-flex align-items-center justify-content-center border-radius-md">
+                        <i class="ni ni-diamond text-gradient text-lg top-0 text-success" aria-hidden="true" id="sidenavCardIcon"></i>
+                    </div>
+                    <div class="docs-info">
+                        <h6 class="text-white up mb-0">Want $20?</h6>
+                        <p class="text-xs font-weight-bold">Refer someone today!</p>
+                        <a class="btn btn-white btn-sm w-100 mb-0" id="referOpenBtn">Make $20</a>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+    </aside>
+    <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
+        <!-- Navbar -->
+        <!-- End Navbar -->
+        <div class="container-fluid py-4" style="position:fixed;padding-top:15px !important">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card mb-4">
+                        <div class="card-body px-0 pt-0 pb-2" style="height:600px !important; max-height: 650px !important;width:90% !important;overflow-y: hidden;">
+                            <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl" id="navbarBlur" navbar-scroll="true">
+                                <div class="container-fluid py-1 px-3">
+                                    <nav aria-label="breadcrumb">
+                                        <h3 style="margin-top: 15px;margin-left:-20px">Prospects</h3>
+                                    </nav>
+                                    <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
+                                        <div class="ms-md-auto pe-md-3 d-flex align-items-center">
+                                        </div>
+                                        <ul class="navbar-nav  justify-content-end">
+                                            <li class="nav-item d-flex align-items-center">
+                                            </li>
+                                            <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
+                                                <a href="javascript:;" class="nav-link text-body p-0" id="iconNavbarSidenav" style="position: absolute;right:-20%;z-index: 1000000;">
+                                                    <div class="sidenav-toggler-inner">
+                                                        <i class="sidenav-toggler-line"></i>
+                                                        <i class="sidenav-toggler-line"></i>
+                                                        <i class="sidenav-toggler-line"></i>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                            <select class="formsSelect" style="width:auto"onchange="if(this.value == 'download'){downloadProspects()}else if(this.value =='delete'){clearAllProspects()}" >
+                                <option>Choose an Action</option>
+                                <option value = "download">Download CSV</option>
+                                <option style="color:red" value = "delete">Delete All Leads</option>
+                            </select>
+                            <div class="card-body px-0 pt-0 pb-2"><br>
+                                <div class="table-responsive p-0" style="height:90%;margin:25px">
+                                    <table class="table align-items-center justify-content-center mb-0">
+                                        <thead>
+                                            <tr id="headers">
+                                                <th>Email</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="leads">
+                                        </tbody>
+
+                                    </table>
+                                    <br>
+                                    <br>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="fixed-plugin">
+        <div class="card shadow-lg ">
+            <div class="card-header pb-0 pt-3 ">
+                <div class="float-start">
+                    <h5 class="mt-3 mb-0">Soft UI Configurator</h5>
+                    <p>See our dashboard options.</p>
+                </div>
+                <div class="float-end mt-4">
+                    <button class="btn btn-link text-dark p-0 fixed-plugin-close-button">
+                        <i class="fa fa-close" aria-hidden="true"></i>
+                    </button>
+                </div>
+                <!-- End Toggle Button -->
+            </div>
+            <hr class="horizontal dark my-1">
+            <div class="card-body pt-sm-3 pt-0">
+                <!-- Sidebar Backgrounds -->
+                <div>
+                    <h6 class="mb-0">Sidebar Colors</h6>
+                </div>
+                <a href="javascript:void(0)" class="switch-trigger background-color">
+                    <div class="badge-colors my-2 text-start">
+                        <span class="badge filter bg-gradient-primary" data-color="primary" onclick="sidebarColor(this)"></span>
+                        <span class="badge filter bg-gradient-dark" data-color="dark" onclick="sidebarColor(this)"></span>
+                        <span class="badge filter bg-gradient-info" data-color="info" onclick="sidebarColor(this)"></span>
+                        <span class="badge filter bg-gradient-success active" data-color="success" onclick="sidebarColor(this)"></span>
+                        <span class="badge filter bg-gradient-warning" data-color="warning" onclick="sidebarColor(this)"></span>
+                        <span class="badge filter bg-gradient-danger" data-color="danger" onclick="sidebarColor(this)"></span>
+                    </div>
+                </a>
+                <!-- Sidenav Type -->
+                <div class="mt-3">
+                    <h6 class="mb-0">Sidenav Type</h6>
+                    <p class="text-sm">Choose between 2 different sidenav types.</p>
+                </div>
+                <div class="d-flex">
+                    <button class="btn bg-gradient-primary w-100 px-3 mb-2" data-class="bg-transparent" onclick="sidebarType(this)">Transparent</button>
+                    <button class="btn bg-gradient-primary w-100 px-3 mb-2 ms-2 active" data-class="bg-white" onclick="sidebarType(this)">White</button>
+                </div>
+                <p class="text-sm d-xl-none d-block mt-2">You can change the sidenav type just on desktop view.</p>
+                <!-- Navbar Fixed -->
+                <div class="mt-3">
+                    <h6 class="mb-0">Navbar Fixed</h6>
+                </div>
+                <div class="form-check form-switch ps-0">
+                    <input class="form-check-input mt-1 ms-auto" type="checkbox" id="navbarFixed" onclick="navbarFixed(this)" checked="true">
+                </div>
+                <hr class="horizontal dark my-sm-4">
+                <a class="btn bg-gradient-dark w-100" href="https://www.creative-tim.com/product/soft-ui-dashboard">Free Download</a>
+                <a class="btn btn-outline-dark w-100" href="https://www.creative-tim.com/learning-lab/bootstrap/license/soft-ui-dashboard">View documentation</a>
+                <div class="w-100 text-center">
+                    <span></span>
+                    <h6 class="mt-3">Thank you for sharing!</h6>
+                    <a href="https://twitter.com/intent/tweet?text=Check%20Soft%20UI%20Dashboard%20made%20by%20%40CreativeTim%20%23webdesign%20%23dashboard%20%23bootstrap5&amp;url=https%3A%2F%2Fwww.creative-tim.com%2Fproduct%2Fsoft-ui-dashboard" class="btn btn-dark mb-0 me-2" target="_blank">
+                        <i class="fab fa-twitter me-1" aria-hidden="true"></i> Tweet
+                    </a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.creative-tim.com/product/soft-ui-dashboard" class="btn btn-dark mb-0 me-2" target="_blank">
+                        <i class="fab fa-facebook-square me-1" aria-hidden="true"></i> Share
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- The Modal -->
+    <div id="teamsModal" class="modal" style="overflow-y: scroll;">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close" onclick="document.getElementById('teamsModal').style.display = 'none';">&times;</span>
+            <center>
+                <h3>Assign Lead to Team:</h3>
+            </center><br>
+            <br>
+            <center>
+                <ul id="teamList" style="list-style: none;margin-right: 30px;"></ul>
+            </center>
+        </div>
+    </div>
+    <!--   Core JS Files   -->
+    <script src="../assets/js/core/popper.min.js"></script>
+    <script src="../assets/js/core/bootstrap.min.js"></script>
+    <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script type="text/javascript" src="../assets/js/firebase.js"></script>
+    <script>
+    var win = navigator.platform.indexOf('Win') > -1;
+    if (win && document.querySelector('#sidenav-scrollbar')) {
+        var options = {
+            damping: '0.5'
+        }
+        Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+    }
+    </script>
+    <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+
+    span.onclick = function() {
+        document.getElementById('teamsModal').style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
+    <!-- Github buttons -->
+    <script async="" defer="" src="https://buttons.github.io/buttons.js"></script>
+    <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
+    <script src="../assets/js/soft-ui-dashboard.min.js?v=1.0.6"></script>
+    <script>
+    getUser()
+    getProspects()
+    </script>
+
+
+</body>

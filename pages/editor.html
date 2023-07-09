@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="./Elev8 Admin.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- Basic Page Needs
+  ================================================== -->
+    <title>Form Builder - Elev8 Admin</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!-- Mobile Specific Metas
+  ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS
+  ================================================== -->
+    <link rel="stylesheet" href="https://givingmortgages.co.uk/assets/css/site.css">
+    <!-- Favicons
+  ================================================== -->
+    <link href="../assets/css/nucleo-icons.css" rel="stylesheet">
+    <link href="../assets/css/nucleo-svg.css" rel="stylesheet">
+    <link href="../assets/css/nucleo-svg.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://i.imgur.com/WMQ1gF2.png">
+    <link rel="shortcut icon" href="https://i.imgur.com/WMQ1gF2.png">
+    <link rel="apple-touch-icon" href="https://i.imgur.com/WMQ1gF2.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <!-- Tracking
+    ================================================== -->
+</head>
+<style>
+    @media (max-width: 991.98px) {
+        #closeSpan{
+            display: block !important;
+        }
+        #elements{
+            max-width:70% !important;
+            min-width: 90% !important;
+
+            width: 70% !important;
+        }
+
+    
+}
+    </style>
+
+<body id="reset" style="max-width:100%">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WLPLN35" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <span class="viewport" style="display: none;"></span>
+    <section class="padding-none">
+        <div class="flex-container twenty-fifty-thirty height-full">
+            <i class="fa fa-bars" id="hamburger" onclick="this.style.display = 'none';document.getElementById('elements').style.display = 'block'" aria-hidden="true" style="display: none;position: fixed;right: 30px;top: 20px;font-size: 20px;cursor:pointer;z-index: 100000000;"></i>
+            <div class="column" id="elements" style="position: fixed;right: 10px;top: 10px;background-color: #055e1d;padding-top: 10px;margin-top: 10px;border-radius: 20px;max-width:440px;min-width:440px;min-height:90%;max-height:90%;z-index: 60;padding-right: 25px;padding-left: 25px;">
+                <span style="
+                    color: white;
+                    font-size: 20px;
+                    background: gray;
+                    padding: 15px;
+                    border-radius: 30%;
+                    width: 50px;
+                    left: -20px;
+                    top: -20px;
+                    position: absolute;
+                    text-align: center;
+                    cursor: pointer;
+                    display: none;
+                " id="closeSpan" onclick="document.getElementById('elements').style.display = 'none';document.getElementById('hamburger').style.display = 'block'">X</span>
+                <a href="" target="_blank" id="preview" style="position: absolute;right:40px;top:20px">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="22px" viewBox="0 0 32 32">
+                    <g transform="translate(0, 0)">
+                        <path d="M31.376,14.2C29.239,11.433,23.463,5,16,5,8.442,5,2.717,11.438.608,14.2a2.936,2.936,0,0,0,.011,3.592C2.758,20.563,8.536,27,16,27s13.239-6.433,15.374-9.195A2.935,2.935,0,0,0,31.376,14.2ZM16,22a6,6,0,1,1,6-6A6,6,0,0,1,16,22Z" fill="#ffffff"></path>
+                    </g>
+                </svg>
+
+                <p style="color:white;font-size: 10px;">Preview</p>
+            </a>
+                <center>
+                    <div class="tab">
+                        <button class="tablinks" id="ViewTab" onclick="openCity(event, 'View')">View</button>
+                        <button class="tablinks" id="AddTab" onclick="openCity(event, 'Add')">Add</button>
+                        <button class="tablinks" onclick="openCity(event, 'Settings')">Settings</button>
+                    </div>
+                </center><br>
+                <div id="View" class="tabcontent">
+                    <div class="main-container" id="elementsContainer" style="overflow-y: scroll;height:450px">
+                    </div>
+                </div>
+                <div id="Add" class="tabcontent">
+                    <section style="padding:0px">
+                        <div class="main-container" style="overflow-y: scroll;height:450px">
+                            <ul class="grid-wrapper">
+                                <li onclick="addElement('multiple')">
+                                    <img class="ElementIcon" src="https://i.imgur.com/NoRQVvN.png">
+                                    <p style="padding-top:10px">Multiple Choice</p>
+                                </li>
+                                <li onclick="addElement('message')">
+                                    <img class="ElementIcon" src="https://i.imgur.com/nawWhlU.png">
+                                    <p style="padding-top:10px">Message</p>
+                                </li>
+                                <li onclick="addElement('currency')">
+                                    <img class="ElementIcon" src="https://i.imgur.com/IpZf6cN.png">
+                                    <p style="padding-top:10px">Currency Input</p>
+                                </li>
+                                <li onclick="addElement('text')">
+                                    <img class="ElementIcon" src="https://i.imgur.com/cQEcfh6.png">
+                                    <p style="padding-top:10px">Text Input</p>
+                                </li>
+                                <li onclick="addElement('select')">
+                                    <img class="ElementIcon" src="https://i.imgur.com/IobbWpi.png">
+                                    <p style="padding-top:10px">Dropdown Select</p>
+                                </li>
+                                <li onclick="addElement('color')">
+                                    <img class="ElementIcon" src="https://i.imgur.com/RurzckB.png">
+                                    <p style="padding-top:10px">Color Input</p>
+                                </li>
+                                <li onclick="addElement('date')">
+                                    <img class="ElementIcon" src="https://i.imgur.com/2LLSwtb.png">
+                                    <p style="padding-top:10px">Date Input</p>
+                                </li>
+                                <li onclick="addElement('datetime-local')">
+                                    <img class="ElementIcon" src="https://i.imgur.com/KID9KfP.png">
+                                    <p style="padding-top:10px">Date and Time Input</p>
+                                </li>
+                                <li onclick="addElement('email')">
+                                    <img class="ElementIcon" src="https://i.imgur.com/3NvyRNv.png">
+                                    <p style="padding-top:10px">Email Input</p>
+                                </li>
+                                <li onclick="addElement('file')">
+                                    <img class="ElementIcon" src="https://i.imgur.com/Ttg7LMt.png">
+                                    <p style="padding-top:10px">File Upload</p>
+                                </li>
+                                <li onclick="addElement('month')">
+                                    <img class="ElementIcon" src="https://i.imgur.com/jjUSts6.png">
+                                    <p style="padding-top:10px">Month Input</p>
+                                </li>
+                                <li onclick="addElement('number')">
+                                    <img class="ElementIcon" src="https://i.imgur.com/XDfHHyl.png">
+                                    <p style="padding-top:10px">Number Input</p>
+                                </li>
+                                <li onclick="addElement('range')">
+                                    <img class="ElementIcon" src="https://i.imgur.com/GYwLpML.png">
+                                    <p style="padding-top:10px">Range Input</p>
+                                </li>
+                                <li onclick="addElement('time')">
+                                    <img class="ElementIcon" src="https://i.imgur.com/Zx8i0vG.png">
+                                    <p style="padding-top:10px">Time Input</p>
+                                </li>
+                                <li onclick="addElement('url')">
+                                    <img class="ElementIcon" src="https://i.imgur.com/miaTQyA.png">
+                                    <p style="padding-top:10px">URL Input</p>
+                                </li>
+                                <li onclick="addElement('week')">
+                                    <img class="ElementIcon" src="https://i.imgur.com/WS6oIsH.png">
+                                    <p style="padding-top:10px">Week Input</p>
+                                </li>
+                                <li onclick="addElement('textbox')">
+                                    <img class="ElementIcon" src="https://i.imgur.com/6x9OCM9.png">
+                                    <p style="padding-top:10px">Textbox Input</p>
+                                </li>
+                                <li onclick="addElement('contact')">
+                                    <img class="ElementIcon" src="https://i.imgur.com/Ej0ttSb.png">
+                                    <p style="padding-top:10px">Contact Form</p>
+                                </li>
+                                <li onclick="addElement('submit')">
+                                    <img class="ElementIcon" src="https://i.imgur.com/d7ifkyC.png">
+                                    <p style="padding-top:10px">Submit Button</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+                <div id="Settings" class="tabcontent">
+                    <br>
+                    <div class="setting">
+                        <p style="margin-bottom:5px">Logo:</p>
+                        <div>
+                            <button id="myBtn">Upload Logo</button>
+                        </div>
+                    </div><br>
+                    <div class="setting">
+                        <p style="margin-bottom:0px">Form Title:</p>
+                        <div>
+                            <input id="FormNameInput" type="text" class="settingsInput" placeholder="Form Name" oninput="updateTitle(this.value)">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="setting">
+                        <p style="margin-bottom:0px">Form Color:</p>
+                        <div style="display: inline-block;">
+                            <input id="FormColorInput" type="text" class="settingsInput colorInput" placeholder="#XXXXXX" oninput="document.getElementById('FormColorPicker').value=this.value;updateColor(this.value)">
+                            <input id="FormColorPicker" type="color" oninput="document.getElementById('FormColorInput').value=this.value;updateColor(this.value)">
+                        </div>
+                    </div>
+                    <div class="setting">
+                        <p style="margin-bottom:0px">Font Color:</p>
+                        <div style="display: inline-block;">
+                            <input id="FontColorInput" type="text" class="settingsInput colorInput" placeholder="#XXXXXX" oninput="document.getElementById('FontColorPicker').value=this.value;updateTextColor(this.value)">
+                            <input id="FontColorPicker" type="color" oninput="document.getElementById('FontColorInput').value=this.value;updateTextColor(this.value)">
+                        </div>
+                    </div>
+                    <div class="setting">
+                        <p style="margin-bottom:0px">Button Color:</p>
+                        <div style="display: inline-block;">
+                            <input id="ButtonColorInput" type="text" class="settingsInput colorInput" placeholder="#XXXXXX" oninput="document.getElementById('ButtonColorPicker').value=this.value;updateButtonColor(this.value)">
+                            <input id="ButtonColorPicker" type="color" oninput="document.getElementById('ButtonColorInput').value=this.value;updateButtonColor(this.value)">
+                        </div>
+                    </div>
+                    <br>
+                </div>
+                <button style="position: fixed;bottom:30px;left:30px;padding:10px" onclick="window.location.href = 'https://dashboard.admin.elev8.cards'">Back To Dashboard</button>
+                <script>
+                document.getElementById('ViewTab').click()
+
+                function openCity(evt, cityName) {
+                    var i, tabcontent, tablinks;
+                    tabcontent = document.getElementsByClassName("tabcontent");
+                    for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+                    }
+                    tablinks = document.getElementsByClassName("tablinks");
+                    for (i = 0; i < tablinks.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" active", "");
+                    }
+                    document.getElementById(cityName).style.display = "block";
+                    evt.currentTarget.className += " active";
+                }
+                </script>
+            </div>
+            <div class="column" id="mortgage_form">
+                <form class="main_form" action="#">
+                    <div class="stage" id="stage_1">
+                        <img id="FormImg" src="" style="width: 200px;"><br>
+                        <h2 id="FormTitle"></h2>
+                        <main id="main">
+                            <div id="Elev8 Admin"></div>
+                    </div>
+            </div>
+            </main>
+        </div>
+        </form>
+        </div>
+        </div>
+    </section>
+</body>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="dropzone">
+            <div class="info"></div>
+        </div>
+    </div>
+</div>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+    });
+}
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+<script src="Elev8 Admin.js"></script>
+<script src="editor.js"></script>
+<script type="text/javascript" src="./js/imgur.js"></script>
+<script type="text/javascript" src="./js/upload.js"></script>
+</body>
+<script>
+</script>
+
+</html>

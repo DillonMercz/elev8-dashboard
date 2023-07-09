@@ -1,0 +1,367 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Primary Meta Tags -->
+    <link rel="icon" type="image/png" href="https://i.imgur.com/WMQ1gF2.png">
+
+<title></title>
+<meta name="title" content="">
+<meta name="description" content="Build Forms to Capture, Distribute, or Sell leads. It's that easy. Get started today.">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://admin.elev8.cards/">
+<meta property="og:title" content="">
+<meta property="og:description" content="Build Forms to Capture, Distribute, or Sell leads. It's that easy. Get started today.">
+<meta property="og:image" content="https://i.imgur.com/hzmbRnz.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://admin.elev8.cards/">
+<meta property="twitter:title" content="">
+<meta property="twitter:description" content="Build Forms to Capture, Distribute, or Sell leads. It's that easy. Get started today.">
+<meta property="twitter:image" content="https://i.imgur.com/hzmbRnz.png">
+    <title>
+        Leads | Elev8 Admin
+    </title>
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <!-- Nucleo Icons -->
+    <link href="../assets/css/nucleo-icons.css" rel="stylesheet">
+    <link href="../assets/css/nucleo-svg.css" rel="stylesheet">
+    <link href="../assets/css/nucleo-svg.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+    <!-- CSS Files -->
+    <link id="pagestyle" href="../assets/css/soft-ui-dashboard.css?v=1.0.6" rel="stylesheet">
+</head>
+<style>
+    .team:hover{
+    color: #52b36c;
+    cursor: pointer;
+  }
+  .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 9999; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.text-xs{
+  margin-bottom: 1rem !important;
+}
+.dropzone{
+  width: 50%;
+  height: 120px !important;
+}
+button{
+width:90%;
+opacity:0.7
+}
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 10;
+  top: 10;
+  left: -105;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+transform: rotate(180deg);
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: -100;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+  display: none;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+.popup-item:hover{
+background-color: #5E6973 !important;
+color: white !important;
+}
+.popup-item{
+  margin-bottom: 0px !important;
+}
+.import{
+    height: 50px;
+    width: 100px;
+    border-radius: 30px;
+    background-color: white;
+    border: none;
+    color: green;
+    border: 2px solid green;
+        position: absolute;
+    left: 61%;
+    top: 25px;
+
+}
+.import:hover{
+    height: 50px;
+    width: 100px;
+    border-radius: 30px;
+    background-color: green;
+    border: none;
+    color: white;
+    border: 2px solid green;
+        position: absolute;
+    left: 61%;
+    top: 25px;
+
+}
+.export{
+    height: 50px;
+    width: 100px;
+    border-radius: 30px;
+    background-color: white;
+    border: none;
+    color: green;
+    border: 2px solid green;
+        position: absolute;
+    left: 70%;
+    top: 25px;
+
+}
+.export:hover{
+    height: 50px;
+    width: 100px;
+    border-radius: 30px;
+    background-color: green;
+    border: none;
+    color: white;
+    border: 2px solid green;
+        position: absolute;
+    left: 70%;
+    top: 25px;
+
+}
+.pill{
+    height: 50px;
+    width: 100px;
+    border-radius: 30px;
+    background-color: white;
+    border: none;
+    color: green;
+    border: 2px solid green;
+        position: absolute;
+    left: 70%;
+    top: 25px;
+
+}
+.pill:hover{
+    height: 50px;
+    width: 100px;
+    border-radius: 30px;
+    background-color: green;
+    border: none;
+    color: white;
+    border: 2px solid green;
+        position: absolute;
+    left: 70%;
+    top: 25px;
+
+}
+.formsSelect{
+      height: 50px;
+    width: 120px;
+    background-color: white;
+    border: none;
+    color: green;
+
+        position: absolute;
+    left: 50%;
+    top: 25px;
+    padding-left: 10px;
+    padding-right: 5px;
+
+}
+.formsSelect:hover{
+    height: 50px;
+    width: 120px;
+    background-color: green;
+    border: none;
+    color: white;
+        position: absolute;
+    left: 50%;
+    top: 25px;
+    padding-left: 10px;
+    padding-right: 5px;
+
+}
+</style>
+<center>
+
+    <body class="g-sidenav-show  bg-gray-100">
+        <div class="container-fluid py-4" style="position:fixed;padding-top:15px !important">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card mb-4">
+                        <div class="card-body px-0 pt-0 pb-2" style="height:600px !important; max-height: 650px !important;width:80% !important;overflow-y: hidden;">
+                            <h3 style="margin-top: 25px;margin-left:25px">Leads</h3>
+                            <button class="export">Export CSV</button>
+                            <div class="card-body px-0 pt-0 pb-2"><br>
+                                <div class="table-responsive p-0" style="height:90%;margin:25px;margin-left:30%">
+                                    <table class="table align-items-center justify-content-center mb-0">
+                                        <thead>
+                                            <tr id="headers">
+                                            </tr>
+                                        </thead>
+                                        <tbody id="leads">
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </main>
+        <!-- The Modal -->
+        <div id="teamsModal" class="modal" style="overflow-y: scroll;">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close" onclick="document.getElementById('teamsModal').style.display = 'none';">&times;</span>
+                <center>
+                    <h3>Assign Lead to Team:</h3>
+                </center><br>
+                <br>
+                <center>
+                    <ul id="teamList" style="list-style: none;margin-right: 30px;"></ul>
+                </center>
+            </div>
+        </div>
+        <!--   Core JS Files   -->
+        <script src="../assets/js/core/popper.min.js"></script>
+        <script src="../assets/js/core/bootstrap.min.js"></script>
+        <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
+            <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
+    <script src="../assets/js/soft-ui-dashboard.min.js?v=1.0.6"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+        <script type="text/javascript" src="../assets/js/firebase.js"></script>
+        <script>
+        var win = navigator.platform.indexOf('Win') > -1;
+        if (win && document.querySelector('#sidenav-scrollbar')) {
+            var options = {
+                damping: '0.5'
+            }
+            Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+        }
+        </script>
+        <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+
+        span.onclick = function() {
+            document.getElementById('teamsModal').style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        </script>
+        <!-- Github buttons -->
+        <script async="" defer="" src="https://buttons.github.io/buttons.js"></script>
+        <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
+        <script src="../assets/js/soft-ui-dashboard.min.js?v=1.0.6"></script>
+        <script>
+        function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, "\\$&");
+            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, " "));
+        }
+        var id = getParameterByName('team')
+        createTeamTable(id)
+        </script>
+    </body>
+</center>

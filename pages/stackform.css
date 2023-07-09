@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+.active{
+  margin-bottom: 0px;
+}
+.active, .collapsible:hover {
+  background-color: #555;
+
+}
+
+.content {
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+    margin-left: 15px;
+    border-radius: 0px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.grid-wrapper{
+            --auto-grid-min-size: 16rem;
+            display: grid;
+            grid-gap: 2rem;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+   font-family: 'Montserrat', sans-serif;
+
+        }
+        .grid-wrapper li{
+            background-color: #393E46;
+            color: #ffffff;
+            font-size: 15px;
+            list-style-type: none;
+            padding: 5rem 1rem;
+            text-align: center;
+            vertical-align: middle;
+            text-transform: capitalize;
+      max-height: 150px;
+      max-width: 150px;
+      border-radius: 20px;
+      cursor: pointer;
+        }
+        .main-container{
+            margin: 0 auto;
+            max-width: 1170px;
+            padding:2rem 1rem;
+        }
+        .ElementIcon{
+            font-size: 50px;
+            height: 50px;
+            width: 50px;
+            position: absolute !important;
+            top: 30px;
+            left: 50px;
+
+        }
+.title {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.title h1 {
+    color: #000;
+    text-decoration: underline;
+}
+
+.title h1:hover {
+    color: #3588DE;
+}
+
+.dropzone {
+    border: 4px dashed #ccc;
+    height: 200px;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 50%;
+}
+
+.info {
+    margin-top: 11%;
+}
+
+.dropzone p {
+    /*height: 100%;*/
+    /*line-height: 200px;*/
+    margin: 0%;
+    text-align: center;
+    width: 100%
+}
+
+.FileInput {
+    height: 100%;
+    left: 0;
+    outline: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+
+.status {
+    border-radius: 5px;
+    text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image-url {
+    width: 50%;
+}
+
+.dropzone.dropzone-dragging {
+    border-color: #000
+}
+
+.loading-modal {
+    background-color: rgba(255, 255, 255, .8);
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%
+}
+
+.loading-table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+    margin-bottom: 15%;
+}
+
+.img {
+    width: 100%;
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.slidecontainer {
+  width: 100%;
+}
+.content{
+    background-color: #38B6FF!important;
+    border-radius: 15px;
+    max-width: 90%;
+  }
+  .h6{
+    color: white !important;
+  }
+.help{
+    color: white;
+}
+.slider {
+  -webkit-appearance: none;
+  width: 90%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #04AA6D;
+  cursor: pointer;
+}
+form{
+ display: block;
+float: left;
+width: 100%;
+padding: 0px 0 0px 0;
+}
+.content{
+background: #F3F6F9 !important;
+border-radius: 15px;
+max-width: 90%;
+}
+.step{
+zoom: -50%;
+margin-left: 10px;
+margin-right: 10px;
+}
+form div.field-icon:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: transparent !important;
+    padding: 0 10px 0 20px;
+    height: 0;
+    content: '\f154';
+    font: var(--fa-font-solid);
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    line-height: 60px;
+    font-size: 16px;
+    z-index: 6;
+    -webkit-border-top-left-radius: 15px;
+    -webkit-border-bottom-left-radius: 15px;
+    -moz-border-radius-topleft: 15px;
+    -moz-border-radius-bottomleft: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+/* Style the tab */
+.tab {
+  overflow: hidden;
+color: white;
+
+
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  color: white;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  border-bottom: 3px solid white;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  background-color: white;
+  border-radius: 10px;
+  height: 80% !important;
+}
+.settingsInput{
+    height: 50px;
+    padding: 10px;
+    width: 100%;
+    font-size: 20px;
+}
+.setting{
+    width: 90%;
+    min-height: 90%;
+}
+.colorInput{
+    width: 70%;
+}
+.elementSettingsInput{
+    height: 30px;
+    padding: 10px;
+    width: 100%;
+    font-size: 15px;
+}
+textarea {
+  resize: none;
+}
+textarea.ta10em {
+  height: 10em;
+}
+.textarea{
+    padding: 15px;
+}
+.deleteBtn{
+    color: #fff!important;
+    background-color: #f44336!important;
+    position: absolute;
+    margin-top: 8px;
+    right: 30px;
+}

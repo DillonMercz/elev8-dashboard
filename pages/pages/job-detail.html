@@ -1,0 +1,2395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, minimal-ui, viewport-fit=cover">
+    <meta name="theme-color" content="#2196f3">
+    <meta name="author" content="DillonMerx" />
+    <meta name="keywords" content="" />
+    <meta name="robots" content="" />
+    <meta name="description" content="Elev8 Home Services" />
+    <meta property="og:title" content="Elev8 Home Services" />
+    <meta property="og:description" content="Elev8 Home Services" />
+    <meta property="og:image" content="https://jobie.DillonMerx.com/mobile-app/xhtml/social-image.png" />
+    <meta name="format-detection" content="telephone=no">
+    <!-- Favicons Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
+    <!-- Title -->
+    <title>Elev8 - Category Details</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        @import 'https://fonts.googleapis.com/css?family=Ubuntu';
+ @keyframes fade {
+	 from {
+		 opacity: 0;
+	}
+	 to {
+		 opacity: 1;
+	}
+}
+ .wrapper {
+	 width: 100%;
+	 margin: 0 auto;
+}
+/* Makes the checkbox hack work for Android 4.1.2 */
+ @-webkit-keyframes checkbox-hack-bugfix {
+	 from {
+		 padding: 0;
+	}
+	 to {
+		 padding: 0;
+	}
+}
+
+ input[type="checkbox"], input[type="radio"] {
+	 -webkit-touch-callout: none;
+	 -webkit-user-select: none;
+	 -khtml-user-select: none;
+	 -moz-user-select: none;
+	 -ms-user-select: none;
+	 user-select: none;
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 width: 0;
+	 height: 0;
+	 clip: rect(0, 0, 0, 0);
+	 visibility: hidden;
+	 opacity: 0;
+	 transform: matrix3d(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+	 z-index: -1;
+}
+ input[type="checkbox"][id="test1"]:checked ~ .tabs .tab label[for="test1"], input[type="radio"][id="test1"]:checked ~ .tabs .tab label[for="test1"] {
+	 color: #f0b53b;
+	 cursor: default;
+}
+ input[type="checkbox"][id="test1"]:checked ~ .tabs .tab label[for="test1"]::after, input[type="radio"][id="test1"]:checked ~ .tabs .tab label[for="test1"]::after {
+	 opacity: 1;
+}
+ input[type="checkbox"][id="test1"]:checked ~ .panels #panel1, input[type="radio"][id="test1"]:checked ~ .panels #panel1 {
+	 display: block;
+}
+ input[type="checkbox"][id="test2"]:checked ~ .tabs .tab label[for="test2"], input[type="radio"][id="test2"]:checked ~ .tabs .tab label[for="test2"] {
+	 color: #f0b53b;
+	 cursor: default;
+}
+ input[type="checkbox"][id="test2"]:checked ~ .tabs .tab label[for="test2"]::after, input[type="radio"][id="test2"]:checked ~ .tabs .tab label[for="test2"]::after {
+	 opacity: 1;
+}
+ input[type="checkbox"][id="test2"]:checked ~ .panels #panel2, input[type="radio"][id="test2"]:checked ~ .panels #panel2 {
+	 display: block;
+}
+ input[type="checkbox"][id="test3"]:checked ~ .tabs .tab label[for="test3"], input[type="radio"][id="test3"]:checked ~ .tabs .tab label[for="test3"] {
+	 color: #f0b53b;
+	 cursor: default;
+}
+ input[type="checkbox"][id="test3"]:checked ~ .tabs .tab label[for="test3"]::after, input[type="radio"][id="test3"]:checked ~ .tabs .tab label[for="test3"]::after {
+	 opacity: 1;
+}
+ input[type="checkbox"][id="test3"]:checked ~ .panels #panel3, input[type="radio"][id="test3"]:checked ~ .panels #panel3 {
+	 display: block;
+}
+ input[type="checkbox"][id="test4"]:checked ~ .tabs .tab label[for="test4"], input[type="radio"][id="test4"]:checked ~ .tabs .tab label[for="test4"] {
+	 color: #f0b53b;
+	 cursor: default;
+}
+ input[type="checkbox"][id="test4"]:checked ~ .tabs .tab label[for="test4"]::after, input[type="radio"][id="test4"]:checked ~ .tabs .tab label[for="test4"]::after {
+	 opacity: 1;
+}
+ input[type="checkbox"][id="test4"]:checked ~ .panels #panel4, input[type="radio"][id="test4"]:checked ~ .panels #panel4 {
+	 display: block;
+}
+ .tabs-panel .tabs {
+	 display: flex;
+}
+ .tabs-panel .tabs .tab {
+	 -webkit-box-flex: 1;
+	 -webkit-flex: 1;
+	 -ms-flex: 1;
+	 flex: 1;
+	 flex-basis: auto;
+	 flex-grow: 1;
+	/* We need to define flex-grow here aside from flex for IE10 because it defaults to something else. */
+	 position: relative;
+	 width: 60%;
+	 margin-top: 2.5rem;
+	 margin-right: 0;
+	 text-align: center;
+	 color: #707a89;
+	 background-color: transparent;
+	 cursor: pointer;
+	 transition: background-color 0.3s, color 0.3s ease;
+}
+ .tabs-panel .tabs .tab label {
+	 -webkit-touch-callout: none;
+	 -webkit-user-select: none;
+	 -khtml-user-select: none;
+	 -moz-user-select: none;
+	 -ms-user-select: none;
+	 user-select: none;
+	 display: block;
+	 height: 100%;
+	 padding: 0 0.75rem;
+	 border: none;
+	 cursor: pointer;
+}
+ .tabs-panel .tabs .tab label .content .icon {
+	 margin-bottom: 1rem;
+	 font-size: 1.375rem;
+	 text-align: center;
+}
+ .tabs-panel .tabs .tab label .content .text {
+	 margin-bottom: 1.563rem;
+	 font-family: 'Ubuntu', 'Myriad Pro', sans-serif;
+	 font-size: 0.875rem;
+}
+ .tabs-panel .tabs .tab label::after {
+	 content: "";
+	 position: absolute;
+	 bottom: -0.188rem;
+	 left: 0;
+	 display: block;
+	 width: 100%;
+	 height: 3px;
+	 opacity: 0;
+	 background-color: #f0b53b;
+	 transition: opacity 0.3s ease-in-out;
+}
+ .tabs-panel .tabs .tab:hover {
+	 color: #f0b53b;
+}
+ .tabs-panel .separator {
+	 width: 100%;
+	 height: 3px;
+	 margin-bottom: 2.5rem;
+	 background-color: #363e4e;
+}
+ .tabs-panel .panels {
+	 border: none;
+}
+ .tabs-panel .panels .tab-panel {
+	 display: none;
+	 border: none;
+}
+ .tabs-panel .panels .tab-panel .content {
+	 font-family: 'Ubuntu', 'Myriad Pro', sans-serif;
+	 color: #707a89;
+	 animation: fade 0.3s linear;
+}
+.active{
+	background-color: var(--primary);
+	color:white !important;
+}
+ 
+.reviews-container {
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 0.3);
+	padding: 20px;
+}
+
+.review {
+	border: 1px solid transparent;
+	border-radius: 5px;
+	color: #777;
+	display: flex;
+	font-size: 12px;
+	align-items: center;
+	padding: 10px;
+	margin: 5px 0;
+	width:30%;
+}
+
+.review:hover {
+	border: 1px solid #ddd;
+	box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 0.7);
+}
+
+.progress {
+	background-color: rgba(100, 100, 100, 0.2);
+	border-radius: 5px;
+	position: relative;
+	margin: 0 10px;
+	height: 10px;
+	width: 200px;
+}
+
+.progress-done {
+	background: linear-gradient(to left, rgb(242, 112, 156), rgb(255, 148, 114));
+	box-shadow: 0 3px 3px -5px rgb(242, 112, 156), 0 2px 5px rgb(242, 112, 156);
+	border-radius: 5px;
+	height: 10px;
+	width: 0;
+	transition: width 1s ease 0.3s;
+}
+
+.percent {
+	color: #333;
+}
+
+/* SOCIAL PANEL CSS */
+.social-panel-container {
+	position: fixed;
+	right: 0;
+	bottom: 80px;
+	transform: translateX(100%);
+	transition: transform 0.4s ease-in-out;
+}
+
+.social-panel-container.visible {
+	transform: translateX(-10px);
+}
+
+.social-panel {	
+	background-color: #fff;
+	border-radius: 16px;
+	box-shadow: 0 16px 31px -17px rgba(0,31,97,0.6);
+	border: 5px solid #001F61;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Muli';
+	position: relative;
+	height: 169px;	
+	width: 370px;
+	max-width: calc(100% - 10px);
+}
+
+.social-panel button.close-btn {
+	border: 0;
+	color: #97A5CE;
+	cursor: pointer;
+	font-size: 20px;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+
+.social-panel button.close-btn:focus {
+	outline: none;
+}
+
+.social-panel p {
+	background-color: #001F61;
+	border-radius: 0 0 10px 10px;
+	color: #fff;
+	font-size: 14px;
+	line-height: 18px;
+	padding: 2px 17px 6px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin: 0;
+	transform: translateX(-50%);
+	text-align: center;
+	width: 235px;
+}
+
+.social-panel p i {
+	margin: 0 5px;
+}
+
+.social-panel p a {
+	color: #FF7500;
+	text-decoration: none;
+}
+
+.social-panel h4 {
+	margin: 20px 0;
+	color: #97A5CE;	
+	font-family: 'Muli';	
+	font-size: 14px;	
+	line-height: 18px;
+	text-transform: uppercase;
+}
+
+.social-panel ul {
+	display: flex;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.social-panel ul li {
+	margin: 0 10px;
+}
+
+.social-panel ul li a {
+	border: 1px solid #DCE1F2;
+	border-radius: 50%;
+	color: #001F61;
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	width: 50px;
+	text-decoration: none;
+}
+
+.social-panel ul li a:hover {
+	border-color: #FF6A00;
+	box-shadow: 0 9px 12px -9px #FF6A00;
+}
+
+.floating-btn {
+	border-radius: 26.5px;
+	background-color: #001F61;
+	border: 1px solid #001F61;
+	box-shadow: 0 16px 22px -17px #03153B;
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+	line-height: 20px;
+	padding: 12px 20px;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 999;
+}
+
+.floating-btn:hover {
+	background-color: #ffffff;
+	color: #001F61;
+}
+
+.floating-btn:focus {
+	outline: none;
+}
+
+.floating-text {
+	background-color: #001F61;
+	border-radius: 10px 10px 0 0;
+	color: #fff;
+	font-family: 'Muli';
+	padding: 7px 15px;
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	z-index: 998;
+}
+
+.floating-text a {
+	color: #FF7500;
+	text-decoration: none;
+}
+
+@media screen and (max-width: 480px) {
+
+	.social-panel-container.visible {
+		transform: translateX(0px);
+	}
+	
+	.floating-btn {
+		right: 10px;
+	}
+}
+</style>
+</head>
+
+<body class="bg-white" data-theme-color="color-yellow">
+    <div class="page-wraper">
+        <!-- Preloader -->
+        <div id="preloader" style="display: none;">
+            <div class="spinner"></div>
+        </div>
+        <!-- Preloader end-->
+        <!-- Header -->
+        <header class="header">
+            <div class="main-bar sticky-header">
+                <div class="container">
+                    <div class="header-content">
+                        <div class="left-content">
+                            <a href="javascript:void(0);" class="back-btn">
+                                <svg width="18" height="18" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.03033 0.46967C9.2966 0.735936 9.3208 1.1526 9.10295 1.44621L9.03033 1.53033L2.561 8L9.03033 14.4697C9.2966 14.7359 9.3208 15.1526 9.10295 15.4462L9.03033 15.5303C8.76406 15.7966 8.3474 15.8208 8.05379 15.6029L7.96967 15.5303L0.96967 8.53033C0.703403 8.26406 0.679197 7.8474 0.897052 7.55379L0.96967 7.46967L7.96967 0.46967C8.26256 0.176777 8.73744 0.176777 9.03033 0.46967Z" fill="#a19fa8"></path>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="mid-content">
+                            <h5 class="mb-0">Category Details</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header End -->
+        <!-- Page Content -->
+        <div class="page-content bottom-content">
+            <div class="content-body">
+                <div class="container">
+                    <div class="border-bottom">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <span class="d-block mb-2">Category:</span>
+                                <h5 class="title" id="category"></h5>
+                            </div>
+                            <div class="ms-3"></div>
+                        </div>
+                        <div class="swiper-btn-center-lr">
+                            <span class="d-block mb-2" style="
+      margin-top: 25px;
+      margin-bottom: 0px !important;
+    ">Subcategories:</span>
+                            <div class="swiper-container tag-group my-4 team-swiper-4 swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events">
+                                <div class="swiper-wrapper" id="swiper-wrapper-714760010fb1034ea4" aria-live="polite" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
+
+                                </div>
+                                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-bottom">
+                        <div class="d-flex align-items-center my-4">
+                            <div class="icon-box">
+                                <svg class="text-primary" width="25" height="25" viewBox="0 0 31 31" fill="none">
+                                    <path d="M10.9793 29.7084C12.5295 29.7176 14.0662 29.4191 15.5002 28.83C16.9326 29.4241 18.4703 29.7228 20.021 29.7084C24.7291 29.7084 28.4168 27.1961 28.4168 23.9876V18.6375C28.4168 15.429 24.7291 12.9167 20.021 12.9167C19.8027 12.9167 19.5883 12.927 19.3752 12.9386V6.88845C19.3752 3.74583 15.6875 1.29166 10.9793 1.29166C6.2712 1.29166 2.5835 3.74583 2.5835 6.88845V24.1116C2.5835 27.2542 6.2712 29.7084 10.9793 29.7084ZM25.8335 23.9876C25.8335 25.4717 23.4465 27.125 20.021 27.125C16.5955 27.125 14.2085 25.4717 14.2085 23.9876V22.7928C15.9577 23.8566 17.9741 24.3993 20.021 24.357C22.0679 24.3993 24.0843 23.8566 25.8335 22.7928V23.9876ZM20.021 15.5C23.4465 15.5 25.8335 17.1533 25.8335 18.6375C25.8335 20.1216 23.4465 21.7736 20.021 21.7736C16.5955 21.7736 14.2085 20.1203 14.2085 18.6375C14.2085 17.1546 16.5955 15.5 20.021 15.5ZM10.9793 3.87499C14.4048 3.87499 16.7918 5.46374 16.7918 6.88845C16.7918 8.31316 14.4048 9.90321 10.9793 9.90321C7.55383 9.90321 5.16683 8.31446 5.16683 6.88845C5.16683 5.46245 7.55383 3.87499 10.9793 3.87499ZM5.16683 10.9559C6.92332 11.999 8.93689 12.5293 10.9793 12.4865C13.0218 12.5293 15.0353 11.999 16.7918 10.9559V13.3429C15.3841 13.6977 14.0931 14.4131 13.046 15.4186C12.3669 15.5656 11.6742 15.6409 10.9793 15.6434C7.55383 15.6434 5.16683 14.0546 5.16683 12.6299V10.9559ZM5.16683 16.6974C6.9237 17.7395 8.93709 18.2692 10.9793 18.2267C11.2092 18.2267 11.4314 18.1983 11.6575 18.1867C11.6382 18.3362 11.6274 18.4867 11.6252 18.6375V21.3306C11.4082 21.3435 11.1989 21.3848 10.9793 21.3848C7.55383 21.3848 5.16683 19.7961 5.16683 18.3701V16.6974ZM5.16683 22.4376C6.92332 23.4807 8.93689 24.0109 10.9793 23.9682C11.1963 23.9682 11.4095 23.9514 11.6252 23.9411V23.9876C11.6436 25.0871 12.0662 26.1414 12.8122 26.9494C12.2078 27.0635 11.5944 27.1222 10.9793 27.125C7.55383 27.125 5.16683 25.5363 5.16683 24.1116V22.4376Z" fill="#40189D"></path>
+                                </svg>
+                            </div>
+                            <div class="ms-3">
+                                <span class="d-block mb-2 light-text">Booking Price:</span>
+                                <h6 class="mb-0">$<span id="price"></span></h6>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center my-4" style="width:250px">
+                            <a class="btn btn-primary btn-rounded flex-1 ms-2" id="book-btn1" onclick="book()">BOOK NOW</a>
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <div class="tabs-panel">
+                            <!-- Input Tabs -->
+                            <input type="radio" id="test1" name="tab" checked="checked" />
+                            <input type="radio" id="test2" name="tab" />
+                            <input type="radio" id="test3" name="tab" />
+                            <input type="radio" id="test4" name="tab" />
+                            <!-- End Input Tabs -->
+                            <!-- Start Tabs -->
+                            <div class="tabs">
+                                <div class="tab">
+                                    <label for="test1" onclick>
+                                        <div class="content">
+                                            <div class="text">Details</div>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="tab">
+                                    <label for="test2" onclick>
+                                        <div class="content">
+                                            <div class="text">Reviews</div>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="tab">
+                                    <label for="test3" onclick>
+                                        <div class="content">
+                                            <div class="text">Service Providers</div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- End Tabs -->
+                            <div class="separator"></div>
+                            <!-- Start Panels -->
+                            <div class="panels">
+                                <!-- Start Tab Panel -->
+                                <div class="tab-panel" id="panel1">
+                                    <div class="content">
+                                        <div class="mt-4 mb-2">
+                                            <h5 class="mb-3">Service Description</h5>
+                                            <p class="para-title" id="description">
+                                               
+                                            </p>
+                                            <br>
+                                            <h3>Things to Note:</h3>
+                                            <ul class="list-check">
+                                                <li>Pros will need access to your water supply.</li>
+                                                <li>This service will be quoted by square footage.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Tab Panel -->
+                                <!-- Start Tab Panel -->
+                                <div class="tab-panel" id="panel2">
+                                    <center>
+                                        <div class="content">
+                                            <center>
+                                                <div class="reviews-container">
+                                                    <h2>Reviews</h2>
+                                                    <div class="review">
+                                                        <span class="icon-container">5 <i class="fas fa-star"></i></span>
+                                                        <div class="progress">
+                                                            <div class="progress-done" data-done="68"></div>
+                                                        </div>
+                                                        <span class="percent">68%</span>
+                                                    </div>
+                                                    <div class="review">
+                                                        <span class="icon-container">4 <i class="fas fa-star"></i></span>
+                                                        <div class="progress">
+                                                            <div class="progress-done" data-done="13"></div>
+                                                        </div>
+                                                        <span class="percent">13%</span>
+                                                    </div>
+                                                    <div class="review">
+                                                        <span class="icon-container">3 <i class="fas fa-star"></i></span>
+                                                        <div class="progress">
+                                                            <div class="progress-done" data-done="9"></div>
+                                                        </div>
+                                                        <span class="percent">9%</span>
+                                                    </div>
+                                                    <div class="review">
+                                                        <span class="icon-container">2 <i class="fas fa-star"></i></span>
+                                                        <div class="progress">
+                                                            <div class="progress-done" data-done="3"></div>
+                                                        </div>
+                                                        <span class="percent">3%</span>
+                                                    </div>
+                                                    <div class="review">
+                                                        <span class="icon-container">1 <i class="fas fa-star"></i></span>
+                                                        <div class="progress">
+                                                            <div class="progress-done" data-done="7"></div>
+                                                        </div>
+                                                        <span class="percent">7%</span>
+                                                    </div>
+                                                </div>
+                                            </center>
+                                        </div>
+                                    </center>
+                                </div>
+                                <!-- End Tab Panel -->
+                                <!-- Start Tab Panel -->
+                                <div class="tab-panel" id="panel3">
+                                    <div class="content">
+                                        <center>
+                                            <h1>Coming Soon: Choose Your Service Provider</h1><br>
+                                        </center>
+                                        <center>
+                                            <p style="text-align: left;">We are excited to announce that we'll be launching a brand new feature on our website soon, designed to give you even more control over your home service experience. With this upcoming addition, you'll be able to select the perfect service provider to tackle your home service tasks, ensuring that you have the best match for your specific needs.
+                                                This innovative feature will allow you to browse through a curated list of trusted professionals, compare their ratings and reviews, and book the one that suits your requirements. Stay tuned for more updates on this game-changing functionality, and get ready to experience a seamless, personalized, and empowered home service journey!</p>
+                                    </div>
+                                </div>
+                                <!-- End Tab Panel -->
+                            </div>
+                            <!-- End Panels -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Page Content End-->
+        <!-- Footer -->
+        <div class="footer fixed bg-white">
+            <div class="container">
+                <div class="footer-btn d-flex align-items-center">
+                    <a href="" class="btn btn-primary btn-rounded flex-1 ms-2" id="book-btn2" onclick="book()">BOOK NOW</a>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+    </div>
+    <!--**********************************
+    Scripts
+***********************************-->
+    <script>
+    var data = [{
+            "name": "Pressure Washing",
+            "subcategories": [{
+                    "name": "Driveway",
+                    "description": "Driveway pressure washing services involve cleaning and removing dirt, stains, and debris from driveways using a high-pressure water spray.",
+                    "price": "120"
+                },
+                {
+                    "name": "Patio",
+                    "description": "Patio pressure washing services involve cleaning and removing dirt, stains, and debris from patios and outdoor living spaces using a high-pressure water spray.",
+                    "price": "150"
+                },
+                {
+                    "name": "Pool Deck",
+                    "description": "Pool deck pressure washing services involve cleaning and removing dirt, stains, and debris from pool decks using a high-pressure water spray.",
+                    "price": "180"
+                },
+                {
+                    "name": "Sidewalk",
+                    "description": "Sidewalk pressure washing services involve cleaning and removing dirt, stains, and debris from sidewalks using a high-pressure water spray.",
+                    "price": "90"
+                },
+                {
+                    "name": "Fence",
+                    "description": "Fence pressure washing services involve cleaning and removing dirt, stains, and debris from fences using a high-pressure water spray.",
+                    "price": "150"
+                },
+                {
+                    "name": "House Exterior",
+                    "description": "House exterior pressure washing services involve cleaning and removing dirt, stains, and debris from the exterior of homes using a high-pressure water spray.",
+                    "price": "300"
+                },
+                {
+                    "name": "Roof",
+                    "description": "Roof pressure washing services involve cleaning and removing dirt, stains, and debris from roofs using a high-pressure water spray.",
+                    "price": "225"
+                },
+                {
+                    "name": "Boat Dock",
+                    "description": "Boat dock pressure washing services involve cleaning and removing dirt, stains, and debris from boat docks using a high-pressure water spray.",
+                    "price": "225"
+                }
+            ]
+        },
+        {
+            "name": "Fencing",
+            "subcategories": [{
+                    "name": "Wooden Fence Installation",
+                    "description": "Wooden fence installation services involve installing new wooden fences for homes or other properties.",
+                    "price": "540"
+                },
+                {
+                    "name": "Wooden Fence Repair",
+                    "description": "Wooden fence repair services involve repairing existing wooden fences for homes or other properties.",
+                    "price": "90"
+                },
+                {
+                    "name": "Vinyl Fence Installation",
+                    "description": "Vinyl fence installation services involve installing new vinyl fences for homes or other properties.",
+                    "price": "630"
+                },
+                {
+                    "name": "Vinyl Fence Repair",
+                    "description": "Vinyl fence repair services involve repairing existing vinyl fences for homes or other properties.",
+                    "price": "105"
+                },
+                {
+                    "name": "Chain Link Fence Installation",
+                    "description": "Chain link fence installation services involve installing new chain link fences for homes or other properties.",
+                    "price": "450"
+                },
+                {
+                    "name": "Chain Link Fence Repair",
+                    "description": "Chain link fence repair services involve repairing existing chain link fences for homes or other properties.",
+                    "price": "75"
+                },
+                {
+                    "name": "Wrought Iron Fence Installation",
+                    "description": "Wrought iron fence installation services involve installing new wrought iron fences for homes or other properties.",
+                    "price": "108"
+                },
+                {
+                    "name": "Wrought Iron Fence Repair",
+                    "description": "Wrought iron fence repair services involve repairing existing wrought iron fences for homes or other properties.",
+                    "price": "180"
+                },
+                {
+                    "name": "Aluminum Fence Installation",
+                    "description": "Aluminum fence installation services involve installing new aluminum fences for homes or other properties.",
+                    "price": "720"
+                },
+                {
+                    "name": "Aluminum Fence Repair",
+                    "description": "Aluminum fence repair services involve repairing existing aluminum fences for homes or other properties.",
+                    "price": "120"
+                },
+                {
+                    "name": "Farm and Ranch Fence Installation",
+                    "description": "Farm and ranch fence installation services involve installing new farm and ranch fences for homes or other properties.",
+                    "price": "900"
+                },
+                {
+                    "name": "Farm and Ranch Fence Repair",
+                    "description": "Farm and ranch fence repair services involve repairing existing farm and ranch fences for homes or other properties.",
+                    "price": "150"
+                },
+                {
+                    "name": "Pool Fence Installation",
+                    "description": "Pool fence installation services involve installing new pool fences for homes or other properties.",
+                    "price": "720"
+                },
+                {
+                    "name": "Pool Fence Repair",
+                    "description": "Pool fence repair services involve repairing existing pool fences for homes or other properties.",
+                    "price": "120"
+                },
+                {
+                    "name": "Fence Staining and Painting",
+                    "description": "Fence staining and painting services involve staining or painting existing fences to protect them from the elements and enhance their appearance.",
+                    "price": "270"
+                },
+                {
+                    "name": "Fence Power Washing",
+                    "description": "Fence power washing services involve using a high-pressure water spray to clean and remove dirt, stains, and debris from fences.",
+                    "price": "54"
+                }
+            ]
+        },
+        {
+            "name": "Solar",
+            "subcategories": [{
+                    "name": "Solar Panel Installation",
+                    "description": "Solar panel installation services involve installing solar panels on homes or other properties to generate renewable energy.",
+                    "price": "4500"
+                },
+                {
+                    "name": "Solar Panel Repair",
+                    "description": "Solar panel repair services involve repairing existing solar panels on homes or other properties to maintain their functionality.",
+                    "price": "450"
+                },
+                {
+                    "name": "Solar Inverter Installation",
+                    "description": "Solar inverter installation services involve installing solar inverters on homes or other properties to convert the DC power generated by solar panels into AC power for use in the home.",
+                    "price": "900"
+                },
+                {
+                    "name": "Solar Inverter Repair",
+                    "description": "Solar inverter repair services involve repairing existing solar inverters on homes or other properties to maintain their functionality.",
+                    "price": "150"
+                },
+                {
+                    "name": "Solar Battery Installation",
+                    "description": "Solar battery installation services involve installing solar batteries on homes or other properties to store excess solar energy generated by solar panels for later use.",
+                    "price": "1800"
+                },
+                {
+                    "name": "Solar Battery Repair",
+                    "description": "Solar battery repair services involve repairing existing solar batteries on homes or other properties to maintain their functionality.",
+                    "price": "300"
+                },
+                {
+                    "name": "Off-Grid Solar System Installation",
+                    "description": "Off-grid solar system installation services involve installing solar panels, inverters, and batteries on homes or other properties to generate and store enough renewable energy to power the home without relyingon the grid.",
+                    "price": "9000"
+                },
+                {
+                    "name": "Off-Grid Solar System Repair",
+                    "description": "Off-grid solar system repair services involve repairing existing solar panels, inverters, and batteries on homes or other properties to maintain their functionality.",
+                    "price": "1500"
+                },
+                {
+                    "name": "Grid-Tied Solar System Installation",
+                    "description": "Grid-tied solar system installation services involve installing solar panels and inverters on homes or other properties to generate renewable energy that can be sold back to the grid.",
+                    "price": "7200"
+                },
+                {
+                    "name": "Grid-Tied Solar System Repair",
+                    "description": "Grid-tied solar system repair services involve repairing existing solar panels and inverters on homes or other properties to maintain their functionality.",
+                    "price": "1200"
+                },
+                {
+                    "name": "Solar Pool Heater Installation",
+                    "description": "Solar pool heater installation services involve installing solar panels on homes or other properties to heat swimming pools using renewable energy.",
+                    "price": "2700"
+                },
+                {
+                    "name": "Solar Pool Heater Repair",
+                    "description": "Solar pool heater repair services involve repairing existing solar panels on homes or other properties to maintain their functionality.",
+                    "price": "450"
+                },
+                {
+                    "name": "Solar Water Heater Installation",
+                    "description": "Solar water heater installation services involve installing solar panels on homes or other properties to heat water using renewable energy.",
+                    "price": "3150"
+                },
+                {
+                    "name": "Solar Water Heater Repair",
+                    "description": "Solar water heater repair services involve repairing existing solar panels on homes or other properties to maintain their functionality.",
+                    "price": "525"
+                }
+            ]
+        },
+
+        {
+            "name": "Irrigation",
+            "subcategories": [{
+                    "name": "Irrigation System Installation",
+                    "description": "Irrigation system installation services involve installing new irrigation systems for homes or other properties.",
+                    "price": "1500"
+                },
+                {
+                    "name": "Irrigation System Repair",
+                    "description": "Irrigation system repair services involve repairing existing irrigation systems for homes or other properties.",
+                    "price": "225"
+                },
+                {
+                    "name": "Sprinkler System Installation",
+                    "description": "Sprinkler system installation services involve installing new sprinkler systems for homes or other properties.",
+                    "price": "1350"
+                },
+                {
+                    "name": "Sprinkler System Repair",
+                    "description": "Sprinkler system repair services involve repairing existing sprinkler systems for homes or other properties.",
+                    "price": "202.50"
+                },
+                {
+                    "name": "Drip Irrigation Installation",
+                    "description": "Drip irrigation installation services involve installing new drip irrigation systems for homes or other properties.",
+                    "price": "900"
+                },
+                {
+                    "name": "Drip Irrigation Repair",
+                    "description": "Drip irrigation repair services involve repairing existing drip irrigation systems for homes or other properties.",
+                    "price": "135"
+                },
+                {
+                    "name": "Lawn Sprinkler System Installation",
+                    "description": "Lawn sprinkler system installation services involve installing new lawn sprinkler systems for homes or other properties.",
+                    "price": "1575"
+                },
+                {
+                    "name": "Lawn Sprinkler System Repair",
+                    "description": "Lawn sprinkler system repair services involve repairing existing lawn sprinkler systems for homes or other properties.",
+                    "price": "236.25"
+                },
+                {
+                    "name": "Backflow Preventer Installation",
+                    "description": "Backflow preventer installation services involve installing new backflow preventers for homes or other properties.",
+                    "price": "450"
+                },
+                {
+                    "name": "Backflow Preventer Testing",
+                    "description": "Backflow preventer testing services involve testing existing backflow preventers for homes or other properties to ensure they are functioning properly.",
+                    "price": "67.50"
+                },
+                {
+                    "name": "Winterization",
+                    "description": "Winterization services involve preparing irrigation and sprinkler systems for homes or other properties for the winter months to prevent damage.",
+                    "price": "180"
+                },
+                {
+                    "name": "Spring Start-Up",
+                    "description": "Spring start-up services involve preparing irrigation and sprinkler systems for homes or other properties for the spring months to ensure they are functioning properly.",
+                    "price": "180"
+                },
+                {
+                    "name": "Rain Sensor Installation",
+                    "description": "Rain sensor installation services involve installing new rain sensors for homes or other properties to prevent unnecessary watering during rain events.",
+                    "price": "135"
+                }
+            ]
+        },
+        {
+            "name": "Door Services",
+            "subcategories": [{
+                    "name": "Door Installation",
+                    "description": "Door installation services involve installing new doors for homes or other properties.",
+                    "price": "600"
+                },
+                {
+                    "name": "Door Repair",
+                    "description": "Door repair services involve repairing existing doors for homes or other properties.",
+                    "price": "90"
+                },
+                {
+                    "name": "Sliding Door Repair",
+                    "description": "Sliding door repair services involve repairing existing sliding doors for homes or other properties.",
+                    "price": "105"
+                },
+                {
+                    "name": "Sliding Door Installation",
+                    "description": "Sliding door installation services involve installing new sliding doors for homes or other properties.",
+                    "price": "675"
+                },
+                {
+                    "name": "Shower Door Repair",
+                    "description": "Shower door repair services involve repairing existing shower doors for homes or other properties.",
+                    "price": "75"
+                },
+                {
+                    "name": "Shower Door Installation",
+                    "description": "Shower door installation services involve installing new shower doors for homes or other properties.",
+                    "price": "525"
+                },
+                {
+                    "name": "Storm Door Installation",
+                    "description": "Storm door installation services involve installing new storm doors for homes or other properties.",
+                    "price": "450"
+                },
+                {
+                    "name": "Storm Door Repair",
+                    "description": "Storm door repair services involve repairing existing storm doors for homes or other properties.",
+                    "price": "67.50"
+                },
+                {
+                    "name": "Screen Door Installation",
+                    "description": "Screen door installation services involve installing new screen doors for homes or other properties.",
+                    "price": "375"
+                },
+                {
+                    "name": "Screen Door Repair",
+                    "description": "Screen door repair services involve repairing existing screen doors for homes or other properties.",
+                    "price": "52.50"
+                },
+                {
+                    "name": "Security Door Installation",
+                    "description": "Security door installation services involve installing new security doors for homes or other properties.",
+                    "price": "750"
+                },
+                {
+                    "name": "Security Door Repair",
+                    "description": "Security door repair services involve repairing existing security doors for homes or other properties.",
+                    "price": "112.50"
+                },
+                {
+                    "name": "French Door Installation",
+                    "description": "French door installation services involve installing new French doors for homes or other properties.",
+                    "price": "975"
+                },
+                {
+                    "name": "French Door Repair",
+                    "description": "French door repair services involve repairing existing French doors for homes or other properties.",
+                    "price": "146.25"
+                }
+            ]
+        },
+        {
+            "name": "Living Room",
+            "subcategories": [{
+                    "name": "Sofa, Couch, and Upholstery Cleaning",
+                    "description": "Sofa, couch, and upholstery cleaning services involve cleaning furniture in the living room to remove dirt, stains, and odors.",
+                    "price": "105"
+                },
+                {
+                    "name": "Carpet Cleaning",
+                    "description": "Carpet cleaning services involve cleaning carpets in the living room to remove dirt, stains, and odors.",
+                    "price": "105"
+                },
+                {
+                    "name": "Blinds and Shades Installation",
+                    "description": "Blinds and shades installation services involve installing new window treatments for the living room.",
+                    "price": "180"
+                },
+                {
+                    "name": "TV Mounting",
+                    "description": "TV mounting services involve mounting a TV on the wall in the living room.",
+                    "price": "105"
+                },
+                {
+                    "name": "Art and Picture Hanging",
+                    "description": "Art and picture hanging services involve hanging art and pictures on the walls in the living room.",
+                    "price": "90"
+                },
+                {
+                    "name": "Lighting Installation",
+                    "description": "Lighting installation services involve installing new lighting fixtures in the living room.",
+                    "price": "150"
+                },
+                {
+                    "name": "Furniture Moving and Rearranging",
+                    "description": "Furniture moving and rearranging services involve moving furniture in the living room to create a new layout or make more space.",
+                    "price": "105"
+                },
+                {
+                    "name": "Curtain and Drapes Installation",
+                    "description": "Curtain and drapes installation services involve installing new window treatments for the living room.",
+                    "price": "180"
+                }
+            ]
+        },
+        {
+            "name": "Garage",
+            "subcategories": [{
+                    "name": "Garage Door Installation",
+                    "description": "Garage door installation services involve installing a new garage door for homes or other properties.",
+                    "price": "735"
+                },
+                {
+                    "name": "Garage Door Repair",
+                    "description": "Garage door repair services involve repairing existing garage doors for homes or other properties.",
+                    "price": "105"
+                },
+                {
+                    "name": "Garage Organization and Shelving",
+                    "description": "Garage organization and shelving services involve organizing and adding shelves to garages to create more storage space.",
+                    "price": "315"
+                },
+                {
+                    "name": "Garage Flooring",
+                    "description": "Garage flooring services involve installing new flooring in garages to improve their appearance and durability.",
+                    "price": "525"
+                },
+                {
+                    "name": "Garage Lighting",
+                    "description": "Garage lighting services involve installing new lighting fixtures in garages to improve visibility and safety.",
+                    "price": "225"
+                },
+                {
+                    "name": "Garage Heating and Cooling",
+                    "description": "Garage heating and cooling services involve installing HVAC systems in garages to regulate temperature.",
+                    "price": "735"
+                },
+                {
+                    "name": "Garage Conversion",
+                    "description": "Garage conversion services involve converting garages into living spaces for homes or other properties.",
+                    "price": "945"
+                },
+                {
+                    "name": "Car Lift Installation",
+                    "description": "Car lift installation services involve installing lifts in garages to create additional space for cars and other vehicles.",
+                    "price": "2100"
+                },
+                {
+                    "name": "Vehicle Maintenance",
+                    "description": "Vehicle maintenance services involve performing routine maintenance on vehicles in garages.",
+                    "price": "105"
+                },
+                {
+                    "name": "General Garage Repairs",
+                    "description": "General garage repair services involve repairing various components of garages, such as doors, walls, and ceilings.",
+                    "price": "210"
+                }
+            ]
+        },
+        {
+            "name": "TV and Stereo",
+            "subcategories": [{
+                    "name": "TV Installation",
+                    "description": "TV installation services involve installing a new TV for homes or other properties.",
+                    "price": "150"
+                },
+                {
+                    "name": "TV Mounting",
+                    "description": "TV mounting services involve mounting a TV on the wall for homes or other properties.",
+                    "price": "105"
+                },
+                {
+                    "name": "Home Theater Setup",
+                    "description": "Home theater setup services involve setting up a home theater system for homes or other properties.",
+                    "price": "600"
+                },
+                {
+                    "name": "Stereo and Surround Sound Installation",
+                    "description": "Stereo and surround sound installation services involve installing new audio systems for homes or other properties.",
+                    "price": "300"
+                },
+                {
+                    "name": "Speaker Installation",
+                    "description": "Speaker installation services involve installing new speakers for homes or other properties.",
+                    "price": "120"
+                },
+                {
+                    "name": "Cable and Wire Management",
+                    "description": "Cable and wire management services involve organizing and managing cables and wires for homes or other properties.",
+                    "price": "75"
+                },
+                {
+                    "name": "Remote Control Programming",
+                    "description": "Remote control programming services involve programming remote controls for home entertainment systems.",
+                    "price": "45"
+                },
+                {
+                    "name": "TV Repair",
+                    "description": "TV repair services involve repairing existing TVs for homes or other properties.",
+                    "price": "210"
+                },
+                {
+                    "name": "Stereo and Sound System Repair",
+                    "description": "Stereo and sound system repair services involve repairing existing audio systems for homes or other properties.",
+                    "price": "210"
+                }
+            ]
+        },
+        {
+            "name": "Kitchen",
+            "subcategories": [{
+                    "name": "Cabinet Installation and Repair",
+                    "description": "Cabinet installation and repair services involve installing or repairing kitchen cabinets for homes or other properties.",
+                    "price": "315"
+                },
+                {
+                    "name": "Countertop Installation and Repair",
+                    "description": "Countertop installation and repair services involve installing or repairing kitchen countertops for homes or other properties.",
+                    "price": "360"
+                },
+                {
+                    "name": "Sink and Faucet Installation and Repair",
+                    "description": "Sink and faucet installation and repair services involve installing or repairing sinks and faucets for kitchens in homes or other properties.",
+                    "price": "135"
+                },
+                {
+                    "name": "Flooring Installation and Repair",
+                    "description": "Flooring installation and repair services involve installing or repairing kitchen flooring for homes or other properties.",
+                    "price": "600"
+                },
+                {
+                    "name": "Lighting Installation and Repair",
+                    "description": "Lighting installation and repair services involve installing or repairing kitchen lighting for homes or other properties.",
+                    "price": "150"
+                },
+                {
+                    "name": "Appliance Installation and Repair",
+                    "description": "Appliance installation and repair services involve installing or repairing kitchen appliances for homes or other properties.",
+                    "price": "300"
+                },
+                {
+                    "name": "Backsplash Installation and Repair",
+                    "description": "Backsplash installation and repair services involve installing or repairing kitchen backsplashes for homes or other properties.",
+                    "price": "240"
+                },
+                {
+                    "name": "Kitchen Island Installation",
+                    "description": "Kitchen island installation services involve installing kitchen islands for homes or other properties.",
+                    "price": "540"
+                },
+                {
+                    "name": "Pantry Organization and Installation",
+                    "description": "Pantry organization and installation services involve organizing and installing pantry storage for homes or other properties.",
+                    "price": "135"
+                }
+            ]
+        },
+        {
+            "name": "Interior Design",
+            "subcategories": [{
+                    "name": "Residential Design",
+                    "description": "Residential design services involve designing the interior of homes.",
+                    "price": "750"
+                },
+                {
+                    "name": "Commercial Design",
+                    "description": "Commercial design services involve designing the interior of commercial spaces.",
+                    "price": "900"
+                },
+                {
+                    "name": "Color Consulting",
+                    "description": "Color consulting services involve helping clients choose colors for their interior design projects.",
+                    "price": "150"
+                },
+                {
+                    "name": "Furniture Selection and Placement",
+                    "description": "Furniture selection and placement services involve helping clients select and arrange furniture for their interior design projects.",
+                    "price": "300"
+                },
+                {
+                    "name": "Lighting Design",
+                    "description": "Lighting design services involve designing the lighting for interior spaces.",
+                    "price": "300"
+                },
+                {
+                    "name": "Window Treatments and Coverings",
+                    "description": "Window treatments and coverings services involve selecting and installing window treatments and coverings for interior spaces.",
+                    "price": "180"
+                },
+                {
+                    "name": "Wallpaper and Paint Selection",
+                    "description": "Wallpaper and paint selection services involve helping clients choose wallpaper and paint for their interior design projects.",
+                    "price": "120"
+                },
+                {
+                    "name": "Flooring Selection",
+                    "description": "Flooring selection services involve helping clients choose flooring for their interior design projects.",
+                    "price": "240"
+                },
+                {
+                    "name": "Accessories and Decor",
+                    "description": "Accessories and decor services involve selecting and placing accessories and decor for interior design projects.",
+                    "price": "225"
+                },
+                {
+                    "name": "Space Planning",
+                    "description": "Space planning services involve planning the layout and organization of interior spaces.",
+                    "price": "450"
+                }
+            ]
+        },
+        {
+            "name": "Flooring",
+            "subcategories": [{
+                    "name": "Vinyl",
+                    "description": "Vinyl flooring services involve installing vinyl flooring for homes or other properties.",
+                    "price": "210"
+                },
+                {
+                    "name": "Tile",
+                    "description": "Tile flooring services involve installing tile flooring for homes or other properties.",
+                    "price": "450"
+                },
+                {
+                    "name": "Epoxy",
+                    "description": "Epoxy flooring services involve installing epoxy flooring for homes or other properties.",
+                    "price": "600"
+                },
+                {
+                    "name": "Laminate",
+                    "description": "Laminate flooring services involve installing laminate flooring for homes or other properties.",
+                    "price": "330"
+                },
+                {
+                    "name": "Hardwood",
+                    "description": "Hardwood flooring services involve installing hardwood flooring for homes or other properties.",
+                    "price": "600"
+                },
+                {
+                    "name": "Carpet",
+                    "description": "Carpet installation services involve installing carpet for homes or other properties.",
+                    "price": "300"
+                },
+                {
+                    "name": "Terrazzo",
+                    "description": "Terrazzo flooring services involve installing terrazzo flooring for homes or other properties.",
+                    "price": "1200"
+                }
+            ]
+        },
+        {
+            "name": "Landscaping",
+            "subcategories": [{
+                    "name": "Lawn care",
+                    "description": "Lawn care services involve maintaining and improving lawns.",
+                    "price": "210"
+                },
+                {
+                    "name": "Garden design",
+                    "description": "Garden design services involve designing and creating gardens for homes or other properties.",
+                    "price": "750"
+                },
+                {
+                    "name": "Hardscaping",
+                    "description": "Hardscaping services involve designing and creating outdoor structures and features, such as patios, walkways, and retaining walls.",
+                    "price": "1050"
+                },
+                {
+                    "name": "Tree care",
+                    "description": "Tree care services involve maintaining and improving trees on properties.",
+                    "price": "360"
+                },
+                {
+                    "name": "Irrigation",
+                    "description": "Irrigation services involve installing and maintaining irrigation systems for properties.",
+                    "price": "420"
+                },
+                {
+                    "name": "Landscape maintenance",
+                    "description": "Landscape maintenance services involve maintaining and improving the overall landscape of properties.",
+                    "price": "315"
+                },
+                {
+                    "name": "Landscaping installation",
+                    "description": "Landscaping installation services involve designing and installing landscaping for properties.",
+                    "price": "1200"
+                },
+                {
+                    "name": "Outdoor living spaces",
+                    "description": "Outdoor living spaces services involve designing and creating outdoor living spaces for properties, such as patios and outdoor kitchens.",
+                    "price": "900"
+                },
+                {
+                    "name": "Water features",
+                    "description": "Water features services involve designing and installing water features, such as ponds and fountains, for properties.",
+                    "price": "750"
+                },
+                {
+
+                    "name": "Landscape lighting",
+                    "description": "Landscape lighting services involve designing and installing lighting for outdoor landscapes.",
+                    "price": "450"
+                },
+                {
+                    "name": "Pool Landscaping",
+                    "description": "Pool landscaping services involve designing and installing landscaping for swimming pools.",
+                    "price": "900"
+                },
+                {
+                    "name": "Xeriscaping",
+                    "description": "Xeriscaping services involve designing and creating landscapes that require minimal water.",
+                    "price": "600"
+                },
+                {
+                    "name": "Artificial Turf",
+                    "description": "Artificial turf installation services involve installing artificial turf for properties.",
+                    "price": "600"
+                },
+                {
+                    "name": "Sod Installation",
+                    "description": "Sod installation services involve installing sod for properties.",
+                    "price": "600"
+                },
+                {
+                    "name": "Mulching",
+                    "description": "Mulching services involve spreading mulch on garden beds to improve soil health and retain moisture.",
+                    "price": "225"
+                },
+                {
+                    "name": "Planting",
+                    "description": "Planting services involve selecting and planting plants and trees for properties.",
+                    "price": "450"
+                },
+                {
+                    "name": "Tree Trimming",
+                    "description": "Tree trimming services involve trimming and maintaining trees on properties.",
+                    "price": "360"
+                },
+                {
+                    "name": "Stump Grinding",
+                    "description": "Stump grinding services involve removing tree stumps from properties.",
+                    "price": "450"
+                },
+                {
+                    "name": "Weed Control",
+                    "description": "Weed control services involve controlling and removing weeds from properties.",
+                    "price": "225"
+                },
+                {
+                    "name": "Pest Control",
+                    "description": "Pest control services involve controlling and removing pests from properties.",
+                    "price": "225"
+                },
+                {
+                    "name": "Fertilization",
+                    "description": "Fertilization services involve applying fertilizers to promote plant growth on properties.",
+                    "price": "225"
+                },
+                {
+                    "name": "Seasonal Cleanups",
+                    "description": "Seasonal cleanup services involve cleaning up properties in preparation for different seasons.",
+                    "price": "315"
+                }
+            ]
+        },
+        {
+            "name": "Handyman",
+            "subcategories": [{
+                    "name": "Painting and Staining",
+                    "description": "Professional painting and staining services for your home or office.",
+                    "price": "30"
+                },
+                {
+                    "name": "Drywall Repair and Installation",
+                    "description": "Repair and installation of drywall to ensure a smooth and flawless finish.",
+                    "price": "36"
+                },
+                {
+                    "name": "Furniture Assembly",
+                    "description": "Expert assembly of all types of furniture, including IKEA and other ready-to-assemble furniture.",
+                    "price": "24"
+                },
+                {
+                    "name": "General Home Repairs",
+                    "description": "Professional home repair services for a variety of issues, including plumbing, electrical, and more.",
+                    "price": "45"
+                },
+                {
+                    "name": "Window Repair and Installation",
+                    "description": "Repair or installation of windows to improve the appearance and energy efficiency of your home.",
+                    "price": "60"
+                },
+                {
+                    "name": "Door Repair and Installation",
+                    "description": "Repair or installation of doors to improve security and energy efficiency of your home.",
+                    "price": "54"
+                },
+                {
+                    "name": "Caulking and Weatherstripping",
+                    "description": "Sealing of gaps and cracks in your home to prevent air leaks and save on energy bills.",
+                    "price": "18"
+                },
+                {
+                    "name": "Tile and Grout Installation and Repair",
+                    "description": "Installation and repair of tile and grout for a beautiful and durable finish.",
+                    "price": "75"
+                }
+            ]
+        },
+        {
+            "name": "Lighting",
+            "subcategories": [{
+                    "name": "Light Fixture Installation",
+                    "description": "Installation of new light fixtures to improve the lighting and ambiance of your home or office.",
+                    "price": "27"
+                },
+                {
+                    "name": "Light Fixture Repair",
+                    "description": "Repair of broken or malfunctioning light fixtures to ensure proper function and safety.",
+                    "price": "18"
+                },
+                {
+                    "name": "LED Lighting Installation",
+                    "description": "Installation of energy-efficient LED lighting to save on energy bills and reduce environmental impact.",
+                    "price": "36"
+                },
+                {
+                    "name": "LED Lighting Repair",
+                    "description": "Repair of broken or malfunctioning LED lighting to ensure proper function and energy efficiency.",
+                    "price": "30"
+                },
+                {
+                    "name": "Outdoor Lighting Installation",
+                    "description": "Installation of outdoor lighting for improved safety, security, and ambiance.",
+                    "price": "45"
+                },
+                {
+                    "name": "Outdoor Lighting Repair",
+                    "description": "Repair of broken or malfunctioning outdoor lighting to ensure proper function and safety.",
+                    "price": "36"
+                },
+                {
+                    "name": "Landscape Lighting Installation",
+                    "description": "Installation of lighting to enhance the beauty and safety of your landscaping.",
+                    "price": "60"
+                },
+                {
+                    "name": "Landscape Lighting Repair",
+                    "description": "Repair of broken or malfunctioning landscape lighting to ensure proper function and safety.",
+                    "price": "45"
+                },
+                {
+                    "name": "Chandelier Installation",
+                    "description": "Installation of chandeliers for a dramatic and elegant touch to your home or office.",
+                    "price": "45"
+                },
+                {
+                    "name": "Chandelier Repair",
+                    "description": "Repair of broken or malfunctioning chandeliers to ensure proper function and safety.",
+                    "price": "36"
+                },
+                {
+                    "name": "Ceiling Fan Installation",
+                    "description": "Installation of ceiling fans to improve air circulation and energy efficiency in your home or office.",
+                    "price": "45"
+                },
+                {
+                    "name": "Ceiling Fan Repair",
+                    "description": "Repair of broken or malfunctioning ceiling fans to ensure proper function and energy efficiency.",
+                    "price": "36"
+                },
+                {
+                    "name": "Dimmer Switch Installation",
+                    "description": "Installation of dimmer switches to adjust the lighting and mood in your home or office.",
+                    "price": "21"
+                },
+                {
+                    "name": "Dimmer Switch Repair",
+                    "description": "Repair of broken or malfunctioning dimmer switches to ensure proper function and safety.",
+                    "price": "18"
+                },
+                {
+                    "name": "Lighting Control System Installation",
+                    "description": "Installation of lighting control systems for improved energy efficiency and convenience.",
+                    "price": "60"
+                },
+                {
+                    "name": "Lighting Control System Repair",
+                    "description": "Repair of broken or malfunctioning lighting control systems to ensure proper function and energy efficiency.",
+                    "price": "54"
+                }
+            ]
+        },
+        {
+            "name": "Cleaning",
+            "subcategories": [{
+                    "name": "House Cleaning",
+                    "description": "Thorough cleaning of your home to ensure a clean and healthy living environment.",
+                    "price": "30"
+                },
+                {
+                    "name": "Carpet Cleaning",
+                    "description": "Deep cleaning of carpets to remove dirt, stains, and odors for a fresher and healthier home.",
+                    "price": "30"
+                },
+                {
+                    "name": "Upholstery Cleaning",
+                    "description": "Cleaning of upholstery to remove dirt, stains, and odors and extend the life of your furniture.",
+                    "price": "30"
+                },
+                {
+                    "name": "Window Cleaning",
+                    "description": "Cleaning of windows to improve the appearance and clarity of your home or office.",
+                    "price": "30"
+                },
+                {
+                    "name": "Deep Cleaning",
+                    "description": "Thorough cleaning of your home or office, including hard-to-reach areas and high-touch surfaces.",
+                    "price": "30"
+                },
+                {
+                    "name": "Move-In/Move-Out Cleaning",
+                    "description": "Deep cleaning of your home or office before or after a move for a fresh start or smooth transition.",
+                    "price": "30"
+                },
+                {
+                    "name": "Commercial Cleaning",
+                    "description": "Regular cleaning of your office or commercial space to maintain a clean and professional environment.",
+                    "price": "30"
+                },
+                {
+                    "name": "Disinfecting and Sanitizing",
+                    "description": "Disinfection and sanitization of your home or office to reduce the spread of germs and viruses.",
+                    "price": "30"
+                },
+                {
+                    "name": "Maid Services",
+                    "description": "Regular cleaning and tidying of your home to maintain a clean and organized living space.",
+                    "price": "30"
+                },
+                {
+                    "name": "Airbnb Cleaning",
+                    "description": "Thorough cleaning of your Airbnb rental between guests to ensure a positive guest experience and good reviews.",
+                    "price": "30"
+                }
+            ]
+        },
+        {
+            "name": "Roofing",
+            "subcategories": [{
+                    "name": "Roof repair",
+                    "description": "Professional repair of leaks, cracks, and other roofing issues to protect your home and belongings.",
+                    "price": "150"
+                },
+                {
+                    "name": "Roof replacement",
+                    "description": "Removal and replacement of your old, damaged roof with a new, high-quality roof.",
+                    "price": "250"
+                },
+                {
+                    "name": "Roof installation",
+                    "description": "Installation of a new roof on your home or office, including shingle, tile, or metal roofing.",
+                    "price": "300"
+                },
+                {
+                    "name": "Gutter installation and repair",
+                    "description": "Installation or repair of gutters to protect your home from water damage and improve drainage.",
+                    "price": "80"
+                },
+                {
+                    "name": "Skylight installation and repair",
+                    "description": "Installation or repair of skylights to improve natural lighting and ventilation in your home or office.",
+                    "price": "200"
+                },
+                {
+                    "name": "Roof cleaning and maintenance",
+                    "description": "Regular cleaning and maintenance of your roof to prolong its life and prevent damage.",
+                    "price": "120"
+                },
+                {
+                    "name": "Chimney repair and maintenance",
+                    "description": "Professional repair and maintenance of your chimney to prevent fire hazards and ensure proper ventilation.",
+                    "price": "150"
+                },
+                {
+                    "name": "Emergency roof repair",
+                    "description": "24/7 emergency repair of your roof to prevent further damage and protect your home and belongings.",
+                    "price": "200"
+                },
+                {
+                    "name": "Flat Roofing",
+                    "description": "Installation and repair of flat roofs for commercial and residential buildings.",
+                    "price": "250"
+                },
+                {
+                    "name": "Metal Roofing",
+                    "description": "Installation and repair of metal roofs for residential and commercial buildings.",
+                    "price": "350"
+                },
+                {
+                    "name": "Tile Roofing",
+                    "description": "Installation and repair of tile roofs for residential and commercial buildings.",
+                    "price": "300"
+                },
+                {
+                    "name": "Shingle Roofing",
+                    "description": "Installation and repair of shingle roofs for residential and commercial buildings.",
+                    "price": "200"
+                }
+            ]
+        },
+        {
+            "name": "Air Conditioning",
+            "subcategories": [{
+                    "name": "AC Repair",
+                    "description": "Professional repair of your air conditioning unit to ensure proper function and energy efficiency.",
+                    "price": "120"
+                },
+                {
+                    "name": "AC Installation",
+                    "description": "Installation of a new air conditioning unit to improve indoor comfort and energy efficiency.",
+                    "price": "300"
+                },
+                {
+                    "name": "AC Maintenance",
+                    "description": "Regular maintenance of your air conditioning unit to prevent breakdowns and ensure optimal performance.",
+                    "price": "90"
+                },
+                {
+                    "name": "Duct Cleaning",
+                    "description": "Professional cleaning of your air ducts to improve indoor air quality and energy efficiency.",
+                    "price": "150"
+                },
+                {
+                    "name": "Thermostat Installation",
+                    "description": "Installation of a new thermostat to improve temperature control and energy efficiency.",
+                    "price": "60"
+                },
+                {
+                    "name": "Indoor Air Quality",
+                    "description": "Improvement of indoor air quality through air filtration, ventilation, and other methods.",
+                    "price": "200"
+                },
+                {
+                    "name": "Commercial AC Services",
+                    "description": "Installation, repair, and maintenance of air conditioning systems for commercial buildings.",
+                    "price": "400"
+                },
+                {
+                    "name": "Emergency AC Services",
+                    "description": "24/7 emergency repair of your air conditioning unit to prevent further damage and ensure indoor comfort.",
+                    "price": "200"
+                },
+                {
+                    "name": "Heat Pump Services",
+                    "description": "Installation, repair, and maintenance of heat pump systems for residential and commercial buildings.",
+                    "price": "300"
+                }
+            ]
+        },
+        {
+            "name": "Plumbing",
+            "subcategories": [{
+                    "name": "Water Heater Repair and Installation",
+                    "description": "Professional repair and installation of water heaters to ensure reliable hot water supply.",
+                    "price": "180"
+                },
+                {
+                    "name": "Drain Cleaning",
+                    "description": "Clearing of clogged or slow drains to improve plumbing function and prevent backups.",
+                    "price": "120"
+                },
+                {
+                    "name": "Toilet Repair and Installation",
+                    "description": "Repair or installation of toilets to improve plumbing function and prevent leaks.",
+                    "price": "120"
+                },
+                {
+                    "name": "Faucet Repair and Installation",
+                    "description": "Repair or installation of faucets to improve plumbing function and prevent leaks.",
+                    "price": "90"
+                },
+                {
+                    "name": "Garbage Disposal Repair and Installation",
+                    "description": "Repair or installation of garbage disposals to improve kitchen function and prevent clogs.",
+                    "price": "120"
+                },
+                {
+                    "name": "Sump Pump Repair and Installation",
+                    "description": "Repair or installation of sump pumps to prevent flooding and water damage.",
+                    "price": "200"
+                },
+                {
+                    "name": "Leak Detection and Repair",
+                    "description": "Professional detection and repair of leaks in your plumbing system to prevent water damage and conserve water.",
+                    "price": "150"
+                },
+                {
+                    "name": "Backflow Prevention",
+                    "description": "Installation and maintenance of backflow prevention devices to protect your water supply from contamination.",
+                    "price": "150"
+                },
+                {
+                    "name": "Hydro Jetting",
+                    "description": "High-pressure cleaning of your plumbing system to remove buildup and improve function.",
+                    "price": "200"
+                },
+                {
+                    "name": "Gas Line Services",
+                    "description": "Installation, repair, and maintenance of gas lines for residential and commercial buildings.",
+                    "price": "250"
+                }
+            ]
+        },
+        {
+            "name": "Electrical",
+            "subcategories": [{
+                    "name": "Electrical Repairs",
+                    "description": "Professional repair of electrical issues in your home or office to ensure safety and function.",
+                    "price": "120"
+                },
+                {
+                    "name": "Electrical Panel Upgrades",
+                    "description": "Upgrade of your electrical panel to accommodate increased electrical demand and improve safety.",
+                    "price": "400"
+                },
+                {
+                    "name": "Electrical Installations",
+                    "description": "Installation of new electrical systems for your home or office, including lighting and outlets.",
+                    "price": "200"
+                },
+                {
+                    "name": "Lighting Installations and Repairs",
+                    "description": "Installation or repair of indoor and outdoor lighting fixtures for your home or office.",
+                    "price": "120"
+                },
+                {
+                    "name": "Ceiling Fan Installations",
+                    "description": "Installation of ceiling fans to improve air circulation and energy efficiency in your home or office.",
+                    "price": "150"
+                },
+                {
+                    "name": "Generators",
+                    "description": "Installation, repair, and maintenance of backup generators for your home or office.",
+                    "price": "300"
+                },
+                {
+                    "name": "Surge Protection",
+                    "description": "Installation of surge protection devices to protect your electronics and appliances from power surges.",
+                    "price": "100"
+                },
+                {
+                    "name": "Electrical Inspections",
+                    "description": "Professional inspection of your electrical system to ensure safety and compliance with electrical codes.",
+                    "price": "150"
+                },
+                {
+                    "name": "Emergency Electrical Services",
+                    "description": "24/7 emergency repair of electrical issues in your home or office to ensure safety and function.",
+                    "price": "200"
+                }
+            ]
+        },
+        {
+            "name": "Pest Control",
+            "subcategories": [{
+                    "name": "Termite Inspection and Treatment",
+                    "description": "Professional inspection and treatment of termite infestations to prevent damage to your home or office.",
+                    "price": "200"
+                },
+                {
+                    "name": "Bed Bug Treatment",
+                    "description": "Professional treatment of bed bug infestations to ensure a comfortable and healthy living environment.",
+                    "price": "200"
+                },
+                {
+                    "name": "Ant Control",
+                    "description": "Professional control of ant infestations to prevent damage to your home or office and ensure cleanliness.",
+                    "price": "120"
+                },
+                {
+                    "name": "Rodent Control",
+                    "description": "Professional control of rodent infestations to prevent damage to your home or office and ensure safety and cleanliness.",
+                    "price": "150"
+                },
+                {
+                    "name": "Mosquito Control",
+                    "description": "Professional control of mosquito populations to prevent the spread of disease and improve outdoor comfort.",
+                    "price": "120"
+                },
+                {
+                    "name": "Spider Control",
+                    "description": "Professional control of spider populations to prevent bites and improve indoor comfort.",
+                    "price": "100"
+                },
+                {
+                    "name": "Flea and Tick Treatment",
+                    "description": "Professional treatment of flea and tick infestations to ensure a healthy and comfortable living environment.",
+                    "price": "150"
+                },
+                {
+                    "name": "Wildlife Control",
+                    "description": "Professional removal of wildlife from your property to prevent damage and ensure safety.",
+                    "price": "250"
+                },
+                {
+                    "name": "Bee and Wasp Removal",
+                    "description": "Professional removal of bee and wasp nests to prevent stings and ensure safety.",
+                    "price": "150"
+                }
+            ]
+        },
+        {
+            "name": "Pool Services",
+            "subcategories": [{
+                    "name": "Pool Cleaning",
+                    "description": "Professional cleaning of your pool to ensure proper hygiene and functioning.",
+                    "price": "150"
+                },
+                {
+                    "name": "Pool Maintenance",
+                    "description": "Regular maintenance of your pool to ensure proper functioning and longevity.",
+                    "price": "250"
+                },
+                {
+                    "name": "Pool Repair",
+                    "description": "Professional repair of your pool to fix leaks, cracks, or other issues.",
+                    "price": "350"
+                },
+                {
+                    "name": "Pool Renovation",
+                    "description": "Complete renovation of your pool to update its appearance and functionality.",
+                    "price": "500"
+                },
+                {
+                    "name": "Pool Resurfacing",
+                    "description": "Resurfacing of your pool to restore its appearance and improve its durability.",
+                    "price": "450"
+                },
+                {
+                    "name": "Pool Decking",
+                    "description": "Installation, repair, or renovation of your pool decking to enhance its appearance and safety.",
+                    "price": "400"
+                },
+                {
+                    "name": "Pool Heating",
+                    "description": "Installation or repair of a pool heating system to extend your swimming season.",
+                    "price": "600"
+                },
+                {
+                    "name": "Saltwater Pool Services",
+                    "description": "Maintenance and repair of saltwater pools to ensure proper functioning and hygiene.",
+                    "price": "350"
+                },
+                {
+                    "name": "Commercial Pool Services",
+                    "description": "Installation, maintenance, and repair of commercial pools for businesses and organizations.",
+                    "price": "600"
+                },
+                {
+                    "name": "Emergency Pool Services",
+                    "description": "24/7 emergency repair of your pool to prevent further damage and ensure safety.",
+                    "price": "300"
+                },
+                {
+                    "name": "Pool Leak Detection and Repair",
+                    "description": "Professional detection and repair of leaks in your pool to prevent water loss and damage.",
+                    "price": "400"
+                },
+                {
+                    "name": "Pool Equipment Repair and Replacement",
+                    "description": "Repair or replacement of pool equipment, such as pumps, filters, and heaters.",
+                    "price": "350"
+                },
+                {
+                    "name": "Pool Lighting Installation and Repair",
+                    "description": "Installation or repair of lighting fixtures for your pool to enhance its appearance and safety.",
+                    "price": "250"
+                }
+            ]
+        },
+        {
+            "name": "Painting",
+            "subcategories": [{
+                    "name": "Interior Painting",
+                    "description": "Professional painting of the interior of your home or office to enhance its appearance.",
+                    "price": "300"
+                },
+                {
+                    "name": "Exterior Painting",
+                    "description": "Professional painting of the exterior of your home or office to enhance its appearance and protect it from the elements.",
+                    "price": "400"
+                },
+                {
+                    "name": "Commercial Painting",
+                    "description": "Professional painting services for commercial buildings and businesses.",
+                    "price": "400"
+                },
+                {
+                    "name": "Residential Painting",
+                    "description": "Professional painting services for residential homes.",
+                    "price": "350"
+                },
+                {
+                    "name": "Wallpaper Installation and Removal",
+                    "description": "Installation or removal of wallpaper to update your home or office's appearance.",
+                    "price": "250"
+                },
+                {
+                    "name": "Color Consultation",
+                    "description": "Consultation with a professional painter to select the best color scheme for your home or office.",
+                    "price": "100"
+                },
+                {
+                    "name": "Faux Painting",
+                    "description": "Professional painting technique that mimics the appearance of materials such as wood or stone.",
+                    "price": "450"
+                },
+                {
+                    "name": "Cabinet Painting",
+                    "description": "Professional painting of cabinets to update their appearance and prolong their lifespan.",
+                    "price": "250"
+                },
+                {
+                    "name": "Deck and Fence Painting or Staining",
+                    "description": "Professional painting or staining of decks and fences to protect them from the elements and enhance their appearance.",
+                    "price": "300"
+                },
+                {
+                    "name": "Pressure Washing",
+                    "description": "Professional pressure washing of your home or office's exterior to remove dirt, grime, and other buildups.",
+                    "price": "250"
+                },
+                {
+                    "name": "Drywall Repair and Texturing",
+                    "description": "Professional repair of drywall damage and texturing to match the surrounding area.",
+                    "price": "200"
+                },
+                {
+                    "name": "Trim and Baseboard Painting",
+                    "description": "Professional painting of trim and baseboards to update their appearance and enhance the overall look of your home or office.",
+                    "price": "150"
+                },
+                {
+                    "name": "Epoxy Floor Coating",
+                    "description": "Professional installation of epoxy floor coating to protect your garage, basement, or other concrete surfaces.",
+                    "price": "500"
+                }
+            ]
+        },
+        {
+            "name": "Smart Home",
+            "subcategories": [{
+                    "name": "Smart Home Installation",
+                    "description": "Professional installation of smart home devices to automate and enhance your home or office's functionality.",
+                    "price": "300"
+                },
+                {
+                    "name": "Smart Thermostat Installation and Programming",
+                    "description": "Installation and programming of a smart thermostat to save energy and enhance your comfort.",
+                    "price": "200"
+                },
+                {
+                    "name": "Smart Lighting Installation and Programming",
+                    "description": "Installation and programming of smart lighting fixtures to automate and enhance your home or office's lighting.",
+                    "price": "250"
+                },
+                {
+                    "name": "Smart Lock Installation and Programming",
+                    "description": "Installation and programming of a smart lock for enhanced security and convenience.",
+                    "price": "200"
+                },
+                {
+                    "name": "Smart Speaker and Voice Assistant Setup",
+                    "description": "Installation and setup of smart speakers and voice assistants to automate and enhance your home or office's functionality.",
+                    "price": "150"
+                },
+                {
+                    "name": "Smart Appliance Installation and Programming",
+                    "description": "Installation and programming of smart appliances to automate and enhance your home or office's functionality.",
+                    "price": "300"
+                },
+                {
+                    "name": "Smart Home Consulting and Design",
+                    "description": "Consultation with a smart home expert to design and plan your ideal smart home setup.",
+                    "price": "150"
+                },
+                {
+                    "name": "Smart Home Troubleshooting and Repair",
+                    "description": "Professional troubleshooting and repair of smart home devices to ensure proper functionality.",
+                    "price": "150"
+                }
+            ]
+        },
+        {
+            "name": "Home Security",
+            "subcategories": [{
+                    "name": "Alarm System Installation",
+                    "description": "Professional installation of a home alarm system to enhance your home or office's security.",
+                    "price": "400"
+                },
+                {
+                    "name": "Surveillance Camera Installation",
+                    "description": "Professional installation of surveillance cameras to monitor your home or office's security.",
+                    "price": "500"
+                },
+                {
+                    "name": "Smart Home Security System Installation",
+                    "description": "Professional installation of a smart home security system to automate and enhance your home or office's security.",
+                    "price": "600"
+                },
+                {
+                    "name": "Window and Door Security",
+                    "description": "Installation of security devices such as bars or sensors to enhance your windows and doors' security.",
+                    "price": "250"
+                },
+                {
+                    "name": "Motion Detector Installation",
+                    "description": "Professional installation of motion detectors to enhance your home or office's security.",
+                    "price": "150"
+                },
+                {
+                    "name": "Security Lighting Installation",
+                    "description": "Professional installation of security lighting fixtures to enhance your home or office's security.",
+                    "price": "200"
+                },
+                {
+                    "name": "Access Control System Installation",
+                    "description": "Professional installation of an access control system to regulate entry to your home or office.",
+                    "price": "500"
+                },
+                {
+                    "name": "Security System Monitoring",
+                    "description": "Professional monitoring of your home or office's security system to ensure prompt response to any threats.",
+                    "price": "150"
+                },
+                {
+                    "name": "Security System Repair and Maintenance",
+                    "description": "Professional repair and maintenance of your home or office's security system to ensure proper functioning.",
+                    "price": "200"
+                },
+                {
+                    "name": "Security Consultation and Design",
+                    "description": "Consultation with a security expert to design and plan your ideal security setup.",
+                    "price": "150"
+                }
+            ]
+        },
+        {
+            "name": "Paving",
+            "subcategories": [{
+                    "name": "Driveway Paving",
+                    "description": "Professional installation of a paved driveway to enhance your home or office's curb appeal and functionality.",
+                    "price": "500"
+                },
+                {
+                    "name": "Asphalt Paving",
+                    "description": "Professional installation of asphalt paving for your home or office's driveway, parking lot, or other surface.",
+                    "price": "450"
+                },
+                {
+                    "name": "Concrete Paving",
+                    "description": "Professional installation of concrete paving for your home or office's driveway, patio, or other surface.",
+                    "price": "550"
+                },
+                {
+                    "name": "Patio Paving",
+                    "description": "Professional installation of paved patios to enhance your outdoor living space.",
+                    "price": "350"
+                },
+                {
+                    "name": "Walkway Paving",
+                    "description": "Professional installation of paved walkways to enhance your home or office's accessibility and appearance.",
+                    "price": "250"
+                },
+                {
+                    "name": "Pool Deck Paving",
+                    "description": "Professional installation of paving for your pool deck to enhance its appearance and safety.",
+                    "price": "400"
+                },
+                {
+                    "name": "Brick Paving",
+                    "description": "Professional installation of brick paving for your home or office's driveway, patio, or other surface.",
+                    "price": "600"
+                },
+                {
+                    "name": "Stone Paving",
+                    "description": "Professional installation of stone paving for your home or office's driveway, patio, or other surface.",
+                    "price": "700"
+                },
+                {
+                    "name": "Interlocking Pavers",
+                    "description": "Professional installation of interlocking pavers for your home or office's driveway, patio, or other surface.",
+                    "price": "500"
+                },
+                {
+                    "name": "Paver Repair and Maintenance",
+                    "description": "Professional repair and maintenance of your home or office's paved surfaces to prolong their lifespan and ensure their safety.",
+                    "price": "200"
+                },
+                {
+                    "name": "Paver Sealing",
+                    "description": "Professional sealing of your home or office's paved surfaces to protect them from the elements and enhance their appearance.",
+                    "price": "250"
+                },
+                {
+                    "name": "Paver Cleaning",
+                    "description": "Professional cleaning of your home or office's paved surfaces to remove dirt, grime, and other buildups.",
+                    "price": "200"
+                }
+            ]
+        },
+        {
+            "name": "Furniture Assembly",
+            "subcategories": [{
+                    "name": "Office Furniture Assembly",
+                    "description": "Professional assembly of office furniture to ensure proper functioning and appearance.",
+                    "price": "150"
+                },
+                {
+                    "name": "Home Furniture Assembly",
+                    "description": "Professional assembly of home furniture to ensure proper functioning and appearance.",
+                    "price": "150"
+                },
+                {
+                    "name": "IKEA Furniture Assembly",
+                    "description": "Professional assembly of IKEA furniture to ensure proper functioning and appearance.",
+                    "price": "200"
+                },
+                {
+                    "name": "Bed Assembly",
+                    "description": "Professional assembly of beds to ensure proper functioning and appearance.",
+                    "price": "100"
+                },
+                {
+                    "name": "Dresser Assembly",
+                    "description": "Professional assembly of dressers to ensure proper functioning and appearance.",
+                    "price": "100"
+                },
+                {
+                    "name": "Wardrobe Assembly",
+                    "description": "Professional assembly of wardrobes to ensure proper functioning and appearance.",
+                    "price": "150"
+                },
+                {
+                    "name": "Table and Chair Assembly",
+                    "description": "Professional assembly of tables and chairs to ensure proper functioning and appearance.",
+                    "price": "100"
+                },
+                {
+                    "name": "Bookshelf Assembly",
+                    "description": "Professional assembly of bookshelves to ensure proper functioning and appearance.",
+                    "price": "100"
+                },
+                {
+                    "name": "TV Stand Assembly",
+                    "description": "Professional assembly of TV stands to ensure proper functioning and appearance.",
+                    "price": "100"
+                },
+                {
+                    "name": "Cabinet Assembly",
+                    "description": "Professional assembly of cabinets to ensure proper functioning and appearance.",
+                    "price": "150"
+                }
+            ]
+        },
+        {
+            "name": "Moving Services",
+            "subcategories": [{
+                    "name": "Local Moving",
+                    "description": "Professional local moving services for homes and offices.",
+                    "price": "400"
+                },
+                {
+                    "name": "Long Distance Moving",
+                    "description": "Professional long distance moving services for homes and offices.",
+                    "price": "1000"
+                },
+                {
+                    "name": "Commercial Moving",
+                    "description": "Professional moving services for commercial businesses.",
+                    "price": "800"
+                },
+                {
+                    "name": "Residential Moving",
+                    "description": "Professional moving services for residential homes.",
+                    "price": "600"
+                },
+                {
+                    "name": "Packing and Unpacking",
+                    "description": "Professional packing and unpacking services to make your move stress-free.",
+                    "price": "250"
+                },
+                {
+                    "name": "Storage Solutions",
+                    "description": "Professional storage solutions to make your move or home organization easier.",
+                    "price": "200"
+                },
+                {
+                    "name": "Senior Moving Services",
+                    "description": "Professional moving services for seniors and their families.",
+                    "price": "600"
+                },
+                {
+                    "name": "Furniture Moving",
+                    "description": "Professional furniture moving services for homes and offices.",
+                    "price": "200"
+                },
+                {
+                    "name": "Piano Moving",
+                    "description": "Professional piano moving services for homes and offices.",
+                    "price": "500"
+                },
+                {
+                    "name": "Small Moves",
+                    "description": "Professional moving services for small moves, such as apartments or dorms.",
+                    "price": "250"
+                }
+            ]
+        },
+        {
+            "name": "Appliances",
+            "subcategories": [{
+                    "name": "Refrigerator Repair",
+                    "description": "Professional repair services for refrigerators to ensure they are functioning properly.",
+                    "price": "200"
+                },
+                {
+                    "name": "Dishwasher Repair",
+                    "description": "Professional repair services for dishwashers to ensure they are functioning properly.",
+                    "price": "150"
+                },
+                {
+                    "name": "Oven and Stove Repair",
+                    "description": "Professional repair services for ovens and stoves to ensure they are functioning properly.",
+                    "price": "150"
+                },
+                {
+                    "name": "Washing Machine Repair",
+                    "description": "Professional repair services for washing machines to ensure they are functioning properly.",
+                    "price": "200"
+                },
+                {
+                    "name": "Dryer Repair",
+                    "description": "Professional repair services for dryers to ensure they are functioning properly.",
+                    "price": "200"
+                },
+                {
+                    "name": "Microwave Repair",
+                    "description": "Professional repair services for microwaves to ensure they are functioning properly.",
+                    "price": "100"
+                },
+                {
+                    "name": "Freezer Repair",
+                    "description": "Professional repair services for freezers to ensure they are functioning properly.",
+                    "price": "200"
+                },
+                {
+                    "name": "Garbage Disposal Repair",
+                    "description": "Professional repair services for garbage disposals to ensure they are functioning properly.",
+                    "price": "100"
+                },
+                {
+                    "name": "Trash Compactor Repair",
+                    "description": "Professional repair services for trash compactors to ensure they are functioning properly.",
+                    "price": "150"
+                },
+                {
+                    "name": "Range Hood Repair",
+                    "description": "Professional repair services for range hoods to ensure they are functioning properly.",
+                    "price": "100"
+                }
+            ]
+        },
+        {
+            "name": "Bathroom",
+            "subcategories": [{
+                    "name": "Bathroom Remodeling",
+                    "description": "Professional bathroom remodeling services to transform your bathroom into a beautiful and functional space.",
+                    "price": "2000"
+                },
+                {
+                    "name": "Shower and Bathtub Installation",
+                    "description": "Professional installation of showers and bathtubs to ensure they are installed properly.",
+                    "price": "500"
+                },
+                {
+                    "name": "Toilet Repair and Installation",
+                    "description": "Professional repair and installation services for toilets to ensure they are functioning properly.",
+                    "price": "150"
+                },
+                {
+                    "name": "Sink and Faucet Installation",
+                    "description": "Professional installation of sinks and faucets to ensure they are installed properly.",
+                    "price": "150"
+                },
+                {
+                    "name": "Tile Installation and Repair",
+                    "description": "Professional tile installation and repair services to ensure your bathroom is beautiful and functional.",
+                    "price": "300"
+                },
+                {
+                    "name": "Grout and Caulking Services",
+                    "description": "Professional grout and caulking services to ensure your bathroom is properly sealed and free from water damage.",
+                    "price": "150"
+                },
+                {
+                    "name": "Plumbing Services",
+                    "description": "Professional plumbing services to ensure your bathroom is functioning properly and free from leaks and other issues.",
+                    "price": "150"
+                },
+                {
+                    "name": "Exhaust Fan Installation",
+                    "description": "Professional installation of exhaust fans to ensure your bathroom has proper ventilation and is free from moisture and mold.",
+                    "price": "100"
+                },
+                {
+                    "name": "Bathroom Lighting Installation",
+                    "description": "Professional installation of bathroom lighting to ensure your bathroom is well-lit and functional.",
+                    "price": "100"
+                },
+                {
+                    "name": "Bathroom Vanity Installation",
+                    "description": "Professional installation of bathroom vanities to ensure they are properly installed and functional.",
+                    "price": "200"
+                },
+                {
+                    "name": "Mirror Installation",
+                    "description": "Professional installation of bathroom mirrors to ensure they are properly installed and functional.",
+                    "price": "50"
+                },
+                {
+                    "name": "Towel Rack and Hook Installation",
+                    "description": "Professional installation of towel racks and hooks to ensure they are properly installed and functional.",
+                    "price": "50"
+                },
+                {
+                    "name": "Handicap Accessible Bathroom Installation",
+                    "description": "Professional installation of handicap accessible features in your bathroom to ensure it is safe and functional for all.",
+                    "price": "2000"
+                }
+            ]
+        }
+    ]
+    var template = ""
+
+    function getQueryParam(name) {
+        const params = new URLSearchParams(window.location.search);
+        return params.get(name);
+    }
+
+    var category = getQueryParam('category');
+    if (category == null) {
+        category = ""
+    }
+    var subcategory = getQueryParam('subcategory');
+    if (subcategory == null) {
+        subcategory = ""
+    }
+    category = window.atob(category)
+    document.getElementById("category").innerHTML = category
+    console.log(category)
+    subcategory = window.atob(subcategory)
+    console.log(subcategory)
+    var obj = data.find(json => json.name === category)
+    var price = obj["subcategories"].find(sub => sub.name === subcategory).price
+    var description = obj["subcategories"].find(sub => sub.name === subcategory).description
+    console.log(price)
+    window.localStorage.setItem("fee", price)
+    console.log(obj)
+    console.log(obj["subcategories"])
+        for (var i in obj["subcategories"]) {
+
+            template = template + `<div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 6" style="margin-right: 10px;">
+                                        <a href="?category=${window.btoa(category)}&subcategory=${window.btoa(obj["subcategories"][i].name)}" class="tag-btn" id="${obj["subcategories"][i].name}">${obj["subcategories"][i].name}</a>
+                                    </div>`
+           
+        }
+        document.getElementById("swiper-wrapper-714760010fb1034ea4").innerHTML = template
+        document.getElementById("price").innerHTML = price
+        document.getElementById("description").innerHTML = description
+        document.getElementById(`${subcategory}`).classList.add('active');
+
+    function book() {
+        location.href = `./book.html?subcategory=${subcategory}&category=${category}`
+    }
+
+
+
+
+
+    const progressDone = document.querySelectorAll('.progress-done');
+
+    progressDone.forEach(progress => {
+        progress.style.width = progress.getAttribute('data-done') + '%';
+    });
+    </script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/settings.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/dz.carousel.js"></script><!-- Swiper -->
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script><!-- Swiper -->
+</body>
+
+</html>

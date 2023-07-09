@@ -1,0 +1,15 @@
+{
+  "background_color": "#40189d",
+  "description": "Elev8 Home Services App",
+  "display": "fullscreen",
+  "icons": [
+    {
+      "src": "assets/images/pwa.png",
+      "sizes": "200x200",
+      "type": "image/png"
+    }
+  ],
+  "name": "Elev8 Home Services",
+  "short_name": "Elev8",
+  "start_url": "https://elev8.cards/search"
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="./Elev8 Admin.css">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- Basic Page Needs
+  ================================================== -->
+    <title>Form Builder - Elev8 Admin</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!-- Mobile Specific Metas
+  ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS
+  ================================================== -->
+    <link rel="stylesheet" href="https://givingmortgages.co.uk/assets/css/site.css">
+    <!-- Favicons
+  ================================================== -->
+    <link rel="icon" type="image/png" href="https://i.imgur.com/WMQ1gF2.png">
+    <link rel="shortcut icon" href="https://i.imgur.com/WMQ1gF2.png">
+    <link rel="apple-touch-icon" href="https://i.imgur.com/WMQ1gF2.png">
+    <!-- Tracking
+    ================================================== -->
+</head>
+<body id="reset" style="max-width:100%">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WLPLN35" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <span class="viewport" style="display: none;"></span>
+    <section class="padding-none">
+        <div class="flex-container twenty-fifty-thirty height-full">
+            <div class="column" id="mortgage_form">
+                <form class="main_form" action="#">
+
+                    <div class="stage" id="stage_1">
+                        <img id="FormImg" src="" style="width: 200px;"><br>
+                        <h2 id="FormTitle"></h2>
+                <main id="main">
+                            <div id="Elev8 Admin"></div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </form>
+    </div>
+</div>
+</section>
+</body>
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+        <div class="dropzone">
+        <div class="info"></div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+</script>
+
+
+    <script src="Elev8 Admin.js"></script>
+    <script type="text/javascript" src="./js/imgur.js"></script>
+    <script type="text/javascript" src="./js/upload.js"></script>
+
+</body>
+<script>
+
+</script>
+</html>
