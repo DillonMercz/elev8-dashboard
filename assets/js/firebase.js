@@ -3,13 +3,14 @@ var formQuota
 var teamQuota
 var prospectQuota
 const firebaseConfig = {
-    apiKey: "AIzaSyAeK4Sa-5hitMezvtaqC9qBKDxO-VN-X7w",
-    authDomain: "Elev8 Admin-ae310.firebaseapp.com",
-    projectId: "Elev8 Admin-ae310",
-    storageBucket: "Elev8 Admin-ae310.appspot.com",
-    messagingSenderId: "102241139444",
-    appId: "1:102241139444:web:86e243c660628a044bfca1",
-    measurementId: "G-WV3JX67Y6Y"
+   // Your Firebase configuration goes here
+            apiKey: "AIzaSyBd9mTGo1lM19_Kcqf_vl7-pE4Rq1AzWA8",
+            authDomain: "bookings-49c4e.firebaseapp.com",
+            projectId: "bookings-49c4e",
+            storageBucket: "bookings-49c4e.appspot.com",
+            messagingSenderId: "491340380786",
+            appId: "1:491340380786:web:50ea0578b31309494ae0eb",
+            measurementId: "G-3JJKPRCD9Y"
 };
 firebase.initializeApp(firebaseConfig);
 db = firebase.firestore();
