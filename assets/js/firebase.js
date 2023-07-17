@@ -13,6 +13,7 @@ const firebaseConfig = {
             measurementId: "G-3JJKPRCD9Y"
 };
 firebase.initializeApp(firebaseConfig);
+firebase.analytics()
 db = firebase.firestore();
 db.settings({ timestampsInSnapshots: true, merge: true });
 
@@ -41,7 +42,7 @@ function getUser() {
             // ...
         } else {
             // User is signed out
-            //window.location.href = "https://dashboard.admin.elev8.cards/pages/sign-in.html"
+            //window.location.href = "https://dashboard.admin.nest-mate.com/pages/sign-in.html"
             // ...
         }
     });
@@ -406,7 +407,7 @@ function getTeams() {
                                             </a>
                                             <header class="flex items-center justify-between leading-tight p-2 md:p-4">
                                                 <h1 class="text-lg">
-                                                    <a class="no-underline hover:underline text-black" href="https://dashboard.admin.elev8.cards/pages/team.html?team=${doc.id}">
+                                                    <a class="no-underline hover:underline text-black" href="https://dashboard.nest-mate.com/pages/team.html?team=${doc.id}">
                                                         ${doc.data().name}
                                                     </a>
                                                 </h1>
@@ -691,7 +692,7 @@ function unicornFuck(status) {
                         "status": status
                     }).then(() => {
                         console.log("verified")
-                        //window.location.href = "https://dashboard.admin.elev8.cards"
+                        //window.location.href = "https://dashboard.admin.nest-mate.com"
                     })
                     .catch((error) => {
                         console.log("Error getting document:", error);
